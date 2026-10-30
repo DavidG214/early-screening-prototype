@@ -1,0 +1,598 @@
+{
+  "generated": true,
+  "generated_at": "2026-10-30T23:56:08.739959+00:00",
+  "dataset": {
+    "name": "Autism Screening Adult (UCI ID 426)",
+    "url": "https://archive.ics.uci.edu/dataset/426/autism+screening+adult",
+    "doi": "10.24432/C5F019",
+    "license": "CC BY 4.0",
+    "n_rows": 704,
+    "columns_seen": [
+      "A1_Score",
+      "A2_Score",
+      "A3_Score",
+      "A4_Score",
+      "A5_Score",
+      "A6_Score",
+      "A7_Score",
+      "A8_Score",
+      "A9_Score",
+      "A10_Score",
+      "age",
+      "gender",
+      "ethnicity",
+      "jaundice",
+      "family_pdd",
+      "country_of_res",
+      "used_app_before",
+      "result",
+      "age_desc",
+      "relation",
+      "class"
+    ],
+    "columns_used": [
+      "A1",
+      "A2",
+      "A3",
+      "A4",
+      "A5",
+      "A6",
+      "A7",
+      "A8",
+      "A9",
+      "A10",
+      "age",
+      "gender",
+      "ethnicity",
+      "jaundice",
+      "family_pdd",
+      "used_app_before",
+      "relation",
+      "result"
+    ],
+    "load_path": "cache ml/raw/autism_screening_adult.csv",
+    "age_range_observed": {
+      "min": 17.0,
+      "max": 64.0,
+      "n_under_18": 18,
+      "n_age_missing": 3,
+      "ages_over_100_set_to_nan": [
+        383.0
+      ]
+    }
+  },
+  "leakage_check": {
+    "method": "DecisionTreeClassifier(max_depth=1) on item_sum (sum of A1..A10) alone, StratifiedKFold(5, shuffle, seed 42)",
+    "cv_accuracy": {
+      "mean": 1.0,
+      "sd": 0.0
+    },
+    "cv_sensitivity": {
+      "mean": 1.0,
+      "sd": 0.0
+    },
+    "cv_specificity": {
+      "mean": 1.0,
+      "sd": 0.0
+    },
+    "threshold_refit_all_rows": "item_sum <= 6.5 -> class 0; item_sum > 6.5 -> class 1",
+    "threshold_value": 6.5,
+    "item_sum_by_label_crosstab": {
+      "0": {
+        "label_0": 14,
+        "label_1": 0
+      },
+      "1": {
+        "label_0": 33,
+        "label_1": 0
+      },
+      "2": {
+        "label_0": 74,
+        "label_1": 0
+      },
+      "3": {
+        "label_0": 110,
+        "label_1": 0
+      },
+      "4": {
+        "label_0": 131,
+        "label_1": 0
+      },
+      "5": {
+        "label_0": 83,
+        "label_1": 0
+      },
+      "6": {
+        "label_0": 70,
+        "label_1": 0
+      },
+      "7": {
+        "label_0": 0,
+        "label_1": 57
+      },
+      "8": {
+        "label_0": 0,
+        "label_1": 55
+      },
+      "9": {
+        "label_0": 0,
+        "label_1": 47
+      },
+      "10": {
+        "label_0": 0,
+        "label_1": 30
+      }
+    },
+    "result_equals_item_sum": {
+      "all_rows_equal": true,
+      "n_mismatch": 0,
+      "n_rows": 704
+    },
+    "label_rate_by_relation": {
+      "self": {
+        "n": 522,
+        "label_rate": 0.3007662835249042,
+        "n_positive": 157
+      },
+      "other": {
+        "n": 87,
+        "label_rate": 0.26436781609195403,
+        "n_positive": 23
+      },
+      "unknown": {
+        "n": 95,
+        "label_rate": 0.09473684210526316,
+        "n_positive": 9
+      }
+    },
+    "relation_raw_value_counts": {
+      "Self": 522,
+      "(missing)": 95,
+      "Parent": 50,
+      "Relative": 28,
+      "Others": 5,
+      "'Health care professional'": 4
+    }
+  },
+  "variants": {
+    "V1_all_columns": {
+      "columns": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "age",
+        "gender",
+        "ethnicity",
+        "jaundice",
+        "family_pdd",
+        "used_app_before",
+        "relation",
+        "result"
+      ],
+      "n": 704,
+      "n_positive": 189,
+      "operating_threshold": "0.5 on class-balanced predicted probability",
+      "sensitivity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "specificity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "ppv": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "auc": {
+        "mean": 1.0,
+        "sd": 0.0
+      }
+    },
+    "V2_items_only": {
+      "columns": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10"
+      ],
+      "n": 704,
+      "n_positive": 189,
+      "operating_threshold": "0.5 on class-balanced predicted probability",
+      "sensitivity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "specificity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "ppv": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "accuracy": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "auc": {
+        "mean": 1.0,
+        "sd": 0.0
+      }
+    },
+    "V2b_items_plus_demographics": {
+      "columns": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7",
+        "A8",
+        "A9",
+        "A10",
+        "age",
+        "gender",
+        "ethnicity",
+        "jaundice",
+        "family_pdd",
+        "used_app_before",
+        "relation"
+      ],
+      "n": 704,
+      "n_positive": 189,
+      "operating_threshold": "0.5 on class-balanced predicted probability",
+      "sensitivity": {
+        "mean": 1.0,
+        "sd": 0.0
+      },
+      "specificity": {
+        "mean": 0.9980582524271846,
+        "sd": 0.0038834951456310665
+      },
+      "ppv": {
+        "mean": 0.9948717948717949,
+        "sd": 0.010256410256410265
+      },
+      "accuracy": {
+        "mean": 0.9985815602836879,
+        "sd": 0.0028368794326241176
+      },
+      "auc": {
+        "mean": 1.0,
+        "sd": 0.0
+      }
+    },
+    "V3_demographics_only": {
+      "columns": [
+        "age",
+        "gender",
+        "ethnicity",
+        "jaundice",
+        "family_pdd",
+        "used_app_before",
+        "relation"
+      ],
+      "n": 704,
+      "n_positive": 189,
+      "operating_threshold": "0.5 on class-balanced predicted probability",
+      "sensitivity": {
+        "mean": 0.7349928876244666,
+        "sd": 0.060247488569380406
+      },
+      "specificity": {
+        "mean": 0.5553398058252427,
+        "sd": 0.0750530022916027
+      },
+      "ppv": {
+        "mean": 0.38055306489553065,
+        "sd": 0.035282676577669723
+      },
+      "accuracy": {
+        "mean": 0.6037183383991894,
+        "sd": 0.04921747220301004
+      },
+      "auc": {
+        "mean": 0.6774441022524824,
+        "sd": 0.03929283115238557
+      }
+    }
+  },
+  "subgroups": {
+    "language": "not available in this dataset; country of residence is not language",
+    "V2_items_only": {
+      "by_gender": {
+        "female": {
+          "n": 337,
+          "n_positive": 103,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        },
+        "male": {
+          "n": 367,
+          "n_positive": 86,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        }
+      },
+      "by_age_band": {
+        "18-29": {
+          "n": 406,
+          "n_positive": 88,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        },
+        "30-44": {
+          "n": 218,
+          "n_positive": 74,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        },
+        "45+": {
+          "n": 59,
+          "n_positive": 22,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        },
+        "under 18 (data says 18+)": {
+          "n": 18,
+          "n_positive": 5,
+          "sensitivity": null,
+          "specificity": null,
+          "ppv": null,
+          "suppressed": true
+        },
+        "unknown": {
+          "n": 3,
+          "n_positive": 0,
+          "sensitivity": null,
+          "specificity": null,
+          "ppv": null,
+          "suppressed": true
+        }
+      },
+      "method": "pooled out-of-fold predictions, 5-fold stratified CV, threshold 0.5 on class-balanced predicted probability"
+    },
+    "V2b_items_plus_demographics": {
+      "by_gender": {
+        "female": {
+          "n": 337,
+          "n_positive": 103,
+          "sensitivity": 1.0,
+          "specificity": 0.9957264957264957,
+          "ppv": 0.9903846153846154,
+          "suppressed": false
+        },
+        "male": {
+          "n": 367,
+          "n_positive": 86,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        }
+      },
+      "by_age_band": {
+        "18-29": {
+          "n": 406,
+          "n_positive": 88,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        },
+        "30-44": {
+          "n": 218,
+          "n_positive": 74,
+          "sensitivity": 1.0,
+          "specificity": 1.0,
+          "ppv": 1.0,
+          "suppressed": false
+        },
+        "45+": {
+          "n": 59,
+          "n_positive": 22,
+          "sensitivity": 1.0,
+          "specificity": 0.972972972972973,
+          "ppv": 0.9565217391304348,
+          "suppressed": false
+        },
+        "under 18 (data says 18+)": {
+          "n": 18,
+          "n_positive": 5,
+          "sensitivity": null,
+          "specificity": null,
+          "ppv": null,
+          "suppressed": true
+        },
+        "unknown": {
+          "n": 3,
+          "n_positive": 0,
+          "sensitivity": null,
+          "specificity": null,
+          "ppv": null,
+          "suppressed": true
+        }
+      },
+      "method": "pooled out-of-fold predictions, 5-fold stratified CV, threshold 0.5 on class-balanced predicted probability"
+    }
+  },
+  "coefficients": {
+    "V2b_items_plus_demographics": [
+      {
+        "feature": "num__A5",
+        "coefficient": 2.1008005712819275
+      },
+      {
+        "feature": "num__A4",
+        "coefficient": 1.9853198859153642
+      },
+      {
+        "feature": "num__A7",
+        "coefficient": 1.9004958120483977
+      },
+      {
+        "feature": "num__A9",
+        "coefficient": 1.89066093201271
+      },
+      {
+        "feature": "num__A1",
+        "coefficient": 1.810810542773034
+      },
+      {
+        "feature": "num__A8",
+        "coefficient": 1.7951976081603398
+      },
+      {
+        "feature": "num__A2",
+        "coefficient": 1.7790075923235933
+      },
+      {
+        "feature": "num__A10",
+        "coefficient": 1.771295449130881
+      },
+      {
+        "feature": "num__A3",
+        "coefficient": 1.765207242375014
+      },
+      {
+        "feature": "num__A6",
+        "coefficient": 1.715192145656931
+      },
+      {
+        "feature": "cat__ethnicity_'Middle Eastern '",
+        "coefficient": -0.3382963362967132
+      },
+      {
+        "feature": "cat__used_app_before_no",
+        "coefficient": -0.28262144361079716
+      },
+      {
+        "feature": "cat__ethnicity_Black",
+        "coefficient": 0.2798163725983416
+      },
+      {
+        "feature": "cat__used_app_before_yes",
+        "coefficient": 0.252270447960977
+      },
+      {
+        "feature": "cat__ethnicity_Asian",
+        "coefficient": -0.22174546232288803
+      },
+      {
+        "feature": "cat__relation_Self",
+        "coefficient": 0.21932140787220641
+      },
+      {
+        "feature": "cat__ethnicity_Hispanic",
+        "coefficient": 0.1893052404369643
+      },
+      {
+        "feature": "cat__ethnicity_'South Asian'",
+        "coefficient": -0.1814522948160993
+      },
+      {
+        "feature": "cat__relation_'Health care professional'",
+        "coefficient": -0.12805144215719785
+      },
+      {
+        "feature": "cat__relation_Others",
+        "coefficient": -0.1098976290144416
+      },
+      {
+        "feature": "cat__ethnicity_Latino",
+        "coefficient": 0.10893958289634713
+      },
+      {
+        "feature": "cat__gender_m",
+        "coefficient": -0.10525485698390857
+      },
+      {
+        "feature": "cat__gender_f",
+        "coefficient": 0.07490386133408772
+      },
+      {
+        "feature": "cat__ethnicity_White-European",
+        "coefficient": 0.07167005403105217
+      },
+      {
+        "feature": "num__age",
+        "coefficient": 0.0696583481591422
+      },
+      {
+        "feature": "cat__ethnicity_Others",
+        "coefficient": 0.04501627561764175
+      },
+      {
+        "feature": "cat__jaundice_yes",
+        "coefficient": -0.04092672925323953
+      },
+      {
+        "feature": "cat__family_pdd_no",
+        "coefficient": -0.03206153272049451
+      },
+      {
+        "feature": "cat__jaundice_no",
+        "coefficient": 0.010575733603419395
+      },
+      {
+        "feature": "cat__ethnicity_Pasifika",
+        "coefficient": 0.009179608427690248
+      },
+      {
+        "feature": "cat__relation_Parent",
+        "coefficient": -0.00837973642392617
+      },
+      {
+        "feature": "cat__ethnicity_others",
+        "coefficient": 0.004554118332831619
+      },
+      {
+        "feature": "cat__relation_Relative",
+        "coefficient": -0.00334359592646305
+      },
+      {
+        "feature": "cat__ethnicity_Turkish",
+        "coefficient": 0.0026618454450114256
+      },
+      {
+        "feature": "cat__family_pdd_yes",
+        "coefficient": 0.0017105370706721867
+      }
+    ]
+  },
+  "warnings": [],
+  "note": "A near-perfect items-only result means the label is reachable from the items alone, which is the leakage finding, not a success.",
+  "caveats": [
+    "The dataset's label appears to be derived from the questionnaire score itself; the depth-1 check scored 100.0%. The model is reproducing a screening score, not predicting a clinical diagnosis.",
+    "Screening-app respondents; representativeness unknown; clinical diagnosis not indicated."
+  ]
+}
