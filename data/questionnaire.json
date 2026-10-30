@@ -1,0 +1,160 @@
+{
+  "version": "0.1",
+  "scale": [
+    { "value": 0, "en": "Never or not at all", "es": "Nunca o para nada" },
+    { "value": 1, "en": "Rarely or a little", "es": "Rara vez o un poco" },
+    { "value": 2, "en": "Sometimes or quite a bit", "es": "A veces o bastante" },
+    { "value": 3, "en": "Often or a great deal", "es": "Con frecuencia o muchísimo" }
+  ],
+  "domains": [
+    {
+      "id": "A",
+      "evidence": "validated_constructs",
+      "name": { "en": "Reading and decoding", "es": "Lectura y decodificación" },
+      "desc": {
+        "en": "How much effort everyday reading, spelling and sounding out words take you.",
+        "es": "Cuánto esfuerzo te cuesta leer, escribir correctamente las palabras y pronunciarlas al leer."
+      }
+    },
+    {
+      "id": "B",
+      "evidence": "not_validated",
+      "name": { "en": "Writing and handwriting", "es": "Escritura y letra a mano" },
+      "desc": {
+        "en": "How easily you get your ideas onto the page, by hand or typed.",
+        "es": "Qué tan fácil te resulta pasar tus ideas al papel, a mano o en computadora."
+      }
+    },
+    {
+      "id": "C",
+      "evidence": "not_validated",
+      "name": { "en": "Numbers and math", "es": "Números y matemáticas" },
+      "desc": {
+        "en": "How you handle everyday numbers: money, time, quantities and mental arithmetic.",
+        "es": "Cómo manejas los números de todos los días: dinero, tiempo, cantidades y cuentas mentales."
+      }
+    },
+    {
+      "id": "D",
+      "evidence": "validated_constructs",
+      "name": { "en": "Attention and organisation", "es": "Atención y organización" },
+      "desc": {
+        "en": "Keeping focus, planning, finishing things and pausing before acting.",
+        "es": "Mantener la concentración, planear, terminar lo que empiezas y detenerte antes de actuar."
+      }
+    },
+    {
+      "id": "E",
+      "evidence": "validated_constructs",
+      "name": { "en": "Social and sensory experience", "es": "Experiencia social y sensorial" },
+      "desc": {
+        "en": "How social situations, change and sensory input feel to you, and how much you adjust yourself to fit in.",
+        "es": "Cómo vives las situaciones sociales, los cambios y los estímulos sensoriales, y cuánto te ajustas para encajar."
+      }
+    }
+  ],
+  "items": [
+    { "id": "A1", "domain": "A", "type": "childhood", "weight": 1.0,
+      "en": "As a child, did learning to read take you noticeably longer than your classmates?",
+      "es": "De niño o niña, ¿te tomó bastante más tiempo aprender a leer que a tus compañeros?" },
+    { "id": "A2", "domain": "A", "type": "childhood", "weight": 1.0,
+      "en": "As a child, did spelling tests stay hard for you even after you had practised the words?",
+      "es": "De niño o niña, ¿los exámenes de ortografía te seguían costando aunque hubieras practicado las palabras?" },
+    { "id": "A3", "domain": "A", "type": "now", "weight": 1.0,
+      "en": "Today, when you have the choice, do you pick audio or video over reading because reading feels like hard work?",
+      "es": "Hoy en día, cuando puedes elegir, ¿prefieres un audio o un video en vez de leer porque leer se siente pesado?" },
+    { "id": "A4", "domain": "A", "type": "now", "weight": 1.0,
+      "en": "Do you count on spell-check or autocorrect to catch words you are unsure of, even everyday ones?",
+      "es": "¿Dependes del corrector ortográfico o del autocorrector para las palabras que no sabes cómo se escriben, incluso las de uso diario?" },
+    { "id": "A5", "domain": "A", "type": "now", "weight": 1.0,
+      "en": "Do new names, street signs or long words you have not seen before take you a while to sound out?",
+      "es": "¿Los nombres nuevos, los letreros de las calles o las palabras largas que nunca has visto te toman un buen rato para pronunciarlas?" },
+    { "id": "A6", "domain": "A", "type": "cost", "weight": 1.0,
+      "en": "How much extra effort does reading for work or school cost you compared with the people around you?",
+      "es": "¿Cuánto esfuerzo extra te cuesta leer para el trabajo o la escuela, comparado con la gente a tu alrededor?" },
+
+    { "id": "B1", "domain": "B", "type": "childhood", "weight": 1.0,
+      "en": "As a child, did teachers often say your handwriting was hard to read or that you wrote very slowly?",
+      "es": "De niño o niña, ¿los maestros decían con frecuencia que tu letra era difícil de leer o que escribías muy despacio?" },
+    { "id": "B2", "domain": "B", "type": "now", "weight": 1.0,
+      "en": "Today, do you avoid writing by hand (forms, notes, cards) because it is slow or tiring?",
+      "es": "Hoy en día, ¿evitas escribir a mano (formularios, notas, tarjetas) porque es lento o agotador?" },
+    { "id": "B3", "domain": "B", "type": "now", "weight": 1.0,
+      "en": "When you write, do your ideas come faster than you can get them onto the page, so the result does not show what you know?",
+      "es": "Cuando escribes, ¿tus ideas van más rápido de lo que puedes plasmarlas, de modo que el resultado no refleja lo que sabes?" },
+    { "id": "B4", "domain": "B", "type": "cost", "weight": 1.0,
+      "en": "How much extra time do you spend going back over and fixing what you wrote before you feel ready to share it?",
+      "es": "¿Cuánto tiempo extra dedicas a revisar y corregir lo que escribiste antes de sentirte listo o lista para compartirlo?" },
+
+    { "id": "C1", "domain": "C", "type": "childhood", "weight": 1.0,
+      "en": "As a child, did you keep counting on your fingers long after classmates had stopped?",
+      "es": "De niño o niña, ¿seguiste contando con los dedos mucho después de que tus compañeros dejaron de hacerlo?" },
+    { "id": "C2", "domain": "C", "type": "now", "weight": 1.0,
+      "en": "Today, do you struggle to estimate a tip, split a bill, or judge how long a task will take?",
+      "es": "Hoy en día, ¿se te dificulta calcular una propina, dividir una cuenta o estimar cuánto tardará una tarea?" },
+    { "id": "C3", "domain": "C", "type": "now", "weight": 1.0,
+      "en": "Do you rely on a calculator or your phone for arithmetic that others do in their head?",
+      "es": "¿Dependes de una calculadora o del celular para cuentas que otros hacen mentalmente?" },
+    { "id": "C4", "domain": "C", "type": "cost", "weight": 1.0,
+      "en": "How much worry or extra effort do everyday numbers, like prices, bills or measurements, cost you compared with the people around you?",
+      "es": "¿Cuánta preocupación o esfuerzo extra te cuestan los números de todos los días, como precios, cuentas o medidas, comparado con la gente a tu alrededor?" },
+
+    { "id": "D1", "domain": "D", "type": "childhood", "weight": 1.0,
+      "en": "As a child, did teachers often say you were bright but \"not applying yourself\", or that your mind was somewhere else?",
+      "es": "De niño o niña, ¿los maestros decían con frecuencia que eras listo o lista pero que \"no te esforzabas\", o que andabas en otro mundo?" },
+    { "id": "D2", "domain": "D", "type": "now", "weight": 1.0,
+      "en": "Do you find that much more time has gone by than you thought, so you end up running late?",
+      "es": "¿Te pasa que ha pasado mucho más tiempo del que creías y terminas llegando tarde?" },
+    { "id": "D3", "domain": "D", "type": "now", "weight": 1.0,
+      "en": "Do you lose track of what you were doing when something interrupts you, even briefly?",
+      "es": "¿Pierdes el hilo de lo que estabas haciendo cuando algo te interrumpe, aunque sea brevemente?" },
+    { "id": "D4", "domain": "D", "type": "now", "weight": 1.0,
+      "en": "When a week has several deadlines, is it hard to decide what comes first and make a plan you actually stick to?",
+      "es": "Cuando tienes varias fechas de entrega en una semana, ¿te cuesta decidir qué va primero y hacer un plan que de verdad cumplas?" },
+    { "id": "D5", "domain": "D", "type": "now", "weight": 1.0,
+      "en": "Do you say or buy things on impulse and later wish you had stopped to think first?",
+      "es": "¿Dices o compras cosas por impulso y después quisieras haberte detenido a pensar?" },
+    { "id": "D6", "domain": "D", "type": "cost", "weight": 1.0,
+      "en": "How much of your energy goes into alarms, lists and reminders just to keep up with what others seem to manage without them?",
+      "es": "¿Cuánta de tu energía se va en alarmas, listas y recordatorios solo para mantener el ritmo que otros parecen llevar sin ellos?" },
+
+    { "id": "E1", "domain": "E", "type": "childhood", "weight": 1.0,
+      "en": "As a child, did the unwritten rules of games and friendships confuse you, even if you did fine in class?",
+      "es": "De niño o niña, ¿te confundían las reglas no escritas de los juegos y las amistades, aunque te fuera bien en clase?" },
+    { "id": "E2", "domain": "E", "type": "now", "weight": 1.0,
+      "en": "In conversations, do you consciously rehearse or copy how others act so that you come across as \"normal\"?",
+      "es": "En las conversaciones, ¿ensayas o copias conscientemente cómo actúan los demás para parecer \"normal\"?" },
+    { "id": "E3", "domain": "E", "type": "now", "weight": 1.0,
+      "en": "Do everyday sounds, lights, textures or smells bother you more than they seem to bother other people?",
+      "es": "¿Los sonidos, luces, texturas u olores cotidianos te molestan más de lo que parecen molestar a los demás?" },
+    { "id": "E4", "domain": "E", "type": "now", "weight": 1.0,
+      "en": "Do unexpected changes to your plans, even small ones, throw you off for a long time?",
+      "es": "¿Los cambios inesperados en tus planes, aunque sean pequeños, te desacomodan por mucho tiempo?" },
+    { "id": "E5", "domain": "E", "type": "cost", "weight": 1.0,
+      "en": "After social situations, do you need a long time alone to recover?",
+      "es": "Después de situaciones sociales, ¿necesitas mucho tiempo a solas para recuperarte?" }
+  ],
+  "context": [
+    {
+      "id": "family",
+      "en": "Does anyone in your family have reading, attention or learning differences?",
+      "es": "¿Alguien en tu familia tiene diferencias en la lectura, la atención o el aprendizaje?",
+      "options": [
+        { "value": "yes", "en": "Yes", "es": "Sí" },
+        { "value": "no", "en": "No", "es": "No" },
+        { "value": "unsure", "en": "Not sure", "es": "No estoy seguro o segura" }
+      ]
+    },
+    {
+      "id": "school",
+      "en": "What support did you get at school as a child?",
+      "es": "¿Qué apoyo recibiste en la escuela de niño o niña?",
+      "options": [
+        { "value": "none", "en": "None", "es": "Ninguno" },
+        { "value": "informal", "en": "Informal help", "es": "Ayuda informal" },
+        { "value": "formal", "en": "A formal plan", "es": "Un plan formal" },
+        { "value": "unsure", "en": "Not sure", "es": "No estoy seguro o segura" }
+      ]
+    }
+  ]
+}
