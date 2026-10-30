@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Early screening prototype</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar no-print">
+    <span class="brand" data-i18n="appName"></span>
+    <button type="button" id="langToggle" class="lang-toggle" aria-label="Español / English"></button>
+  </header>
+
+  <p id="esNotice" class="es-notice no-print" hidden data-i18n="esNotice"></p>
+
+  <main id="app">
+    <noscript>This tool needs JavaScript. Nothing is sent anywhere.</noscript>
+
+    <section id="screen-loaderror" class="screen" hidden>
+      <h1 data-i18n="loadErrorTitle"></h1>
+      <p data-i18n="loadErrorBody"></p>
+      <pre>py -m http.server 8349</pre>
+    </section>
+
+    <section id="screen-intro" class="screen" hidden>
+      <h1 data-i18n="introTitle"></h1>
+      <p class="lead" data-i18n="notDiagnosis"></p>
+      <p data-i18n="introBody"></p>
+      <ul class="plain-list">
+        <li data-i18n="introPoint1"></li>
+        <li data-i18n="introPoint2"></li>
+        <li data-i18n="introPoint3"></li>
+      </ul>
+      <p class="distress" data-i18n="distress"></p>
+      <div class="actions">
+        <button type="button" class="btn primary" data-go="questions" data-i18n="start"></button>
+        <button type="button" class="btn" data-go="limitations" data-i18n="seeLimitations"></button>
+      </div>
+    </section>
+
+    <section id="screen-questions" class="screen" hidden>
+      <h1 data-i18n="questionsTitle"></h1>
+      <p data-i18n="questionsHelp"></p>
+      <p class="distress" data-i18n="distress"></p>
+      <form id="qForm" novalidate></form>
+      <p id="qError" class="error" role="alert" hidden></p>
+      <div class="actions">
+        <button type="button" class="btn primary" id="submitBtn" data-i18n="seeResults"></button>
+      </div>
+    </section>
+
+    <section id="screen-result" class="screen" hidden>
+      <h1 data-i18n="resultTitle"></h1>
+      <p class="lead" data-i18n="notDiagnosis"></p>
+      <div id="nextStep" class="card next-step"></div>
+      <div id="domainCards" class="cards"></div>
+      <div id="copingLine" class="card coping"></div>
+      <div class="card does-not">
+        <h2 data-i18n="doesNotTitle"></h2>
+        <ul>
+          <li data-i18n="doesNot1"></li>
+          <li data-i18n="doesNot2"></li>
+          <li data-i18n="doesNot3"></li>
+        </ul>
+      </div>
+      <p class="distress" data-i18n="distress"></p>
+      <p class="muted" data-i18n="notDocumentation"></p>
+      <div class="actions">
+        <button type="button" class="btn primary" data-go="packet" data-i18n="makeSummary"></button>
+        <button type="button" class="btn" data-go="providers" data-i18n="findPlaces"></button>
+        <button type="button" class="btn" data-go="limitations" data-i18n="seeLimitations"></button>
+        <button type="button" class="btn" id="restartBtn" data-i18n="startOver"></button>
+      </div>
+    </section>
+
+    <section id="screen-packet" class="screen" hidden>
+      <div class="actions no-print">
+        <button type="button" class="btn primary" id="printBtn" data-i18n="print"></button>
+        <button type="button" class="btn" data-go="result" data-i18n="backToResults"></button>
+      </div>
+      <article id="packet" class="packet"></article>
+    </section>
+
+    <section id="screen-providers" class="screen" hidden>
+      <h1 data-i18n="providersTitle"></h1>
+      <p data-i18n="providersIntro"></p>
+      <div id="providerList" class="cards"></div>
+      <div class="actions">
+        <button type="button" class="btn" data-back data-i18n="back"></button>
+      </div>
+    </section>
+
+    <section id="screen-limitations" class="screen" hidden>
+      <h1 data-i18n="limitationsTitle"></h1>
+      <ul id="limitationsList" class="limits"></ul>
+      <h2 data-i18n="sourcesTitle"></h2>
+      <p data-i18n="sourcesNote"></p>
+      <ul id="sourcesList" class="plain-list"></ul>
+      <div class="actions">
+        <button type="button" class="btn" data-back data-i18n="back"></button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
