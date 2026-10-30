@@ -1,0 +1,282 @@
+{
+  "providers": [
+    {
+      "id": "smu-psychology-clinic",
+      "name": "SMU Psychology Clinic",
+      "type": "clinic",
+      "credential_types": [],
+      "conditions_evaluated": [],
+      "adult": true,
+      "cities": [
+        "Dallas"
+      ],
+      "state": "TX",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://www.smu.edu/dedman/academics/departments/psychology/smu-psychology-clinic",
+      "phone": "214-768-2398",
+      "source_url": "https://www.smu.edu/dedman/academics/departments/psychology/smu-psychology-clinic",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "M",
+      "notes": "Non-profit training clinic; trainees supervised by licensed psychologists; described as affordable; all ages. Adult learning/ADHD testing and fees not confirmed.",
+      "services_unconfirmed": true
+    },
+    {
+      "id": "unt-psychology-clinic",
+      "name": "UNT Psychology Clinic",
+      "type": "clinic",
+      "credential_types": [],
+      "conditions_evaluated": [],
+      "adult": true,
+      "cities": [
+        "Denton"
+      ],
+      "state": "TX",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": true,
+      "insurance_note": "No insurance billed; receipts provided.",
+      "fee_note": "Call to confirm",
+      "waitlist": true,
+      "url": "https://psychology.unt.edu/clinics-and-centers/psychology-clinic/scheduling-and-fees.html",
+      "phone": "940-565-2631",
+      "source_url": "https://psychology.unt.edu/clinics-and-centers/psychology-clinic/scheduling-and-fees.html",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "L",
+      "notes": "fees: high confidence; services unconfirmed. Non-profit; sliding scale set per client; free intake. Adult testing not confirmed.",
+      "services_unconfirmed": true
+    },
+    {
+      "id": "metrocare-samuell",
+      "name": "Metrocare Services, Samuell Blvd adult clinic",
+      "type": "clinic",
+      "credential_types": [],
+      "conditions_evaluated": [],
+      "adult": true,
+      "cities": [
+        "Dallas"
+      ],
+      "state": "TX",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": true,
+      "insurance_note": "Third-party listing mentions Medicare and Medicaid.",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://www.opencounseling.com/united-states/dallas/counseling-agency/metrocare-samuell-adult-mental-health-clinic",
+      "phone": "214-275-7393",
+      "source_url": "https://www.opencounseling.com/united-states/dallas/counseling-agency/metrocare-samuell-adult-mental-health-clinic",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "M",
+      "notes": "Address: 4645 Samuell Blvd, Cottage 5. third-party listing only; confirm by phone. Adult outpatient mental health; listing says bilingual (language not named). Assessment services not confirmed; fee text looked copied.",
+      "services_unconfirmed": true
+    },
+    {
+      "id": "dallas-college-accessibility",
+      "name": "Dallas College Accessibility Services",
+      "type": "campus",
+      "credential_types": [],
+      "conditions_evaluated": [],
+      "adult": true,
+      "cities": [
+        "Dallas"
+      ],
+      "state": "TX",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://www.dallascollege.edu/resources/accessibility-services/eligibility-for-services/",
+      "phone": "972-669-6400 / 214-378-1500",
+      "source_url": "https://www.dallascollege.edu/resources/accessibility-services/eligibility-for-services/",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "H",
+      "notes": "Accommodations for enrolled students with documented disability; submit documentation at least one month before term. Does not say whether it evaluates or refers.",
+      "services_unconfirmed": true
+    },
+    {
+      "id": "twc-vr",
+      "name": "Texas Workforce Solutions, Vocational Rehabilitation (TWC VR)",
+      "type": "vr",
+      "credential_types": [],
+      "conditions_evaluated": [
+        "dyslexia",
+        "learning",
+        "adhd"
+      ],
+      "adult": true,
+      "cities": [],
+      "state": "TX",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://www.twc.texas.gov/programs/vocational-rehabilitation/adults",
+      "phone": "512-936-6400",
+      "source_url": "https://www.twc.texas.gov/programs/vocational-rehabilitation/adults",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "H",
+      "notes": "disability types served; can pay for testing. Eligibility decided within 60 days. Email: vr.office.locator@twc.texas.gov"
+    },
+    {
+      "id": "chadd",
+      "name": "CHADD",
+      "type": "directory",
+      "credential_types": [],
+      "conditions_evaluated": [
+        "adhd"
+      ],
+      "adult": true,
+      "cities": [],
+      "state": "",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": "2026-10-30"
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://chadd.org/",
+      "phone": "1-866-200-8098",
+      "source_url": "https://chadd.org/",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "H",
+      "notes": "information line, not an evaluator. Professional directory; phone weekdays 1-5 pm ET; Spanish-speaking information staff; Spanish resource page."
+    },
+    {
+      "id": "ida",
+      "name": "International Dyslexia Association",
+      "type": "directory",
+      "credential_types": [],
+      "conditions_evaluated": [
+        "dyslexia"
+      ],
+      "adult": true,
+      "cities": [],
+      "state": "",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://dyslexiaida.org/?p=256",
+      "phone": "",
+      "source_url": "https://dyslexiaida.org/?p=256",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "H",
+      "notes": "Provider directory of members (credentials not vetted by IDA). Spanish fact sheets, including one for adolescents and adults, are reading material, not Spanish-speaking evaluators: https://dc.dyslexiaida.org/dyslexia/new-fact-sheets/recursos-en-espanol"
+    },
+    {
+      "id": "lda-america",
+      "name": "LDA America (info page)",
+      "type": "nonprofit",
+      "credential_types": [],
+      "conditions_evaluated": [],
+      "adult": true,
+      "cities": [],
+      "state": "",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://ldaamerica.org/info/",
+      "phone": "",
+      "source_url": "https://ldaamerica.org/info/",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "M",
+      "notes": "Adult articles on self-advocacy, disclosure, ADA/504."
+    },
+    {
+      "id": "psychology-today-dallas",
+      "name": "Psychology Today directory, Dallas",
+      "type": "directory",
+      "credential_types": [],
+      "conditions_evaluated": [
+        "adhd",
+        "learning",
+        "autism"
+      ],
+      "adult": true,
+      "cities": [
+        "Dallas"
+      ],
+      "state": "TX",
+      "telehealth": null,
+      "languages": [
+        {
+          "lang": "es",
+          "verified_date": null
+        }
+      ],
+      "sliding_scale": null,
+      "insurance_note": "",
+      "fee_note": "Call to confirm",
+      "waitlist": null,
+      "url": "https://www.psychologytoday.com/us/therapists/tx/dallas/city-center-district",
+      "phone": "",
+      "source_url": "https://www.psychologytoday.com/us/therapists/tx/dallas/city-center-district",
+      "last_verified": "2026-10-30",
+      "verified_by": "research session, web page only; not confirmed by phone",
+      "confidence": "M",
+      "notes": "therapist specialty filters, not confirmed evaluators. Filters seen: format, insurance, specialties. No language filter seen."
+    }
+  ]
+}
