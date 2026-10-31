@@ -1,8 +1,11 @@
 {
   "id": "reading",
   "domain": "A",
-  "version": "0.1",
-  "title": { "en": "A closer look: everyday reading", "es": "Más de cerca: la lectura de todos los días" },
+  "version": "0.2",
+  "title": {
+    "en": "A closer look: everyday reading",
+    "es": "Más de cerca: la lectura de todos los días"
+  },
   "help": {
     "en": "Each question describes a situation. Pick what usually happens for you. If a situation is not part of your life, choose “This doesn’t happen in my life”.",
     "es": "Cada pregunta describe una situación. Elige lo que normalmente te pasa. Si una situación no es parte de tu vida, elige “Esto no pasa en mi vida”."
@@ -17,183 +20,539 @@
       "es": "¿Quieres ver más de cerca la lectura de todos los días? Hay una sección opcional más detallada."
     }
   },
-  "go": { "en": "Take a closer look at reading", "es": "Ver más de cerca la lectura" },
-  "na": { "en": "This doesn't happen in my life", "es": "Esto no pasa en mi vida" },
+  "go": {
+    "en": "Take a closer look at reading",
+    "es": "Ver más de cerca la lectura"
+  },
+  "na": {
+    "en": "This doesn't happen in my life",
+    "es": "Esto no pasa en mi vida"
+  },
   "items": [
-    { "id": "R1",
+    {
+      "id": "R1",
       "en": "At a new restaurant, friends are ready to order and you have the menu. What usually happens?",
       "es": "En un restaurante nuevo, tus amigos ya están listos para pedir y tú tienes el menú. ¿Qué suele pasar?",
       "options": [
-        { "v": 0, "en": "I read it and choose without trouble.", "es": "Lo leo y elijo sin problema." },
-        { "v": 1, "en": "I read it, but I'm the last one ready.", "es": "Lo leo, pero soy el último o la última en estar listo o lista." },
-        { "v": 2, "en": "I skim for words I know or look at the pictures.", "es": "Busco palabras que conozco o miro las fotos." },
-        { "v": 3, "en": "I order something I already know or ask what's good, so I don't have to read it.", "es": "Pido algo que ya conozco o pregunto qué es bueno, para no tener que leerlo." }
-      ] },
-    { "id": "R2",
+        {
+          "v": 0,
+          "en": "I read it and choose without trouble.",
+          "es": "Lo leo y elijo sin problema."
+        },
+        {
+          "v": 1,
+          "en": "I read it, but I'm the last one ready.",
+          "es": "Lo leo, pero termino después que los demás."
+        },
+        {
+          "v": 2,
+          "en": "I skim for words I know or look at the pictures.",
+          "es": "Busco palabras que conozco o miro las fotos."
+        },
+        {
+          "v": 3,
+          "en": "I order something I already know or ask what's good, so I don't have to read it.",
+          "es": "Pido algo que ya conozco o pregunto qué recomiendan, para no tener que leerlo."
+        }
+      ]
+    },
+    {
+      "id": "R2",
       "en": "You get a new medicine with written instructions. What happens?",
       "es": "Te dan un medicamento nuevo con instrucciones escritas. ¿Qué pasa?",
       "options": [
-        { "v": 0, "en": "I read them and understand them the first time.", "es": "Las leo y las entiendo a la primera." },
-        { "v": 1, "en": "I understand them after reading slowly.", "es": "Las entiendo después de leerlas despacio." },
-        { "v": 2, "en": "I often miss a detail and have to check with someone.", "es": "Con frecuencia se me pasa un detalle y tengo que preguntarle a alguien." },
-        { "v": 3, "en": "I ask the pharmacist or someone else to tell me instead of reading them.", "es": "Le pido al farmacéutico o a alguien más que me lo explique en vez de leerlas." }
-      ] },
-    { "id": "R3",
+        {
+          "v": 0,
+          "en": "I read them and understand them the first time.",
+          "es": "Las leo y las entiendo la primera vez que las leo."
+        },
+        {
+          "v": 1,
+          "en": "I understand them after reading slowly.",
+          "es": "Las entiendo después de leerlas despacio."
+        },
+        {
+          "v": 2,
+          "en": "I often miss a detail and have to check with someone.",
+          "es": "Con frecuencia se me pasa un detalle y tengo que preguntarle a alguien."
+        },
+        {
+          "v": 3,
+          "en": "I ask the pharmacist or someone else to tell me instead of reading them.",
+          "es": "Le pido al farmacéutico o a alguien más que me lo explique en vez de leerlas."
+        }
+      ]
+    },
+    {
+      "id": "R3",
       "en": "A long email arrives an hour before a meeting about it.",
       "es": "Te llega un correo largo una hora antes de una reunión sobre ese tema.",
       "options": [
-        { "v": 0, "en": "I read it in time.", "es": "Lo leo a tiempo." },
-        { "v": 1, "en": "I read it, but it takes me longer than others.", "es": "Lo leo, pero me toma más tiempo que a los demás." },
-        { "v": 2, "en": "I only get through part of it.", "es": "Solo alcanzo a leer una parte." },
-        { "v": 3, "en": "I can't get through it, so I hope someone sums it up.", "es": "No logro leerlo, así que espero que alguien lo resuma." }
-      ] },
-    { "id": "R4",
+        {
+          "v": 0,
+          "en": "I read it in time.",
+          "es": "Lo leo a tiempo."
+        },
+        {
+          "v": 1,
+          "en": "I read it, but it takes me a long time.",
+          "es": "Lo leo, pero me toma mucho tiempo."
+        },
+        {
+          "v": 2,
+          "en": "I only get through part of it.",
+          "es": "Solo alcanzo a leer una parte."
+        },
+        {
+          "v": 3,
+          "en": "I can't get through it, so I hope someone sums it up.",
+          "es": "No logro leerlo, así que espero que alguien lo resuma."
+        }
+      ]
+    },
+    {
+      "id": "R4",
       "en": "Someone asks you to read a paragraph out loud to a group.",
       "es": "Alguien te pide que leas un párrafo en voz alta frente a un grupo.",
       "options": [
-        { "v": 0, "en": "I'm comfortable doing it.", "es": "Lo hago con tranquilidad." },
-        { "v": 1, "en": "I can, but I trip over a few words.", "es": "Puedo, pero me trabo en algunas palabras." },
-        { "v": 2, "en": "I trip over many words and lose the meaning.", "es": "Me trabo en muchas palabras y pierdo el sentido." },
-        { "v": 3, "en": "I find a way to get out of it.", "es": "Busco la manera de evitarlo." }
-      ] },
-    { "id": "R5",
+        {
+          "v": 0,
+          "en": "I'm comfortable doing it.",
+          "es": "Lo hago con tranquilidad."
+        },
+        {
+          "v": 1,
+          "en": "I can, but I trip over a few words.",
+          "es": "Puedo, pero me trabo en algunas palabras."
+        },
+        {
+          "v": 2,
+          "en": "I trip over many words and lose the meaning.",
+          "es": "Me trabo en muchas palabras y pierdo el sentido."
+        },
+        {
+          "v": 3,
+          "en": "I avoid it because I would stumble over too many words.",
+          "es": "Lo evito porque me trabaría en demasiadas palabras."
+        }
+      ]
+    },
+    {
+      "id": "R5",
       "en": "You watch a show with subtitles.",
       "es": "Ves un programa con subtítulos.",
       "options": [
-        { "v": 0, "en": "I keep up easily.", "es": "Los sigo sin problema." },
-        { "v": 1, "en": "I keep up, but I miss some of the picture.", "es": "Los sigo, pero me pierdo parte de la imagen." },
-        { "v": 2, "en": "Lines often disappear before I finish them.", "es": "Con frecuencia desaparecen antes de que termine de leerlos." },
-        { "v": 3, "en": "I can't keep up, so I avoid shows with subtitles.", "es": "No logro seguirlos, así que evito los programas con subtítulos." }
-      ] },
-    { "id": "R6",
+        {
+          "v": 0,
+          "en": "I keep up easily.",
+          "es": "Los sigo sin problema."
+        },
+        {
+          "v": 1,
+          "en": "I keep up, but I miss some of the picture.",
+          "es": "Los sigo, pero me pierdo parte de lo que pasa en pantalla."
+        },
+        {
+          "v": 2,
+          "en": "Lines often disappear before I finish them.",
+          "es": "Con frecuencia desaparecen antes de que termine de leerlos."
+        },
+        {
+          "v": 3,
+          "en": "I can't keep up, so I avoid shows with subtitles.",
+          "es": "No logro seguirlos, así que evito los programas con subtítulos."
+        }
+      ]
+    },
+    {
+      "id": "R6",
       "en": "You are typing a message and need a word you are unsure how to spell.",
       "es": "Estás escribiendo un mensaje y necesitas una palabra que no sabes bien cómo se escribe.",
       "options": [
-        { "v": 0, "en": "This rarely happens to me.", "es": "Casi nunca me pasa." },
-        { "v": 1, "en": "I sometimes switch to a word I know how to spell.", "es": "A veces cambio a una palabra que sí sé escribir." },
-        { "v": 2, "en": "I often switch words or try several spellings until one looks right.", "es": "Con frecuencia cambio de palabra o pruebo varias formas hasta que una se ve bien." },
-        { "v": 3, "en": "I send a voice message instead of typing.", "es": "Mando un audio en vez de escribir." }
-      ] },
-    { "id": "R7",
-      "en": "While driving or riding, you need to read a road sign as you pass it.",
-      "es": "Mientras manejas o vas de pasajero, necesitas leer un letrero de la calle al pasar.",
+        {
+          "v": 0,
+          "en": "This rarely happens to me.",
+          "es": "Casi nunca me pasa."
+        },
+        {
+          "v": 1,
+          "en": "I sometimes switch to a word I know how to spell.",
+          "es": "A veces cambio a una palabra que sí sé escribir."
+        },
+        {
+          "v": 2,
+          "en": "I often switch words or try several spellings until one looks right.",
+          "es": "Con frecuencia cambio de palabra o pruebo varias formas hasta que una se ve bien."
+        },
+        {
+          "v": 3,
+          "en": "I avoid typing it because I can't get the spelling right; I send a voice message or ask someone.",
+          "es": "Evito escribirlo porque no logro acertar la ortografía; mando un audio o le pregunto a alguien."
+        }
+      ]
+    },
+    {
+      "id": "R7",
+      "en": "A notice is posted on a door at work or in your building about a schedule change.",
+      "es": "Hay un aviso pegado en una puerta del trabajo o de tu edificio sobre un cambio de horario.",
       "options": [
-        { "v": 0, "en": "I read it in time.", "es": "Lo leo a tiempo." },
-        { "v": 1, "en": "I usually read it in time.", "es": "Por lo general lo leo a tiempo." },
-        { "v": 2, "en": "I often pass it before I finish reading.", "es": "Con frecuencia lo paso antes de terminar de leerlo." },
-        { "v": 3, "en": "I can't read signs fast enough, so I rely on spoken directions.", "es": "No logro leer los letreros a tiempo, así que dependo de las indicaciones habladas." }
-      ] },
-    { "id": "R8",
-      "en": "Before signing a lease or a work contract:",
-      "es": "Antes de firmar un contrato de renta o de trabajo:",
+        {
+          "v": 0,
+          "en": "I get it at a glance.",
+          "es": "Lo entiendo de un vistazo."
+        },
+        {
+          "v": 1,
+          "en": "I have to read it twice.",
+          "es": "Tengo que leerlo dos veces."
+        },
+        {
+          "v": 2,
+          "en": "I only catch part of it.",
+          "es": "Solo capto una parte."
+        },
+        {
+          "v": 3,
+          "en": "I ask someone what it says.",
+          "es": "Le pregunto a alguien qué dice."
+        }
+      ]
+    },
+    {
+      "id": "R8",
+      "en": "When you do read a lease or a work contract:",
+      "es": "Cuando sí lees un contrato de alquiler o de trabajo:",
       "options": [
-        { "v": 0, "en": "I read the whole thing.", "es": "Lo leo completo." },
-        { "v": 1, "en": "I read it, but it takes a long time.", "es": "Lo leo, pero me toma mucho tiempo." },
-        { "v": 2, "en": "I read only parts and hope the rest is fine.", "es": "Leo solo algunas partes y espero que lo demás esté bien." },
-        { "v": 3, "en": "I sign without reading because reading it is too hard.", "es": "Firmo sin leer porque leerlo me cuesta demasiado." }
-      ] },
-    { "id": "R9",
+        {
+          "v": 0,
+          "en": "I follow it.",
+          "es": "Lo entiendo."
+        },
+        {
+          "v": 1,
+          "en": "I follow it, but slowly.",
+          "es": "Lo entiendo, pero despacio."
+        },
+        {
+          "v": 2,
+          "en": "I lose the thread and have to go back a lot.",
+          "es": "Pierdo el hilo y tengo que regresar muchas veces."
+        },
+        {
+          "v": 3,
+          "en": "I can't get through it and need someone to explain it.",
+          "es": "No logro terminarlo y necesito que alguien me lo explique."
+        }
+      ]
+    },
+    {
+      "id": "R9",
       "en": "You put together furniture that comes with written step-by-step instructions.",
       "es": "Armas un mueble que trae instrucciones escritas paso a paso.",
       "options": [
-        { "v": 0, "en": "I follow the written steps.", "es": "Sigo los pasos escritos." },
-        { "v": 1, "en": "I follow them, but I read slowly.", "es": "Los sigo, pero leo despacio." },
-        { "v": 2, "en": "I skip the text and go by the pictures.", "es": "Me salto el texto y me guío por los dibujos." },
-        { "v": 3, "en": "I need someone to explain the steps to me.", "es": "Necesito que alguien me explique los pasos." }
-      ] },
-    { "id": "R10",
+        {
+          "v": 0,
+          "en": "I follow the written steps.",
+          "es": "Sigo los pasos escritos."
+        },
+        {
+          "v": 1,
+          "en": "I follow them, but I read slowly.",
+          "es": "Los sigo, pero leo despacio."
+        },
+        {
+          "v": 2,
+          "en": "I try the text but give up and go by the pictures.",
+          "es": "Intento leer el texto, pero me rindo y me guío por los dibujos."
+        },
+        {
+          "v": 3,
+          "en": "I need someone to explain the steps to me.",
+          "es": "Necesito que alguien me explique los pasos."
+        }
+      ]
+    },
+    {
+      "id": "R10",
       "en": "A test or training at work or school has written questions and a time limit.",
       "es": "Un examen o una capacitación en el trabajo o la escuela tiene preguntas escritas y tiempo límite.",
       "options": [
-        { "v": 0, "en": "I finish in time.", "es": "Termino a tiempo." },
-        { "v": 1, "en": "I finish, but just barely.", "es": "Termino, pero apenas." },
-        { "v": 2, "en": "I often run out of time because of the reading.", "es": "Con frecuencia se me acaba el tiempo por la lectura." },
-        { "v": 3, "en": "I can't get through the reading in time, so I avoid these or ask for a spoken version.", "es": "No logro leer todo a tiempo, así que los evito o pido una versión hablada." }
-      ] },
-    { "id": "R11",
+        {
+          "v": 0,
+          "en": "I finish in time.",
+          "es": "Termino a tiempo."
+        },
+        {
+          "v": 1,
+          "en": "I finish, but just barely.",
+          "es": "Termino, pero apenas."
+        },
+        {
+          "v": 2,
+          "en": "I often run out of time because of the reading.",
+          "es": "Con frecuencia se me acaba el tiempo por la lectura."
+        },
+        {
+          "v": 3,
+          "en": "I can't get through the reading in time, so I avoid these or ask for a spoken version.",
+          "es": "No logro leer todo a tiempo, así que los evito o pido una versión hablada."
+        }
+      ]
+    },
+    {
+      "id": "R11",
       "en": "A phone app (bank, school, health) shows a screen full of text.",
       "es": "Una app del celular (banco, escuela, salud) muestra una pantalla llena de texto.",
       "options": [
-        { "v": 0, "en": "I read it and find what I need.", "es": "La leo y encuentro lo que necesito." },
-        { "v": 1, "en": "I find it, but slowly.", "es": "Lo encuentro, pero despacio." },
-        { "v": 2, "en": "I look for icons and buttons instead of reading.", "es": "Busco íconos y botones en vez de leer." },
-        { "v": 3, "en": "I ask someone else to do it for me.", "es": "Le pido a alguien más que lo haga por mí." }
-      ] },
-    { "id": "R12",
-      "en": "When you have free time and a book or a long article:",
-      "es": "Cuando tienes tiempo libre y un libro o un artículo largo:",
+        {
+          "v": 0,
+          "en": "I read it and find what I need.",
+          "es": "La leo y encuentro lo que necesito."
+        },
+        {
+          "v": 1,
+          "en": "I find it, but slowly.",
+          "es": "Lo encuentro, pero despacio."
+        },
+        {
+          "v": 2,
+          "en": "I rely on icons because the text is too hard to get through.",
+          "es": "Me guío por los íconos porque el texto me cuesta demasiado."
+        },
+        {
+          "v": 3,
+          "en": "I ask someone else to do it for me.",
+          "es": "Le pido a alguien más que lo haga por mí."
+        }
+      ]
+    },
+    {
+      "id": "R12",
+      "en": "When you read a book or a long article:",
+      "es": "Cuando lees un libro o un artículo largo:",
       "options": [
-        { "v": 0, "en": "Reading feels easy and relaxing.", "es": "Leer se siente fácil y relajante." },
-        { "v": 1, "en": "I can enjoy it, but it takes effort.", "es": "Lo puedo disfrutar, pero me cuesta esfuerzo." },
-        { "v": 2, "en": "It wears me out quickly, so I rarely do it.", "es": "Me cansa rápido, así que casi nunca lo hago." },
-        { "v": 3, "en": "Reading is too hard to be relaxing, so I don't.", "es": "Leer me cuesta demasiado para que sea relajante, así que no lo hago." }
-      ] }
+        {
+          "v": 0,
+          "en": "I read at a steady pace without tiring.",
+          "es": "Leo a un ritmo constante sin cansarme."
+        },
+        {
+          "v": 1,
+          "en": "I read it, but slower than I'd like.",
+          "es": "Lo leo, pero más despacio de lo que quisiera."
+        },
+        {
+          "v": 2,
+          "en": "I tire after a page or two and lose the thread.",
+          "es": "Me canso después de una o dos páginas y pierdo el hilo."
+        },
+        {
+          "v": 3,
+          "en": "Reading it is so slow that I don't finish.",
+          "es": "Leerlo me toma tanto que no lo termino."
+        }
+      ]
+    }
   ],
-  "tasksTitle": { "en": "Hands-on reading tasks", "es": "Tareas prácticas de lectura" },
+  "tasksTitle": {
+    "en": "Hands-on reading tasks",
+    "es": "Tareas prácticas de lectura"
+  },
   "tasks": [
     {
       "type": "read",
-      "title": { "en": "Read a short passage", "es": "Lee un texto corto" },
+      "title": {
+        "en": "Read a short passage",
+        "es": "Lee un texto corto"
+      },
       "help": {
-        "en": "Read the passage at your normal pace, then tap “I’m done reading”. Three questions follow, with the passage hidden. The English and Spanish passages are different texts, so times are not comparable across languages.",
-        "es": "Lee el texto a tu ritmo normal y luego toca “Terminé de leer”. Después vienen tres preguntas, sin el texto a la vista. Los textos en inglés y en español son distintos, así que los tiempos no se pueden comparar entre idiomas."
+        "en": "Read the passage at your normal pace, then tap “I’m done reading”. Three questions follow, with the passage hidden. The Spanish version is a translation of the same text, so reading times are not comparable across languages.",
+        "es": "Lee el texto a tu ritmo normal y luego toca “Terminé de leer”. Después vienen tres preguntas, sin el texto a la vista. La versión en inglés es una traducción del mismo texto, así que los tiempos no se pueden comparar entre idiomas."
       },
       "passage": {
         "en": "The Saturday Garden\n\nEvery Saturday morning, a group of neighbors meets at an empty lot on Oak Street. Two years ago the lot was full of trash and broken glass. Rosa, who lives across the street, asked the city if the neighbors could clean it up and plant a garden. The city said yes, as long as the space stayed open to everyone.\n\nToday the lot has twelve raised beds, a small shed for tools and a bench under a young tree. Families grow tomatoes, peppers, beans and herbs. Anyone can take vegetables from the front bed, which is planted for people who cannot grow their own.\n\nThe hardest part, Rosa says, is water. There is no tap on the lot, so volunteers carry water from her house in buckets until the city puts in a pipe next spring.",
-        "es": "El jardín de los sábados\n\nTodos los sábados por la mañana, un grupo de vecinos se reúne en un terreno vacío de la calle Roble. Hace dos años, el terreno estaba lleno de basura y vidrios rotos. Rosa, que vive enfrente, le preguntó a la ciudad si los vecinos podían limpiarlo y sembrar un jardín. La ciudad aceptó, con la condición de que el espacio quedara abierto para todos.\n\nHoy el terreno tiene doce camas de cultivo elevadas, un pequeño cobertizo para herramientas y un banco bajo un árbol joven. Las familias cultivan tomates, pimientos, frijoles y hierbas. Cualquier persona puede llevarse verduras de la cama del frente, que se siembra para quienes no pueden cultivar las suyas.\n\nLo más difícil, dice Rosa, es el agua. No hay toma de agua en el terreno, así que los voluntarios cargan agua en baldes desde su casa hasta que la ciudad instale una tubería la próxima primavera."
+        "es": "El jardín de los sábados\n\nTodos los sábados por la mañana, un grupo de vecinos se reúne en un terreno vacío de la calle Roble. Hace dos años, el terreno estaba lleno de basura y vidrios rotos. Rosa, que vive enfrente, le preguntó al municipio si los vecinos podían limpiarlo y sembrar un jardín. El municipio aceptó, con la condición de que el espacio quedara abierto para todos.\n\nHoy el terreno tiene doce camas elevadas para sembrar, un pequeño cobertizo para herramientas y un banco bajo un árbol joven. Las familias cultivan tomates, pimientos, frijoles y hierbas. Cualquier persona puede llevarse verduras de la cama del frente, que se siembra para quienes no pueden cultivar las suyas.\n\nLo más difícil, dice Rosa, es el agua. No hay toma de agua en el terreno, así que los voluntarios cargan agua en baldes desde su casa hasta que el municipio instale una tubería la próxima primavera."
       },
       "questions": [
-        { "q": { "en": "Who first asked the city about the lot?", "es": "¿Quién le preguntó primero a la ciudad sobre el terreno?" },
+        {
+          "q": {
+            "en": "Who asked the city about the lot?",
+            "es": "¿Quién le preguntó al municipio sobre el terreno?"
+          },
           "options": [
-            { "en": "The city", "es": "La ciudad" },
-            { "en": "A neighbor named Rosa", "es": "Una vecina llamada Rosa" },
-            { "en": "A school group", "es": "Un grupo escolar" }
-          ], "c": 1 },
-        { "q": { "en": "Who is the front bed planted for?", "es": "¿Para quién se siembra la cama del frente?" },
+            {
+              "en": "The city",
+              "es": "El municipio"
+            },
+            {
+              "en": "A neighbor named Rosa",
+              "es": "Una vecina llamada Rosa"
+            },
+            {
+              "en": "A school group",
+              "es": "Un grupo escolar"
+            }
+          ],
+          "c": 1
+        },
+        {
+          "q": {
+            "en": "Who is the front bed planted for?",
+            "es": "¿Para quién se siembra la cama del frente?"
+          },
           "options": [
-            { "en": "People who cannot grow their own food", "es": "Para quienes no pueden cultivar sus propias verduras" },
-            { "en": "Volunteers who carry water", "es": "Para los voluntarios que cargan agua" },
-            { "en": "People who buy vegetables", "es": "Para quienes compran verduras" }
-          ], "c": 0 },
-        { "q": { "en": "What does Rosa say is the hardest part?", "es": "¿Qué dice Rosa que es lo más difícil?" },
+            {
+              "en": "People who cannot grow their own food",
+              "es": "Quienes no pueden cultivar sus propias verduras"
+            },
+            {
+              "en": "Volunteers who carry water",
+              "es": "Los voluntarios que cargan agua"
+            },
+            {
+              "en": "People who buy vegetables",
+              "es": "Quienes compran verduras"
+            }
+          ],
+          "c": 0
+        },
+        {
+          "q": {
+            "en": "What does Rosa say is the hardest part?",
+            "es": "¿Qué dice Rosa que es lo más difícil?"
+          },
           "options": [
-            { "en": "Finding volunteers", "es": "Encontrar voluntarios" },
-            { "en": "Keeping trash out", "es": "Mantener fuera la basura" },
-            { "en": "Getting water", "es": "Conseguir agua" }
-          ], "c": 2 }
+            {
+              "en": "Finding volunteers",
+              "es": "Encontrar voluntarios"
+            },
+            {
+              "en": "Keeping trash out",
+              "es": "Evitar que tiren basura"
+            },
+            {
+              "en": "Getting water",
+              "es": "Conseguir agua"
+            }
+          ],
+          "c": 2
+        }
       ]
     },
     {
       "type": "choose",
-      "title": { "en": "Which spelling is right?", "es": "¿Cuál está bien escrita?" },
+      "title": {
+        "en": "Which spelling is right?",
+        "es": "¿Cuál está bien escrita?"
+      },
       "help": {
-        "en": "Tap the word that is spelled correctly. There are 10 words. The Spanish version uses a different word list, so results are not comparable across languages.",
+        "en": "Tap the word that is spelled correctly. There are 10 words. The Spanish version uses its own word list, so results are not comparable across languages.",
         "es": "Toca la palabra que está bien escrita. Son 10 palabras. La versión en inglés usa otra lista de palabras, así que los resultados no se pueden comparar entre idiomas."
       },
       "items": {
         "en": [
-          ["necessary", "neccessary", "necesary"],
-          ["separate", "seperate", "separete"],
-          ["receive", "recieve", "receeve"],
-          ["definitely", "definately", "definitly"],
-          ["tomorrow", "tommorow", "tomorow"],
-          ["different", "diffrent", "differant"],
-          ["business", "buisness", "busness"],
-          ["because", "becuase", "becouse"],
-          ["environment", "enviroment", "envirnoment"],
-          ["government", "goverment", "govermant"]
+          [
+            "necessary",
+            "neccessary",
+            "necesary"
+          ],
+          [
+            "separate",
+            "seperate",
+            "separete"
+          ],
+          [
+            "receive",
+            "recieve",
+            "receeve"
+          ],
+          [
+            "definitely",
+            "definately",
+            "definitly"
+          ],
+          [
+            "tomorrow",
+            "tommorow",
+            "tomorow"
+          ],
+          [
+            "different",
+            "diffrent",
+            "differant"
+          ],
+          [
+            "business",
+            "buisness",
+            "busness"
+          ],
+          [
+            "because",
+            "becuase",
+            "becouse"
+          ],
+          [
+            "environment",
+            "enviroment",
+            "envirnoment"
+          ],
+          [
+            "government",
+            "goverment",
+            "govermant"
+          ]
         ],
         "es": [
-          ["cabeza", "cabesa", "kabeza"],
-          ["zapato", "sapato", "zapatto"],
-          ["llegar", "yegar", "llejar"],
-          ["jirafa", "girafa", "jiraffa"],
-          ["bicicleta", "vicicleta", "bisicleta"],
-          ["hospital", "ospital", "hozpital"],
-          ["escribir", "escrivir", "ezcribir"],
-          ["cerveza", "serveza", "cerbeza"],
-          ["hermano", "ermano", "hermanno"],
-          ["gente", "jente", "guente"]
+          [
+            "cabeza",
+            "cabesa",
+            "caveza"
+          ],
+          [
+            "zanahoria",
+            "sanahoria",
+            "zanaoria"
+          ],
+          [
+            "llegar",
+            "yegar",
+            "llejar"
+          ],
+          [
+            "jirafa",
+            "girafa",
+            "hirafa"
+          ],
+          [
+            "bicicleta",
+            "vicicleta",
+            "bisicleta"
+          ],
+          [
+            "hospital",
+            "ospital",
+            "hozpital"
+          ],
+          [
+            "escribir",
+            "escrivir",
+            "ezcribir"
+          ],
+          [
+            "también",
+            "tambien",
+            "tanbién"
+          ],
+          [
+            "hermano",
+            "ermano",
+            "hermáno"
+          ],
+          [
+            "corazón",
+            "corazon",
+            "corasón"
+          ]
         ]
       }
     }
