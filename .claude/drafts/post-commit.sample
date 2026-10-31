@@ -1,0 +1,13 @@
+#!/bin/sh
+# DRAFT fallback, NOT installed. Rebuilds SUMMARY.md locally after every commit.
+# To activate (needs David's OK): copy to .git/hooks/post-commit (no extension).
+# It only writes the local file; it does not upload anything.
+# Cost: about 30-50k input + 2k output tokens per commit (~$0.10 on Sonnet 5.5 if billed to API credits).
+# Skips itself on the summary's own commit so it does not loop.
+case "$(git log -1 --format=%s)" in
+  "Update project summary"*) exit 0 ;;
+esac
+cd "$(git rev-parse --show-toplevel)" || exit 0
+claude -p "$(cat .claude/drafts/summary-prompt.txt)" \
+  --allowedTools "Read,Write,Bash(git log *)" \
+  > /dev/null 2>&1 &

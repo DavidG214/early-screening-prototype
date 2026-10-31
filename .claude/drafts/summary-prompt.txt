@@ -1,0 +1,26 @@
+You are updating SUMMARY.md, a plain-language project summary for a non-technical teammate (story and design). Rewrite it from the current repo, not from memory.
+
+Read, in this order:
+1. README.md (its Limitations list is the source of truth for what is and is not validated)
+2. git log --oneline -30 and git log -1 --format=%ci (what changed and when)
+3. data/questionnaire.json (domain names, item count, pre-screen count; do not quote items)
+4. data/modules/*.json (one line per module: title.en, item count, task titles)
+5. index.html (list of screens, by section id)
+6. data/providers.json (count only)
+
+Write SUMMARY.md with exactly these headings, short sentences, no jargon, under 450 words:
+# Project summary (auto-updated <date>, last commit <short hash>)
+## 1. What the app is
+## 2. What it does
+## 3. The big idea
+## 4. The honest AI part
+## 5. What it is not
+## What changed since last update
+## Open questions for the team
+
+Rules:
+- Never claim the app diagnoses, documents, is validated, equitable or "accurate". Screening, not diagnosis.
+- Keep these facts unless the README changes them: nothing is saved or sent; no score or labels are shown; writing, math and Spanish are not validated; the AI model decides nothing about a person because the dataset's label turned out to be the questionnaire score (100% leakage).
+- Only describe features you can see in the files. If unsure, put it under "Open questions".
+- "What changed": the newest commits in plain words, at most 5 bullets; compare with the previous SUMMARY.md if it exists.
+- Do not copy questionnaire items, provider names or phone numbers.

@@ -1,0 +1,38 @@
+# Project summary (draft, built 2026-10-30, last commit 9fea6d9)
+
+## 1. What the app is
+A free, private website in English and Spanish for adults who wonder whether they have differences in reading, writing, numbers, attention, or social and sensory experience. Built for the Dartmouth "AI at 70: What Must Remain Human?" hackathon (Oct 31, 2026).
+
+## 2. What it does
+- Before the questions: five context questions (age, education, school language, everyday language, gender). Adults only. These go in the summary and never change a result.
+- The questionnaire: 25 questions in 5 areas: reading and decoding, writing and handwriting, numbers and math, attention and organisation, social and sensory experience. All wording is our own.
+- Results: each area gets a plain-words band. No total score, no condition label.
+- A closer look (optional), two built:
+  - Reading: 12 everyday questions, a timed short passage, a "which spelling is right?" task.
+  - Numbers: 12 everyday questions, "which is bigger?", mental math, and a paper task with an optional photo.
+  Task results are just counts and times, never scored.
+- A printable summary to bring to a professional.
+- A provider list of 9 places whose web pages we opened. None confirmed by phone, so the app says "call to confirm".
+- Demo mode and a page explaining the AI model.
+
+## 3. The big idea
+The app gathers evidence; a human makes the call. Nothing is saved or sent: no accounts, cookies or server. Closing the tab erases everything, including any photo.
+
+## 4. The honest AI part
+We trained a model on a public autism-screening dataset (UCI #426). The first check showed the dataset's "diagnosis" label is just the questionnaire score (reproduced 100% of the time). So the model shows a method and a warning about leaky data, not diagnostic power. It never sees anyone's answers, and AI decides nothing about a person.
+
+## 5. What it is not
+- Not a diagnosis, and not documentation for school or work.
+- Writing and math areas are not validated for adults.
+- The Spanish version is our own translation and is not validated.
+- Band cut-offs and question weights are design choices, not tested.
+
+## What changed recently
+- Closer looks now share one design; the reading closer look was added (timed passage, spelling).
+- A review pass fixed answer order, swapped one attention question, accepted Spanish number formats and neutralised the Spanish.
+- A model card page and demo mode were added.
+- The numbers closer look and hands-on tasks were added, with an in-memory photo option.
+
+## Open questions for the team
+- Closer looks for writing, attention and social/sensory are not built. Show as "coming later" or hide?
+- Does the judges' story lead with "what must remain human" (the person and the professional make the call)?
