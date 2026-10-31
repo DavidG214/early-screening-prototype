@@ -76,6 +76,22 @@ fieldset.domain > legend { font-size: 1.2rem; font-weight: 700; padding: 0; marg
 
 .limits li { margin-bottom: 0.6rem; }
 
+/* model card */
+.caveats { margin-top: 12px; padding: 10px 12px; background: var(--warn-bg); border: 1px solid var(--warn-line); border-radius: 6px; font-size: 0.95rem; }
+.caveats ul { margin: 6px 0 0; padding-left: 1.2rem; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; font-variant-numeric: tabular-nums; }
+caption { text-align: left; font-weight: 600; margin: 8px 0 4px; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td + td { white-space: nowrap; }
+.coefs { display: grid; gap: 4px; }
+.coef { display: grid; grid-template-columns: 9rem 1fr 3.5rem; align-items: center; gap: 8px; font-size: 0.9rem; }
+.coef .bar { height: 12px; background: var(--accent); border-radius: 3px; }
+.coef .bar.neg { background: var(--warn-line); }
+.coef .val { text-align: right; font-variant-numeric: tabular-nums; }
+.demo-banner { padding: 8px 12px; background: var(--badge-bg); border-radius: 6px; font-weight: 600; }
+.linklike { font: inherit; background: none; border: 0; padding: 8px 0; min-height: 44px; color: var(--accent); text-decoration: underline; cursor: pointer; }
+
 /* tasks */
 .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1rem 0; }
 .btn.big { font-size: 2rem; min-height: 96px; font-variant-numeric: tabular-nums; }

@@ -37,7 +37,9 @@
       <div class="actions">
         <button type="button" class="btn primary" data-go="prescreen" data-i18n="start"></button>
         <button type="button" class="btn" data-go="limitations" data-i18n="seeLimitations"></button>
+        <button type="button" class="btn" data-go="model" data-i18n="modelLink"></button>
       </div>
+      <p class="muted"><button type="button" class="linklike" id="demoBtn" data-i18n="demoBtn"></button></p>
     </section>
 
     <section id="screen-prescreen" class="screen" hidden>
@@ -71,6 +73,7 @@
     </section>
 
     <section id="screen-result" class="screen" hidden>
+      <p class="demo-banner" data-i18n="demoBanner" hidden></p>
       <h1 data-i18n="resultTitle"></h1>
       <p class="lead" data-i18n="notDiagnosis"></p>
       <div id="nextStep" class="card next-step"></div>
@@ -91,6 +94,7 @@
         <button type="button" class="btn primary" data-go="packet" data-i18n="makeSummary"></button>
         <button type="button" class="btn" data-go="providers" data-i18n="findPlaces"></button>
         <button type="button" class="btn" data-go="limitations" data-i18n="seeLimitations"></button>
+        <button type="button" class="btn" data-go="model" data-i18n="modelLink"></button>
         <button type="button" class="btn" id="restartBtn" data-i18n="startOver"></button>
       </div>
     </section>
@@ -128,9 +132,18 @@
       </div>
     </section>
 
+    <section id="screen-model" class="screen" hidden>
+      <h1 data-i18n="modelTitle"></h1>
+      <div id="modelCard"></div>
+      <div class="actions">
+        <button type="button" class="btn" data-back data-i18n="back"></button>
+      </div>
+    </section>
+
     <section id="screen-limitations" class="screen" hidden>
       <h1 data-i18n="limitationsTitle"></h1>
       <ul id="limitationsList" class="limits"></ul>
+      <p><button type="button" class="btn" data-go="model" data-i18n="modelLink"></button></p>
       <h2 data-i18n="sourcesTitle"></h2>
       <p data-i18n="sourcesNote"></p>
       <ul id="sourcesList" class="plain-list"></ul>

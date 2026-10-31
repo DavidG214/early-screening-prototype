@@ -109,6 +109,40 @@ const STR = {
     p_no: "No (per their page)",
     p_notes: "Notes",
     p_lastChecked: (d, by) => `Last checked ${d}; ${by}`,
+    modelLink: "How the AI part works",
+    modelTitle: "Model card: how the AI part works",
+    demoBtn: "Demo mode: fill in a sample set of answers",
+    demoBanner: "Demo mode: these are sample answers, not a real person's.",
+    mc_notScored: "This model does not score your answers.",
+    mc_notScoredWhy: "Our 25 questions are original wording. The public dataset encodes a different 10-item questionnaire, so applying its weights to our questions would be a made-up mapping. Your results come only from the transparent rules described on the results screen.",
+    mc_missing: "Model report not generated. The training script has not been run on real data, so no metrics are shown.",
+    mc_leakTitle: "1. Leakage check (run first)",
+    mc_leakBody: (acc, sens, spec, n, pos) => `A one-step rule using only the total of the dataset's own 10 questions reproduces its label with ${acc} accuracy, sensitivity ${sens}, specificity ${spec} (n = ${n}, ${pos} labelled positive; 5-fold cross-validation).`,
+    mc_leakRule: (thr) => `Learned rule: a total above ${thr} is labelled positive.`,
+    mc_resultEq: (eq, n) => eq ? `The dataset's "result" column equals the question total on all ${n} rows.` : `The dataset's "result" column does not always equal the question total.`,
+    mc_relation: "Label rate by who filled in the form",
+    mc_rel: { self: "Self", other: "Someone else", unknown: "Not recorded" },
+    mc_variantsTitle: "2. Logistic regression, four variants",
+    mc_variant: {
+      V1_all_columns: "All columns (questions + demographics + the dataset's own score)",
+      V2_items_only: "The 10 questions only",
+      V2b_items_plus_demographics: "The 10 questions + demographics",
+      V3_demographics_only: "Demographics only (no questions)"
+    },
+    mc_cols: ["Variant", "Sensitivity", "Specificity", "PPV", "n (positive)"],
+    mc_threshold: "Operating point: 0.5 on class-balanced predicted probability. Mean ± SD across 5 folds.",
+    mc_itemsNote: "A near-perfect result from the questions alone means the label is reachable from the questions themselves. That is the leakage finding, not a success.",
+    mc_subTitle: "3. Subgroups (questions + demographics)",
+    mc_subCols: ["Group", "Sensitivity", "Specificity", "PPV", "n (positive)"],
+    mc_suppressed: "suppressed (n < 30 or fewer than 10 positive)",
+    mc_lang: "Language subgroup: not available in this dataset; country of residence is not language.",
+    mc_coefTitle: "4. Weights (questions + demographics model, top 10)",
+    mc_coefNote: "Because the label is a function of the questions, these weights mostly restate the scoring rule. They are not evidence about any condition.",
+    mc_caveatsTitle: "Read these with every number above",
+    mc_caveatLeak: (acc) => `The dataset's label appears to be derived from the questionnaire score itself; the depth-1 check scored ${acc}. The model is reproducing a screening score, not predicting a clinical diagnosis.`,
+    mc_caveatSample: "Screening-app respondents; representativeness unknown; clinical diagnosis not indicated.",
+    mc_dataset: (n, lo, hi, under) => `Dataset: Autism Screening Adult, UCI Machine Learning Repository, ID 426, DOI 10.24432/C5F019, CC BY 4.0. ${n} rows. Observed ages ${lo} to ${hi}; ${under} rows are under 18 although the dataset describes adults.`,
+    mc_generated: (d) => `Report generated ${d} by ml/train_uci.py.`,
     continue: "Continue",
     preTitle: "Before we start",
     preHelp: "A few background questions. Only the first one is required. These answers do not change your results; they only appear in your summary to give a professional context.",
@@ -287,6 +321,40 @@ const STR = {
     p_no: "No (según su página)",
     p_notes: "Notas (en inglés)",
     p_lastChecked: (d, by) => `Revisado por última vez el ${d}; ${by}`,
+    modelLink: "Cómo funciona la parte de IA",
+    modelTitle: "Ficha del modelo: cómo funciona la parte de IA",
+    demoBtn: "Modo demo: llenar con respuestas de ejemplo",
+    demoBanner: "Modo demo: son respuestas de ejemplo, no de una persona real.",
+    mc_notScored: "Este modelo no califica tus respuestas.",
+    mc_notScoredWhy: "Nuestras 25 preguntas son originales. El conjunto de datos público usa otro cuestionario de 10 preguntas, así que aplicar sus pesos a nuestras preguntas sería una correspondencia inventada. Tus resultados vienen solo de las reglas transparentes descritas en la pantalla de resultados.",
+    mc_missing: "No se generó el informe del modelo. El script de entrenamiento no se ha ejecutado con datos reales, así que no se muestran métricas.",
+    mc_leakTitle: "1. Revisión de fuga de datos (se ejecuta primero)",
+    mc_leakBody: (acc, sens, spec, n, pos) => `Una regla de un solo paso, usando solo el total de las 10 preguntas del propio conjunto de datos, reproduce su etiqueta con ${acc} de exactitud, sensibilidad ${sens}, especificidad ${spec} (n = ${n}, ${pos} etiquetados positivos; validación cruzada de 5 particiones).`,
+    mc_leakRule: (thr) => `Regla aprendida: un total mayor que ${thr} se etiqueta como positivo.`,
+    mc_resultEq: (eq, n) => eq ? `La columna "result" del conjunto de datos es igual al total de las preguntas en las ${n} filas.` : `La columna "result" no siempre es igual al total de las preguntas.`,
+    mc_relation: "Tasa de etiqueta según quién llenó el formulario",
+    mc_rel: { self: "La misma persona", other: "Otra persona", unknown: "No registrado" },
+    mc_variantsTitle: "2. Regresión logística, cuatro variantes",
+    mc_variant: {
+      V1_all_columns: "Todas las columnas (preguntas + datos demográficos + el puntaje propio del conjunto)",
+      V2_items_only: "Solo las 10 preguntas",
+      V2b_items_plus_demographics: "Las 10 preguntas + datos demográficos",
+      V3_demographics_only: "Solo datos demográficos (sin preguntas)"
+    },
+    mc_cols: ["Variante", "Sensibilidad", "Especificidad", "VPP", "n (positivos)"],
+    mc_threshold: "Punto de operación: 0.5 sobre la probabilidad predicha con clases balanceadas. Media ± DE en 5 particiones.",
+    mc_itemsNote: "Un resultado casi perfecto solo con las preguntas significa que la etiqueta se obtiene de las propias preguntas. Ese es el hallazgo de fuga de datos, no un éxito.",
+    mc_subTitle: "3. Subgrupos (preguntas + datos demográficos)",
+    mc_subCols: ["Grupo", "Sensibilidad", "Especificidad", "VPP", "n (positivos)"],
+    mc_suppressed: "omitido (n < 30 o menos de 10 positivos)",
+    mc_lang: "Subgrupo por idioma: no disponible en este conjunto de datos; el país de residencia no es el idioma.",
+    mc_coefTitle: "4. Pesos (modelo de preguntas + datos demográficos, los 10 mayores)",
+    mc_coefNote: "Como la etiqueta es una función de las preguntas, estos pesos casi solo repiten la regla de puntaje. No son evidencia sobre ninguna condición.",
+    mc_caveatsTitle: "Lee esto junto con cada número de arriba",
+    mc_caveatLeak: (acc) => `La etiqueta del conjunto de datos parece derivarse del propio puntaje del cuestionario; la revisión de profundidad 1 obtuvo ${acc}. El modelo reproduce un puntaje de detección, no predice un diagnóstico clínico.`,
+    mc_caveatSample: "Personas que usaron una app de detección; representatividad desconocida; no se indica diagnóstico clínico.",
+    mc_dataset: (n, lo, hi, under) => `Datos: Autism Screening Adult, UCI Machine Learning Repository, ID 426, DOI 10.24432/C5F019, CC BY 4.0. ${n} filas. Edades observadas de ${lo} a ${hi}; ${under} filas son menores de 18 aunque el conjunto dice ser de adultos.`,
+    mc_generated: (d) => `Informe generado el ${d} por ml/train_uci.py.`,
     continue: "Continuar",
     preTitle: "Antes de empezar",
     preHelp: "Unas preguntas de contexto. Solo la primera es obligatoria. Estas respuestas no cambian tus resultados; solo aparecen en tu resumen para darle contexto a un profesional.",
@@ -454,7 +522,9 @@ function applyStrings() {
     if (state.result) { renderResult(); renderPacket(); }
     if (state.mod && state.tasks && state.screen === "tasks") renderTasks();
     renderProviders();
+    renderModel();
   }
+  document.querySelectorAll(".demo-banner").forEach((el) => (el.hidden = !state.demo));
 }
 
 function buildForm() {
@@ -554,6 +624,83 @@ function renderResult() {
     <p class="band">${esc(t("coping_" + r.coping.band))}</p>
     <p class="muted">${esc(t("copingNote"))} ${esc(t("designNote"))}</p>`;
   renderDeep();
+}
+
+// ---------- model card (read-only view of data/model_report.json) ----------
+const pct = (x) => (x === null || x === undefined ? "—" : `${(100 * x).toFixed(1)}%`);
+const pctSd = (m) => (m && m.mean !== null ? `${pct(m.mean)} ± ${(100 * m.sd).toFixed(1)}` : "—");
+
+function caveatBlock(r) {
+  const acc = pct(r.leakage_check.cv_accuracy.mean);
+  return `<div class="caveats"><strong>${esc(t("mc_caveatsTitle"))}</strong><ul>
+    <li>${esc(t("mc_caveatLeak")(acc))}</li><li>${esc(t("mc_caveatSample"))}</li></ul></div>`;
+}
+
+function renderModel() {
+  const box = $("#modelCard");
+  const r = state.report;
+  const notScored = `<div class="card next-step"><p class="band">${esc(t("mc_notScored"))}</p><p>${esc(t("mc_notScoredWhy"))}</p></div>`;
+  // The leakage block must exist before any metric is shown; otherwise hide all metric panels.
+  if (!r || !r.generated || !r.leakage_check || !r.variants) {
+    box.innerHTML = notScored + `<div class="card"><p>${esc(t("mc_missing"))}</p></div>`;
+    return;
+  }
+  const L = r.leakage_check, d = r.dataset, V2 = r.variants.V2_items_only;
+  const relRows = Object.entries(L.label_rate_by_relation || {}).map(([k, v]) =>
+    `<tr><td>${esc((t("mc_rel") || {})[k] || k)}</td><td>${pct(v.label_rate)}</td><td>${v.n}</td></tr>`).join("");
+  const leak = `<div class="card metric"><h2>${esc(t("mc_leakTitle"))}</h2>
+    <p class="band">${esc(t("mc_leakBody")(pct(L.cv_accuracy.mean), pct(L.cv_sensitivity.mean), pct(L.cv_specificity.mean), d.n_rows, V2.n_positive))}</p>
+    <p>${esc(t("mc_leakRule")(L.threshold_value))} ${esc(t("mc_resultEq")(L.result_equals_item_sum && L.result_equals_item_sum.all_rows_equal, d.n_rows))}</p>
+    <table><caption>${esc(t("mc_relation"))}</caption><tbody>${relRows}</tbody></table>
+    ${caveatBlock(r)}</div>`;
+
+  const cols = t("mc_cols");
+  const vRows = Object.entries(r.variants).map(([k, v]) =>
+    `<tr><td>${esc((t("mc_variant") || {})[k] || k)}</td><td>${pctSd(v.sensitivity)}</td><td>${pctSd(v.specificity)}</td><td>${pctSd(v.ppv)}</td><td>${v.n} (${v.n_positive})</td></tr>`).join("");
+  const variants = `<div class="card metric"><h2>${esc(t("mc_variantsTitle"))}</h2>
+    <div class="table-wrap"><table><thead><tr>${cols.map((c) => `<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${vRows}</tbody></table></div>
+    <p class="muted">${esc(t("mc_threshold"))}</p><p>${esc(t("mc_itemsNote"))}</p>${caveatBlock(r)}</div>`;
+
+  const S = r.subgroups && r.subgroups.V2b_items_plus_demographics;
+  const gLabel = (g) => (state.lang === "es" ? { female: "Mujeres", male: "Hombres", unknown: "No registrado" }[g] : { female: "Women", male: "Men", unknown: "Not recorded" }[g]) || g;
+  const subRows = (obj) => Object.entries(obj || {}).map(([g, v]) => v.suppressed
+    ? `<tr><td>${esc(gLabel(g))}</td><td colspan="3" class="muted">${esc(t("mc_suppressed"))}</td><td>${v.n} (${v.n_positive})</td></tr>`
+    : `<tr><td>${esc(gLabel(g))}</td><td>${pct(v.sensitivity)}</td><td>${pct(v.specificity)}</td><td>${pct(v.ppv)}</td><td>${v.n} (${v.n_positive})</td></tr>`).join("");
+  const subs = S ? `<div class="card metric"><h2>${esc(t("mc_subTitle"))}</h2>
+    <div class="table-wrap"><table><thead><tr>${t("mc_subCols").map((c) => `<th>${esc(c)}</th>`).join("")}</tr></thead>
+    <tbody>${subRows(S.by_gender)}${subRows(S.by_age_band)}</tbody></table></div>
+    <p class="muted">${esc(t("mc_threshold"))}</p><p class="muted">${esc(t("mc_lang"))}</p>${caveatBlock(r)}</div>` : "";
+
+  const coefs = ((r.coefficients || {}).V2b_items_plus_demographics || []).slice(0, 10);
+  const maxC = Math.max(...coefs.map((c) => Math.abs(c.coefficient)), 1e-9);
+  const coef = coefs.length ? `<div class="card metric"><h2>${esc(t("mc_coefTitle"))}</h2>
+    <div class="coefs">${coefs.map((c) => `<div class="coef"><span>${esc(c.feature.replace(/^(num|cat)__/, ""))}</span>
+      <span class="bar ${c.coefficient < 0 ? "neg" : ""}" style="width:${(100 * Math.abs(c.coefficient) / maxC).toFixed(0)}%"></span>
+      <span class="val">${c.coefficient.toFixed(2)}</span></div>`).join("")}</div>
+    <p class="muted">${esc(t("mc_coefNote"))}</p>${caveatBlock(r)}</div>` : "";
+
+  const ages = d.age_range_observed || {};
+  box.innerHTML = notScored + leak + variants + subs + coef +
+    `<p class="muted">${esc(t("mc_dataset")(d.n_rows, ages.min, ages.max, ages.n_under_18))}</p>
+     <p class="muted">${esc(t("mc_generated")(String(r.generated_at || "").slice(0, 10)))}</p>`;
+}
+
+// ---------- demo mode: a plausible sample answer set, filled instantly ----------
+const DEMO = {
+  pre: { adult: "yes", education: "some_college", school_lang: "both", home_lang: "both", gender: "woman" },
+  answers: { A1: 2, A2: 3, A3: 2, A4: 3, A5: 2, A6: 3, B1: 1, B2: 1, B3: 2, B4: 1, C1: 2, C2: 2, C3: 1, C4: 2,
+    D1: 2, D2: 3, D3: 2, D4: 2, D5: 1, D6: 3, E1: 1, E2: 1, E3: 2, E4: 1, E5: 2 },
+  context: { family: "yes", school: "informal" }
+};
+
+function runDemo() {
+  restart();
+  const pick = (name, v) => { const el = document.querySelector(`input[name="${name}"][value="${v}"]`); if (el) el.click(); };
+  for (const [k, v] of Object.entries(DEMO.pre)) pick(`pre-${k}`, v);
+  for (const [k, v] of Object.entries(DEMO.answers)) pick(`item-${k}`, v);
+  for (const [k, v] of Object.entries(DEMO.context)) pick(`ctx-${k}`, v);
+  state.demo = true;
+  submit();
 }
 
 // ---------- closer look: math module ----------
@@ -755,6 +902,7 @@ function renderPacket() {
 
   $("#packet").innerHTML = `
     <header>
+      ${state.demo ? `<p class="demo-banner">${esc(t("demoBanner"))}</p>` : ""}
       <h1>${esc(t("packetTitle"))}</h1>
       <p>${esc(t("packetMeta")(dateStr, state.q.version))}</p>
       <p><strong>${esc(t("packetNotDoc"))}</strong></p>
@@ -841,6 +989,7 @@ function submit() {
   state.result = scoreAll();
   renderResult();
   renderPacket();
+  document.querySelectorAll(".demo-banner").forEach((el) => (el.hidden = !state.demo));
   show("result");
 }
 
@@ -853,6 +1002,7 @@ function restart() {
   if (state.tasks && state.tasks.photoUrl) URL.revokeObjectURL(state.tasks.photoUrl);
   state.tasks = freshTasks();
   state.result = null;
+  state.demo = false;
   state.history = [];
   $("#qForm").reset();
   $("#preForm").reset();
@@ -883,6 +1033,7 @@ function bindEvents() {
   });
   $("#adultBack").addEventListener("click", () => show("prescreen", false));
   $("#modSubmit").addEventListener("click", submitModule);
+  $("#demoBtn").addEventListener("click", runDemo);
   $("#taskArea").addEventListener("click", onTaskClick);
   $("#taskArea").addEventListener("change", (e) => { if (e.target.id === "photoInput") onPhoto(e); });
   $("#taskArea").addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.id === "mentalInput") { e.preventDefault(); nextMental(); } });
