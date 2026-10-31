@@ -1,0 +1,147 @@
+{
+  "id": "math",
+  "domain": "C",
+  "version": "0.1",
+  "na": { "en": "This doesn't happen in my life", "es": "Esto no pasa en mi vida" },
+  "items": [
+    { "id": "M1",
+      "en": "You and three friends get a $68 bill and want to split it evenly. What usually happens?",
+      "es": "Tú y tres amigos reciben una cuenta de $68 y quieren dividirla en partes iguales. ¿Qué suele pasar?",
+      "options": [
+        { "v": 0, "en": "I work it out in my head fairly quickly.", "es": "Lo calculo mentalmente bastante rápido." },
+        { "v": 1, "en": "I can do it in my head, but it takes me a while.", "es": "Puedo hacerlo mentalmente, pero me toma un rato." },
+        { "v": 2, "en": "I need my phone or paper to work it out.", "es": "Necesito el celular o papel para calcularlo." },
+        { "v": 3, "en": "I let someone else handle it or avoid it.", "es": "Dejo que alguien más lo haga o lo evito." }
+      ] },
+    { "id": "M2",
+      "en": "You pay with a $20 bill and the cashier hands you change. What do you do?",
+      "es": "Pagas con un billete de $20 y el cajero te da el cambio. ¿Qué haces?",
+      "options": [
+        { "v": 0, "en": "I quickly check in my head that it is right.", "es": "Reviso rápido mentalmente que esté bien." },
+        { "v": 1, "en": "I check, but it takes me some time.", "es": "Lo reviso, pero me toma tiempo." },
+        { "v": 2, "en": "I don't check because it would take too long.", "es": "No lo reviso porque me tardaría demasiado." },
+        { "v": 3, "en": "I'm not sure I could tell if it was wrong.", "es": "No estoy seguro o segura de poder notar si está mal." }
+      ] },
+    { "id": "M3",
+      "en": "A sign says 20% off a $45 jacket. How do you find the new price?",
+      "es": "Un letrero dice 20% de descuento en una chamarra de $45. ¿Cómo sacas el nuevo precio?",
+      "options": [
+        { "v": 0, "en": "I figure it out in my head.", "es": "Lo calculo mentalmente." },
+        { "v": 1, "en": "I get a rough idea, but I'm not sure.", "es": "Saco una idea aproximada, pero no estoy seguro o segura." },
+        { "v": 2, "en": "I need a calculator.", "es": "Necesito una calculadora." },
+        { "v": 3, "en": "I wait to see the price at the register.", "es": "Espero a ver el precio en la caja." }
+      ] },
+    { "id": "M4",
+      "en": "A recipe calls for ¾ cup of flour and you want to make half the recipe. What happens?",
+      "es": "Una receta pide ¾ de taza de harina y quieres hacer la mitad. ¿Qué pasa?",
+      "options": [
+        { "v": 0, "en": "I know how much to use.", "es": "Sé cuánto usar." },
+        { "v": 1, "en": "I work it out after some thought.", "es": "Lo resuelvo después de pensarlo un poco." },
+        { "v": 2, "en": "I guess or look it up.", "es": "Le atino a ojo o lo busco." },
+        { "v": 3, "en": "I avoid recipes I would have to change.", "es": "Evito las recetas que tendría que ajustar." }
+      ] },
+    { "id": "M5",
+      "en": "A bus leaves at 3:45 and the trip takes 50 minutes. When you work out the arrival time:",
+      "es": "Un autobús sale a las 3:45 y el viaje dura 50 minutos. Cuando calculas la hora de llegada:",
+      "options": [
+        { "v": 0, "en": "I know right away.", "es": "Lo sé de inmediato." },
+        { "v": 1, "en": "I get it after a moment.", "es": "Lo saco después de un momento." },
+        { "v": 2, "en": "I count it out step by step or write it down.", "es": "Lo cuento paso a paso o lo escribo." },
+        { "v": 3, "en": "I often get times like this wrong.", "es": "Seguido me equivoco con horas así." }
+      ] },
+    { "id": "M6",
+      "en": "When you add two small numbers, like 8 + 7:",
+      "es": "Cuando sumas dos números pequeños, como 8 + 7:",
+      "options": [
+        { "v": 0, "en": "I just know the answer.", "es": "Simplemente sé el resultado." },
+        { "v": 1, "en": "I work it out quickly in my head.", "es": "Lo calculo rápido mentalmente." },
+        { "v": 2, "en": "I count up, sometimes on my fingers or under my breath.", "es": "Cuento hacia arriba, a veces con los dedos o en voz baja." },
+        { "v": 3, "en": "I need my fingers or a calculator nearly every time.", "es": "Casi siempre necesito los dedos o una calculadora." }
+      ] },
+    { "id": "M7",
+      "en": "Two brands cost $2.45 and $2.5 per pound. When you decide which is cheaper:",
+      "es": "Dos marcas cuestan $2.45 y $2.5 la libra. Cuando decides cuál es más barata:",
+      "options": [
+        { "v": 0, "en": "I can tell right away.", "es": "Lo sé de inmediato." },
+        { "v": 1, "en": "I need a moment to be sure.", "es": "Necesito un momento para estar seguro o segura." },
+        { "v": 2, "en": "I often mix up which is bigger when there are decimals.", "es": "Con decimales seguido confundo cuál es mayor." },
+        { "v": 3, "en": "I avoid comparing and just pick one.", "es": "Evito comparar y escojo cualquiera." }
+      ] },
+    { "id": "M8",
+      "en": "When you add up your bills for the month:",
+      "es": "Cuando sumas tus cuentas del mes:",
+      "options": [
+        { "v": 0, "en": "I add them in my head or quickly on paper.", "es": "Las sumo mentalmente o rápido en papel." },
+        { "v": 1, "en": "I can do it with some effort.", "es": "Puedo hacerlo con algo de esfuerzo." },
+        { "v": 2, "en": "I need an app or calculator and still feel unsure.", "es": "Necesito una app o calculadora y aun así me quedan dudas." },
+        { "v": 3, "en": "I avoid it or ask someone else to do it.", "es": "Lo evito o le pido a alguien más que lo haga." }
+      ] },
+    { "id": "M9",
+      "en": "You measure a wall with a tape measure marked in inches and fractions. What happens?",
+      "es": "Mides una pared con una cinta métrica marcada en pulgadas y fracciones. ¿Qué pasa?",
+      "options": [
+        { "v": 0, "en": "I read it easily.", "es": "La leo sin problema." },
+        { "v": 1, "en": "I have to stop and count the small marks.", "es": "Tengo que detenerme a contar las marcas pequeñas." },
+        { "v": 2, "en": "I often read it wrong.", "es": "Seguido la leo mal." },
+        { "v": 3, "en": "I ask someone else to measure.", "es": "Le pido a alguien más que mida." }
+      ] },
+    { "id": "M10",
+      "en": "In a card or board game where someone has to keep score:",
+      "es": "En un juego de cartas o de mesa donde alguien tiene que llevar la cuenta de los puntos:",
+      "options": [
+        { "v": 0, "en": "I keep score without trouble.", "es": "Llevo la cuenta sin problema." },
+        { "v": 1, "en": "I can, but I fall behind.", "es": "Puedo, pero me quedo atrás." },
+        { "v": 2, "en": "I avoid being the scorekeeper.", "es": "Evito ser quien lleva los puntos." },
+        { "v": 3, "en": "The number parts make me want to stop playing.", "es": "La parte de los números me quita las ganas de jugar." }
+      ] },
+    { "id": "M11",
+      "en": "At a store, you want to know if $40 covers what is in your cart.",
+      "es": "En una tienda quieres saber si $40 alcanzan para lo que llevas en el carrito.",
+      "options": [
+        { "v": 0, "en": "I keep a rough running total as I shop.", "es": "Voy llevando una suma aproximada mientras compro." },
+        { "v": 1, "en": "I can guess, but often loosely.", "es": "Puedo adivinar, pero muchas veces de forma muy aproximada." },
+        { "v": 2, "en": "I usually have no idea until the register.", "es": "Por lo general no tengo idea hasta llegar a la caja." },
+        { "v": 3, "en": "Not knowing worries me, so I plan around it.", "es": "No saberlo me preocupa, así que me organizo para evitarlo." }
+      ] },
+    { "id": "M12",
+      "en": "When numbers come up at work or school, such as a chart in a meeting:",
+      "es": "Cuando aparecen números en el trabajo o la escuela, como una gráfica en una junta:",
+      "options": [
+        { "v": 0, "en": "I follow along fine.", "es": "Le sigo el hilo sin problema." },
+        { "v": 1, "en": "I follow, but it takes extra focus.", "es": "Le sigo, pero me cuesta concentración extra." },
+        { "v": 2, "en": "I lose track and hope no one asks me.", "es": "Me pierdo y espero que nadie me pregunte." },
+        { "v": 3, "en": "I dread these moments and plan around them.", "es": "Me angustian estos momentos y me organizo para evitarlos." }
+      ] }
+  ],
+  "tasks": {
+    "compare": [
+      { "a": "7", "av": 7, "b": "4", "bv": 4 },
+      { "a": "23", "av": 23, "b": "32", "bv": 32 },
+      { "a": "0.45", "av": 0.45, "b": "0.5", "bv": 0.5 },
+      { "a": "1.2", "av": 1.2, "b": "1.09", "bv": 1.09 },
+      { "a": "⅔", "av": 0.6667, "b": "¾", "bv": 0.75 },
+      { "a": "½", "av": 0.5, "b": "⅓", "bv": 0.3333 },
+      { "a": "0.3", "av": 0.3, "b": "0.25", "bv": 0.25 },
+      { "a": "105", "av": 105, "b": "150", "bv": 150 },
+      { "a": "⅗", "av": 0.6, "b": "½", "bv": 0.5 },
+      { "a": "2.05", "av": 2.05, "b": "2.5", "bv": 2.5 },
+      { "a": "98", "av": 98, "b": "89", "bv": 89 },
+      { "a": "0.7", "av": 0.7, "b": "0.65", "bv": 0.65 },
+      { "a": "¼", "av": 0.25, "b": "0.3", "bv": 0.3 },
+      { "a": "⅜", "av": 0.375, "b": "½", "bv": 0.5 },
+      { "a": "1,010", "av": 1010, "b": "1,001", "bv": 1001 },
+      { "a": "0.09", "av": 0.09, "b": "0.1", "bv": 0.1 }
+    ],
+    "mental": [
+      { "q": "8 + 7", "a": ["15"] },
+      { "q": "14 − 6", "a": ["8"] },
+      { "q": "6 × 7", "a": ["42"] },
+      { "q": "45 + 38", "a": ["83"] },
+      { "q": "72 − 29", "a": ["43"] },
+      { "q": "36 ÷ 4", "a": ["9"] },
+      { "q": { "en": "You pay $10 for something that costs $6.35. How much change?", "es": "Pagas $10 por algo que cuesta $6.35. ¿Cuánto es el cambio?" }, "a": ["3.65", "$3.65", "3,65"] },
+      { "q": { "en": "It is 2:40. What time will it be in 35 minutes?", "es": "Son las 2:40. ¿Qué hora será en 35 minutos?" }, "a": ["3:15", "315", "3.15"] }
+    ],
+    "paper": ["¾ + ½", "15% × 60", "1,000 − 387"]
+  }
+}

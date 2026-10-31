@@ -76,6 +76,18 @@ fieldset.domain > legend { font-size: 1.2rem; font-weight: 700; padding: 0; marg
 
 .limits li { margin-bottom: 0.6rem; }
 
+/* tasks */
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1rem 0; }
+.btn.big { font-size: 2rem; min-height: 96px; font-variant-numeric: tabular-nums; }
+.problem { font-size: 1.6rem; font-weight: 700; margin: 1rem 0; }
+.answer-label { display: grid; gap: 6px; font-weight: 600; max-width: 260px; }
+.answer-label input { font: inherit; font-size: 1.4rem; padding: 10px 12px; min-height: 48px;
+  border: 1px solid var(--line); border-radius: var(--radius); }
+.problem-list { font-size: 1.4rem; font-weight: 700; }
+.file-btn { display: inline-flex; align-items: center; }
+.work-photo { display: block; max-width: 100%; max-height: 420px; margin: 12px 0; border: 1px solid var(--line); border-radius: 6px; }
+.task-results { padding-left: 1.2rem; }
+
 /* packet */
 .packet h1 { font-size: 1.4rem; }
 .packet section { margin-bottom: 1.25rem; }
