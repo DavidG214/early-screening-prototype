@@ -36,4 +36,6 @@ Autism Screening Adult. UCI Machine Learning Repository, ID 426. https://archive
 - Band thresholds (33 / 60) and item weights are design choices with no validation.
 - All 25 items are original wording. No item from the ASRS, AQ-10, CAT-Q, Dyslexia Adult Checklist or any other instrument is reproduced; those instruments are cited as construct sources only.
 - The UCI 426 label appears to be derived from the questionnaire score itself (the depth-1 check reproduces it at 100%), and clinical diagnosis is not indicated. The model demonstrates a method and a leakage check, not diagnostic power. Respondents are screening-app users; representativeness is unknown.
+- The pre-screen (age, education, school language, everyday language, gender) is context for the summary only and never changes a result.
+- The closer look at numbers (`data/modules/math.json`) and the hands-on tasks are not validated. Task results are raw counts and times with no norms, and are never scored. A photo of paper work stays in the tab's memory as an object URL; it is never uploaded or analysed.
 - The provider list holds only nine entries whose web pages were opened during research. None was confirmed by phone. Fees, wait times and insurance are unverified, so the app says "call to confirm".

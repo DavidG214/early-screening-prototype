@@ -190,8 +190,6 @@ const STR = {
     packetMentalDetail: "Problem, my answer, seconds",
     limitationsTitle: "Limitations",
     limitations: [
-      "The closer look at numbers and the hands-on tasks are not validated. Task times are not compared with any norms; they are examples for a professional to interpret.",
-      "If you add a photo, it stays on this device in this tab only. It is never uploaded or analysed, and it is erased when you close the tab or start over.",
       "This is screening, not diagnosis. No condition is assigned to you. Only a qualified professional can diagnose.",
       "A screening result is not documentation for school or work and will not qualify you for accommodations on its own.",
       "The writing and math areas are not validated for adults. We found no validated adult self-report screener for either, so these are the least supported areas.",
@@ -202,7 +200,9 @@ const STR = {
       "Online self-report screening tends to reach people with internet access, more education and an interest in the topic. Accuracy depends on who uses a tool.",
       "Nothing is stored. Your answers live only in this browser tab's memory. There are no accounts, cookies, local storage, analytics or server.",
       "The prototype includes a model trained on a public autism screening dataset (UCI, ID 426). Its label appears to be derived from the questionnaire score itself, and clinical diagnosis is not indicated. The model shows a method and a leakage check. It does not score your answers.",
-      "The list of places to ask comes from web pages opened during research. Nothing was confirmed by phone, and fees, wait times and insurance are unknown."
+      "The list of places to ask comes from web pages opened during research. Nothing was confirmed by phone, and fees, wait times and insurance are unknown.",
+      "The closer look at numbers and the hands-on tasks are not validated. Task times are not compared with any norms; they are examples for a professional to interpret.",
+      "If you add a photo, it stays on this device in this tab only. It is never uploaded or analysed, and it is erased when you close the tab or start over."
     ],
     sourcesTitle: "Construct sources",
     sourcesNote: "Our areas draw on the constructs these instruments measure. No item from any of them is reproduced or altered here. All 25 questions are original wording written for this prototype.",
@@ -402,8 +402,6 @@ const STR = {
     packetMentalDetail: "Problema, mi respuesta, segundos",
     limitationsTitle: "Limitaciones",
     limitations: [
-      "La sección detallada de números y las tareas prácticas no están validadas. Los tiempos no se comparan con ninguna norma; son ejemplos para que un profesional los interprete.",
-      "Si agregas una foto, se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza, y se borra al cerrar la pestaña o empezar de nuevo.",
       "Esto es una detección, no un diagnóstico. No se te asigna ninguna condición. Solo un profesional calificado puede diagnosticar.",
       "Un resultado de detección no es documentación para la escuela o el trabajo y por sí solo no te da derecho a adaptaciones.",
       "Las áreas de escritura y matemáticas no están validadas para adultos. No encontramos ninguna prueba de autorreporte validada para adultos en ninguna de las dos, así que son las áreas con menos respaldo.",
@@ -414,7 +412,9 @@ const STR = {
       "Las pruebas de autorreporte en línea suelen llegar a personas con internet, más estudios e interés en el tema. La precisión depende de quién use la herramienta.",
       "No se guarda nada. Tus respuestas solo existen en la memoria de esta pestaña. No hay cuentas, cookies, almacenamiento local, analíticas ni servidor.",
       "El prototipo incluye un modelo entrenado con un conjunto público de datos de detección de autismo (UCI, ID 426). Su etiqueta parece derivarse del propio puntaje del cuestionario y no indica diagnóstico clínico. El modelo muestra un método y una revisión de fuga de datos. No califica tus respuestas.",
-      "La lista de lugares viene de páginas web revisadas durante la investigación. Nada se confirmó por teléfono, y los costos, tiempos de espera y seguros son desconocidos."
+      "La lista de lugares viene de páginas web revisadas durante la investigación. Nada se confirmó por teléfono, y los costos, tiempos de espera y seguros son desconocidos.",
+      "La sección detallada de números y las tareas prácticas no están validadas. Los tiempos no se comparan con ninguna norma; son ejemplos para que un profesional los interprete.",
+      "Si agregas una foto, se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza, y se borra al cerrar la pestaña o empezar de nuevo."
     ],
     sourcesTitle: "Fuentes de los constructos",
     sourcesNote: "Nuestras áreas se basan en los constructos que miden estos instrumentos. No se reproduce ni se modifica ninguna pregunta de ellos. Las 25 preguntas son originales, escritas para este prototipo.",
@@ -552,7 +552,7 @@ function buildForm() {
 
   const mod = $("#modForm");
   mod.innerHTML = "";
-  if (state.mod) for (const it of state.mod.items) mod.appendChild(radioGroup(it.id, "mod", [...it.options.map((o) => o.v), "na"]));
+  if (state.mod) for (const it of state.mod.items) mod.appendChild(radioGroup(it.id, "mod", [...it.options.map((o) => o.v), ...(it.no_na ? [] : ["na"])]));
 }
 
 function radioGroup(id, kind, values) {
@@ -596,7 +596,8 @@ function relabelForm() {
     for (const it of state.mod.items) {
       $(`#lg-${it.id}`).textContent = loc(it);
       for (const o of it.options) document.querySelector(`[data-opt="${it.id}:${o.v}"]`).textContent = loc(o);
-      document.querySelector(`[data-opt="${it.id}:na"]`).textContent = loc(state.mod.na);
+      const na = document.querySelector(`[data-opt="${it.id}:na"]`);
+      if (na) na.textContent = loc(state.mod.na);
     }
   }
   document.querySelectorAll("#qForm [data-i18n]").forEach((el) => (el.textContent = t(el.dataset.i18n)));

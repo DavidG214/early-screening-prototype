@@ -150,12 +150,12 @@
       "en": "What is the highest level of school you have finished?",
       "es": "¿Cuál es el nivel de estudios más alto que terminaste?",
       "options": [
-        { "value": "lt_hs", "en": "Less than high school", "es": "Menos que preparatoria" },
-        { "value": "hs", "en": "High school or GED", "es": "Preparatoria o GED" },
-        { "value": "some_college", "en": "Some college or trade school", "es": "Algo de universidad o escuela técnica" },
+        { "value": "lt_hs", "en": "Less than high school", "es": "Sin terminar bachillerato o preparatoria (high school)" },
+        { "value": "hs", "en": "High school or GED", "es": "Bachillerato o preparatoria (high school) o GED" },
+        { "value": "some_college", "en": "Some college or trade school", "es": "Universidad incompleta o escuela técnica" },
         { "value": "degree", "en": "College degree", "es": "Título universitario" },
         { "value": "graduate", "en": "Graduate degree", "es": "Posgrado" },
-        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decirlo" }
       ]
     },
     {
@@ -167,7 +167,7 @@
         { "value": "es", "en": "Spanish", "es": "Español" },
         { "value": "both", "en": "Both", "es": "Ambos" },
         { "value": "other", "en": "Another language", "es": "Otro idioma" },
-        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decirlo" }
       ]
     },
     {
@@ -179,7 +179,7 @@
         { "value": "es", "en": "Spanish", "es": "Español" },
         { "value": "both", "en": "Both", "es": "Ambos" },
         { "value": "other", "en": "Another language", "es": "Otro idioma" },
-        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decirlo" }
       ]
     },
     {
@@ -189,8 +189,8 @@
       "options": [
         { "value": "woman", "en": "Woman", "es": "Mujer" },
         { "value": "man", "en": "Man", "es": "Hombre" },
-        { "value": "another", "en": "Another gender", "es": "Otro género" },
-        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+        { "value": "another", "en": "Non-binary or another gender", "es": "No binario u otro género" },
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decirlo" }
       ]
     }
   ],
