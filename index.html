@@ -35,8 +35,27 @@
       </ul>
       <p class="distress" data-i18n="distress"></p>
       <div class="actions">
-        <button type="button" class="btn primary" data-go="questions" data-i18n="start"></button>
+        <button type="button" class="btn primary" data-go="prescreen" data-i18n="start"></button>
         <button type="button" class="btn" data-go="limitations" data-i18n="seeLimitations"></button>
+      </div>
+    </section>
+
+    <section id="screen-prescreen" class="screen" hidden>
+      <h1 data-i18n="preTitle"></h1>
+      <p data-i18n="preHelp"></p>
+      <form id="preForm" novalidate></form>
+      <p id="preError" class="error" role="alert" hidden></p>
+      <div class="actions">
+        <button type="button" class="btn primary" id="preNext" data-i18n="continue"></button>
+      </div>
+    </section>
+
+    <section id="screen-adultonly" class="screen" hidden>
+      <h1 data-i18n="adultOnlyTitle"></h1>
+      <p data-i18n="adultOnlyBody"></p>
+      <p class="distress" data-i18n="distress"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="adultBack" data-i18n="back"></button>
       </div>
     </section>
 
@@ -56,6 +75,7 @@
       <p class="lead" data-i18n="notDiagnosis"></p>
       <div id="nextStep" class="card next-step"></div>
       <div id="domainCards" class="cards"></div>
+      <div id="deepArea"></div>
       <div id="copingLine" class="card coping"></div>
       <div class="card does-not">
         <h2 data-i18n="doesNotTitle"></h2>
@@ -73,6 +93,22 @@
         <button type="button" class="btn" data-go="limitations" data-i18n="seeLimitations"></button>
         <button type="button" class="btn" id="restartBtn" data-i18n="startOver"></button>
       </div>
+    </section>
+
+    <section id="screen-module" class="screen" hidden>
+      <h1 data-i18n="deepTitle"></h1>
+      <p data-i18n="deepHelp"></p>
+      <span class="tag warn" data-i18n="tagNotValidated"></span>
+      <form id="modForm" novalidate></form>
+      <p id="modError" class="error" role="alert" hidden></p>
+      <div class="actions">
+        <button type="button" class="btn primary" id="modSubmit" data-i18n="continue"></button>
+      </div>
+    </section>
+
+    <section id="screen-tasks" class="screen" hidden>
+      <h1 data-i18n="tasksTitle"></h1>
+      <div id="taskArea" aria-live="polite"></div>
     </section>
 
     <section id="screen-packet" class="screen" hidden>

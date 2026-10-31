@@ -134,6 +134,66 @@
       "en": "After social situations, do you need a long time alone to recover?",
       "es": "Después de situaciones sociales, ¿necesitas mucho tiempo a solas para recuperarte?" }
   ],
+  "prescreen": [
+    {
+      "id": "adult",
+      "required": true,
+      "en": "Are you 18 or older?",
+      "es": "¿Tienes 18 años o más?",
+      "options": [
+        { "value": "yes", "en": "Yes", "es": "Sí" },
+        { "value": "no", "en": "No", "es": "No" }
+      ]
+    },
+    {
+      "id": "education",
+      "en": "What is the highest level of school you have finished?",
+      "es": "¿Cuál es el nivel de estudios más alto que terminaste?",
+      "options": [
+        { "value": "lt_hs", "en": "Less than high school", "es": "Menos que preparatoria" },
+        { "value": "hs", "en": "High school or GED", "es": "Preparatoria o GED" },
+        { "value": "some_college", "en": "Some college or trade school", "es": "Algo de universidad o escuela técnica" },
+        { "value": "degree", "en": "College degree", "es": "Título universitario" },
+        { "value": "graduate", "en": "Graduate degree", "es": "Posgrado" },
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+      ]
+    },
+    {
+      "id": "school_lang",
+      "en": "What language were you taught in at school?",
+      "es": "¿En qué idioma te enseñaron en la escuela?",
+      "options": [
+        { "value": "en", "en": "English", "es": "Inglés" },
+        { "value": "es", "en": "Spanish", "es": "Español" },
+        { "value": "both", "en": "Both", "es": "Ambos" },
+        { "value": "other", "en": "Another language", "es": "Otro idioma" },
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+      ]
+    },
+    {
+      "id": "home_lang",
+      "en": "What language do you use most today?",
+      "es": "¿Qué idioma usas más hoy en día?",
+      "options": [
+        { "value": "en", "en": "English", "es": "Inglés" },
+        { "value": "es", "en": "Spanish", "es": "Español" },
+        { "value": "both", "en": "Both", "es": "Ambos" },
+        { "value": "other", "en": "Another language", "es": "Otro idioma" },
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+      ]
+    },
+    {
+      "id": "gender",
+      "en": "What is your gender?",
+      "es": "¿Cuál es tu género?",
+      "options": [
+        { "value": "woman", "en": "Woman", "es": "Mujer" },
+        { "value": "man", "en": "Man", "es": "Hombre" },
+        { "value": "another", "en": "Another gender", "es": "Otro género" },
+        { "value": "skip", "en": "Prefer not to say", "es": "Prefiero no decir" }
+      ]
+    }
+  ],
   "context": [
     {
       "id": "family",
