@@ -149,29 +149,20 @@ const STR = {
     preRequired: "Please answer the first question to continue.",
     adultOnlyTitle: "This tool is for adults",
     adultOnlyBody: "This prototype was built for people 18 and older. If you are under 18 and have questions about reading, writing, math, attention or social differences, a parent, school counselor or doctor can help you find the right next step.",
-    deepOfferHigh: "Your answers about numbers showed a signal. You can take a closer look with everyday situations and a few short number tasks (about 5 to 8 minutes).",
-    deepOfferLow: "Want to look more closely at how you handle everyday numbers? There is an optional deeper section.",
-    deepGo: "Take a closer look at numbers",
-    deepTitle: "A closer look: everyday numbers",
-    deepHelp: "Each question describes a situation. Pick what usually happens for you. If a situation is not part of your life, choose \"This doesn't happen in my life\".",
-    deepCardTitle: "A closer look: everyday numbers",
     deepCardNA: "Too many situations did not apply to give a result here.",
     deepCardNote: "This section is not validated. It adds detail for a professional; it does not change your other results.",
-    tasksTitle: "Hands-on number tasks",
-    tasksIntro: "Three short, optional tasks. They record how you did and how long it took, so a professional can see real examples. We do not score them or compare them with anyone. You can skip any of them.",
+    tasksIntro: "A few short, optional tasks. They record how you did and how long it took, so a professional can see real examples. We do not score them or compare them with anyone. You can skip any of them.",
+    taskOf: (i, n, title) => `Task ${i} of ${n}: ${title}`,
+    itemProgress: (i, n) => `${i} of ${n}`,
+    countResult: (title, c, n, s) => `${title}: ${c} of ${n} correct, ${s} seconds in total.`,
+    readResult: (title, w, s, c, n) => `${title}: ${w} words read in ${s} seconds; ${c} of ${n} questions answered correctly.`,
+    readDone: "I'm done reading",
+    readQHelp: "Answer from memory; the passage is hidden now.",
     tasksStart: "Start the tasks",
     tasksSkip: "Skip the tasks",
     skipTask: "Skip this task",
     next: "Next",
-    compareTitle: "Task 1 of 3: Which is bigger?",
-    compareHelp: "Tap the bigger number in each pair. Go at a comfortable pace; there are 16 pairs.",
-    compareProgress: (i, n) => `Pair ${i} of ${n}`,
-    mentalTitle: "Task 2 of 3: Work it out in your head",
-    mentalHelp: "Type each answer without a calculator or paper. Write times like 3:15.",
-    mentalProgress: (i, n) => `Problem ${i} of ${n}`,
     yourAnswer: "Your answer",
-    paperTitle: "Task 3 of 3: On paper",
-    paperHelp: "Work out these problems by hand on paper or a whiteboard. Show your steps. Then take a photo of your work. The photo stays on this device, in this tab only. It is never uploaded or analysed; it only appears in your printed summary.",
     takePhoto: "Take or choose a photo",
     retakePhoto: "Use a different photo",
     finishTasks: "Finish",
@@ -179,15 +170,10 @@ const STR = {
     toResults: "Back to my results",
     beginTask: "Begin",
     noNorms: "No adult norms are used here, and these results are not scored. A professional can interpret them.",
-    taskCompareResult: (c, n, s) => `Which is bigger: ${c} of ${n} correct, ${s} seconds in total.`,
-    taskMentalResult: (c, n, s) => `Mental math: ${c} of ${n} correct, ${s} seconds in total.`,
     taskSkipped: "Skipped",
     taskPhoto: "Photo of work on paper",
     taskPhotoNone: "No photo added.",
     packetPre: "Background questions",
-    packetDeep: "A closer look: everyday numbers",
-    packetTasks: "Hands-on number tasks",
-    packetMentalDetail: "Problem, my answer, seconds",
     limitationsTitle: "Limitations",
     limitations: [
       "This is screening, not diagnosis. No condition is assigned to you. Only a qualified professional can diagnose.",
@@ -361,29 +347,20 @@ const STR = {
     preRequired: "Contesta la primera pregunta para continuar.",
     adultOnlyTitle: "Esta herramienta es para adultos",
     adultOnlyBody: "Este prototipo se hizo para personas de 18 años o más. Si eres menor de 18 y tienes dudas sobre la lectura, la escritura, las matemáticas, la atención o las diferencias sociales, tu mamá, papá, un orientador escolar o un médico pueden ayudarte a encontrar el siguiente paso.",
-    deepOfferHigh: "Tus respuestas sobre los números mostraron una señal. Puedes ver más de cerca con situaciones cotidianas y unas tareas cortas con números (de 5 a 8 minutos).",
-    deepOfferLow: "¿Quieres ver más de cerca cómo manejas los números de todos los días? Hay una sección opcional más detallada.",
-    deepGo: "Ver más de cerca los números",
-    deepTitle: "Más de cerca: los números de todos los días",
-    deepHelp: "Cada pregunta describe una situación. Elige lo que normalmente te pasa. Si una situación no es parte de tu vida, elige \"Esto no pasa en mi vida\".",
-    deepCardTitle: "Más de cerca: los números de todos los días",
     deepCardNA: "Demasiadas situaciones no aplicaban para dar un resultado aquí.",
     deepCardNote: "Esta sección no está validada. Agrega detalles para un profesional; no cambia tus otros resultados.",
-    tasksTitle: "Tareas prácticas con números",
-    tasksIntro: "Tres tareas cortas y opcionales. Registran cómo te fue y cuánto tardaste, para que un profesional vea ejemplos reales. No las calificamos ni las comparamos con nadie. Puedes saltarte cualquiera.",
+    tasksIntro: "Unas tareas cortas y opcionales. Registran cómo te fue y cuánto tardaste, para que un profesional vea ejemplos reales. No las calificamos ni las comparamos con nadie. Puedes saltarte cualquiera.",
+    taskOf: (i, n, title) => `Tarea ${i} de ${n}: ${title}`,
+    itemProgress: (i, n) => `${i} de ${n}`,
+    countResult: (title, c, n, s) => `${title}: ${c} de ${n} correctas, ${s} segundos en total.`,
+    readResult: (title, w, s, c, n) => `${title}: ${w} palabras leídas en ${s} segundos; ${c} de ${n} preguntas contestadas correctamente.`,
+    readDone: "Terminé de leer",
+    readQHelp: "Contesta de memoria; el texto ya no está a la vista.",
     tasksStart: "Empezar las tareas",
     tasksSkip: "Saltar las tareas",
     skipTask: "Saltar esta tarea",
     next: "Siguiente",
-    compareTitle: "Tarea 1 de 3: ¿Cuál es mayor?",
-    compareHelp: "Toca el número mayor de cada par. Ve a tu ritmo; son 16 pares.",
-    compareProgress: (i, n) => `Par ${i} de ${n}`,
-    mentalTitle: "Tarea 2 de 3: Resuélvelo mentalmente",
-    mentalHelp: "Escribe cada respuesta sin calculadora ni papel. Escribe las horas así: 3:15.",
-    mentalProgress: (i, n) => `Problema ${i} de ${n}`,
     yourAnswer: "Tu respuesta",
-    paperTitle: "Tarea 3 de 3: En papel",
-    paperHelp: "Resuelve estos problemas a mano en papel o en un pizarrón. Muestra tus pasos. Luego toma una foto de tu trabajo. La foto se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza; solo aparece en tu resumen impreso.",
     takePhoto: "Tomar o elegir una foto",
     retakePhoto: "Usar otra foto",
     finishTasks: "Terminar",
@@ -391,15 +368,10 @@ const STR = {
     toResults: "Volver a mis resultados",
     beginTask: "Empezar",
     noNorms: "Aquí no se usan normas para adultos y estos resultados no se califican. Un profesional puede interpretarlos.",
-    taskCompareResult: (c, n, s) => `¿Cuál es mayor?: ${c} de ${n} correctas, ${s} segundos en total.`,
-    taskMentalResult: (c, n, s) => `Cálculo mental: ${c} de ${n} correctas, ${s} segundos en total.`,
     taskSkipped: "Omitida",
     taskPhoto: "Foto del trabajo en papel",
     taskPhotoNone: "No se agregó foto.",
     packetPre: "Preguntas de contexto",
-    packetDeep: "Más de cerca: los números de todos los días",
-    packetTasks: "Tareas prácticas con números",
-    packetMentalDetail: "Problema, mi respuesta, segundos",
     limitationsTitle: "Limitaciones",
     limitations: [
       "Esto es una detección, no un diagnóstico. No se te asigna ninguna condición. Solo un profesional calificado puede diagnosticar.",
@@ -432,16 +404,13 @@ const state = {
   answers: {},   // item id -> 0..3
   context: {},   // context id -> value
   pre: {},       // prescreen id -> value (context only, never scored)
-  mod: null,     // math module definition
-  modAnswers: {},// module item id -> 0..3, or null for "doesn't apply"
-  modResult: null,
-  tasks: null,   // { step, compare, mental, photoUrl, ... }
+  mods: {},       // module id -> definition from data/modules/
+  activeMod: null,
+  modAnswers: {}, // module item id -> 0..3, or null for "doesn't apply"
+  modResults: {}, // module id -> { band, applied }
+  tasks: {},      // module id -> { i: task index (-1 intro), runs: [] }
   result: null
 };
-
-function freshTasks() {
-  return { step: "intro", compare: null, mental: null, photoUrl: null, paperDone: false };
-}
 
 const $ = (sel) => document.querySelector(sel);
 const t = (key) => {
@@ -469,8 +438,9 @@ async function init() {
   try { state.providers = (await loadJSON("data/providers.json")).providers || []; } catch (e) { state.providers = []; }
   try { state.report = await loadJSON("data/model_report.json"); } catch (e) { state.report = null; }
   // Loaded up front so nothing is requested after page load.
-  try { state.mod = await loadJSON("data/modules/math.json"); } catch (e) { state.mod = null; }
-  state.tasks = freshTasks();
+  for (const id of MODULE_IDS) {
+    try { state.mods[id] = await loadJSON(`data/modules/${id}.json`); } catch (e) { /* module simply not offered */ }
+  }
 
   bindEvents();
   buildForm();
@@ -520,7 +490,7 @@ function applyStrings() {
     relabelForm();
     renderLimitations();
     if (state.result) { renderResult(); renderPacket(); }
-    if (state.mod && state.tasks && state.screen === "tasks") renderTasks();
+    if (state.activeMod) { relabelModule(); if (state.screen === "tasks") renderTasks(); }
     renderProviders();
     renderModel();
   }
@@ -549,10 +519,6 @@ function buildForm() {
   const pre = $("#preForm");
   pre.innerHTML = "";
   for (const p of state.q.prescreen) pre.appendChild(radioGroup(p.id, "pre", p.options.map((o) => o.value)));
-
-  const mod = $("#modForm");
-  mod.innerHTML = "";
-  if (state.mod) for (const it of state.mod.items) mod.appendChild(radioGroup(it.id, "mod", [...it.options.map((o) => o.v), ...(it.no_na ? [] : ["na"])]));
 }
 
 function radioGroup(id, kind, values) {
@@ -591,14 +557,6 @@ function relabelForm() {
   for (const p of state.q.prescreen) {
     $(`#lg-${p.id}`).textContent = loc(p);
     for (const o of p.options) document.querySelector(`[data-opt="${p.id}:${o.value}"]`).textContent = loc(o);
-  }
-  if (state.mod) {
-    for (const it of state.mod.items) {
-      $(`#lg-${it.id}`).textContent = loc(it);
-      for (const o of it.options) document.querySelector(`[data-opt="${it.id}:${o.v}"]`).textContent = loc(o);
-      const na = document.querySelector(`[data-opt="${it.id}:na"]`);
-      if (na) na.textContent = loc(state.mod.na);
-    }
   }
   document.querySelectorAll("#qForm [data-i18n]").forEach((el) => (el.textContent = t(el.dataset.i18n)));
 }
@@ -704,39 +662,73 @@ function runDemo() {
   submit();
 }
 
-// ---------- closer look: math module ----------
-function scoreModule() {
-  const vals = state.mod.items.map((it) => state.modAnswers[it.id]).filter((v) => v !== null);
+// ---------- closer looks: optional deeper modules (data/modules/*.json) ----------
+const MODULE_IDS = ["reading", "math"]; // same order as the areas on the result screen
+const activeMod = () => state.mods[state.activeMod];
+
+function scoreModule(m) {
+  const vals = m.items.map((it) => state.modAnswers[it.id]).filter((v) => v !== null && v !== undefined);
   // Need at least half the situations to apply before giving a band.
-  if (vals.length < Math.ceil(state.mod.items.length / 2)) return { band: null, applied: vals.length };
+  if (vals.length < Math.ceil(m.items.length / 2)) return { band: null, applied: vals.length };
   const score = (100 * vals.reduce((a, b) => a + b, 0)) / (3 * vals.length);
   return { band: bandFor(score), applied: vals.length };
 }
 
 function renderDeep() {
   const area = $("#deepArea");
-  if (!state.mod || !state.result) { area.innerHTML = ""; return; }
-  const c = state.result.domains.find((d) => d.id === state.mod.domain);
-  if (!state.modResult) {
-    const strong = c && c.band !== "low";
-    area.innerHTML = `<div class="card ${strong ? "band-high" : ""}">
-      <p>${esc(strong ? t("deepOfferHigh") : t("deepOfferLow"))}</p>
-      <div class="actions"><button type="button" class="btn ${strong ? "primary" : ""}" data-go="module">${esc(t("deepGo"))}</button></div>
+  if (!state.result) { area.innerHTML = ""; return; }
+  area.innerHTML = MODULE_IDS.filter((id) => state.mods[id]).map((id) => {
+    const m = state.mods[id], r = state.modResults[id];
+    if (!r) {
+      const c = state.result.domains.find((d) => d.id === m.domain);
+      const strong = c && c.band !== "low";
+      return `<div class="card ${strong ? "band-high" : ""}">
+        <p>${esc(loc(strong ? m.offer.high : m.offer.low))}</p>
+        <div class="actions"><button type="button" class="btn ${strong ? "primary" : ""}" data-module="${id}">${esc(loc(m.go))}</button></div>
+      </div>`;
+    }
+    return `<div class="card">
+      <h2>${esc(loc(m.title))}</h2>
+      <p class="band">${esc(r.band ? t("band_" + r.band) : t("deepCardNA"))}</p>
+      <span class="tag warn">${esc(t("tagNotValidated"))}</span>
+      <p class="muted">${esc(t("deepCardNote"))}</p>
+      ${tasksSummaryHTML(id)}
     </div>`;
-    return;
+  }).join("");
+}
+
+function openModule(id) {
+  state.activeMod = id;
+  const m = state.mods[id], form = $("#modForm");
+  form.innerHTML = "";
+  for (const it of m.items) form.appendChild(radioGroup(it.id, "mod", [...it.options.map((o) => o.v), ...(it.no_na ? [] : ["na"])]));
+  relabelModule();
+  for (const it of m.items) { // restore answers if the person comes back
+    const v = state.modAnswers[it.id];
+    if (v === undefined) continue;
+    const el = form.querySelector(`input[name="mod-${it.id}"][value="${v === null ? "na" : v}"]`);
+    if (el) el.checked = true;
   }
-  const r = state.modResult;
-  area.innerHTML = `<div class="card">
-    <h2>${esc(t("deepCardTitle"))}</h2>
-    <p class="band">${esc(r.band ? t("band_" + r.band) : t("deepCardNA"))}</p>
-    <span class="tag warn">${esc(t("tagNotValidated"))}</span>
-    <p class="muted">${esc(t("deepCardNote"))}</p>
-    ${tasksSummaryHTML()}
-  </div>`;
+  $("#modError").hidden = true;
+  show("module");
+}
+
+function relabelModule() {
+  const m = activeMod();
+  if (!m || !$(`#lg-${m.items[0].id}`)) return;
+  $("#modTitle").textContent = loc(m.title);
+  $("#modHelp").textContent = loc(m.help);
+  for (const it of m.items) {
+    $(`#lg-${it.id}`).textContent = loc(it);
+    for (const o of it.options) document.querySelector(`[data-opt="${it.id}:${o.v}"]`).textContent = loc(o);
+    const na = document.querySelector(`[data-opt="${it.id}:na"]`);
+    if (na) na.textContent = loc(m.na);
+  }
 }
 
 function submitModule() {
-  const missing = state.mod.items.filter((it) => !(it.id in state.modAnswers));
+  const id = state.activeMod, m = activeMod();
+  const missing = m.items.filter((it) => !(it.id in state.modAnswers));
   document.querySelectorAll("#modForm .item.missing").forEach((el) => el.classList.remove("missing"));
   if (missing.length) {
     missing.forEach((it) => $(`#item-${it.id}`).classList.add("missing"));
@@ -746,121 +738,217 @@ function submitModule() {
     return;
   }
   $("#modError").hidden = true;
-  state.modResult = scoreModule();
-  state.tasks = freshTasks();
+  state.modResults[id] = scoreModule(m);
+  revokePhotos(id);
+  state.tasks[id] = { i: -1, runs: [] };
   renderTasks();
   show("tasks");
 }
 
-// ---------- hands-on tasks (recorded, never scored or compared) ----------
+// ---------- hands-on tasks (recorded, never scored or compared with anyone) ----------
 const secs = (ms) => Math.round(ms / 1000);
+const txt = (x) => (typeof x === "string" ? x : loc(x));
+const words = (s) => s.trim().split(/\s+/).length;
 
 function normAnswer(s) {
   return String(s).toLowerCase().replace(/\s+/g, "").replace(/\$/g, "").replace(/[ap]\.?m\.?$/, "");
 }
 
-function renderTasks() {
-  const T = state.tasks, M = state.mod.tasks, area = $("#taskArea");
-  const skip = (to) => `<button type="button" class="btn" data-task="${to}">${esc(t("skipTask"))}</button>`;
-
-  if (T.step === "intro") {
-    area.innerHTML = `<p>${esc(t("tasksIntro"))}</p><p class="muted">${esc(t("noNorms"))}</p>
-      <div class="actions"><button type="button" class="btn primary" data-task="compare">${esc(t("tasksStart"))}</button>
-      <button type="button" class="btn" data-task="done">${esc(t("tasksSkip"))}</button></div>`;
-  } else if (T.step === "compare") {
-    const C = T.compare;
-    if (!C) {
-      area.innerHTML = `<h2>${esc(t("compareTitle"))}</h2><p>${esc(t("compareHelp"))}</p>
-        <div class="actions"><button type="button" class="btn primary" id="beginCompare">${esc(t("beginTask"))}</button>${skip("mental")}</div>`;
-    } else {
-      const p = M.compare[C.i];
-      area.innerHTML = `<h2>${esc(t("compareTitle"))}</h2><p class="muted">${esc(t("compareProgress")(C.i + 1, M.compare.length))}</p>
+// Each task type: start() -> run state, render() -> html, click() -> true if handled, summary() -> one line.
+const TASKS = {
+  compare: {
+    start: () => ({ k: 0, correct: 0, t0: performance.now(), ms: 0 }),
+    render: (task, run) => {
+      const p = task.pairs[run.k];
+      return `<p class="muted">${esc(t("itemProgress")(run.k + 1, task.pairs.length))}</p>
         <div class="pair"><button type="button" class="btn big" data-pick="a">${esc(p.a)}</button>
         <button type="button" class="btn big" data-pick="b">${esc(p.b)}</button></div>`;
-    }
-  } else if (T.step === "mental") {
-    const Mn = T.mental;
-    if (!Mn) {
-      area.innerHTML = `<h2>${esc(t("mentalTitle"))}</h2><p>${esc(t("mentalHelp"))}</p>
-        <div class="actions"><button type="button" class="btn primary" id="beginMental">${esc(t("beginTask"))}</button>${skip("paper")}</div>`;
-    } else {
-      const p = M.mental[Mn.i];
-      const q = typeof p.q === "string" ? p.q : loc(p.q);
-      area.innerHTML = `<h2>${esc(t("mentalTitle"))}</h2><p class="muted">${esc(t("mentalProgress")(Mn.i + 1, M.mental.length))}</p>
-        <p class="problem">${esc(q)}</p>
+    },
+    click: (e, task, run) => {
+      const pick = e.target.closest("[data-pick]");
+      if (!pick) return false;
+      const p = task.pairs[run.k];
+      if ((pick.dataset.pick === "a" ? p.av : p.bv) === Math.max(p.av, p.bv)) run.correct++;
+      if (++run.k >= task.pairs.length) { run.ms = performance.now() - run.t0; run.done = true; }
+      return true;
+    },
+    summary: (task, run) => t("countResult")(loc(task.title), run.correct, task.pairs.length, secs(run.ms))
+  },
+  mental: {
+    start: () => ({ k: 0, items: [], q0: performance.now() }),
+    render: (task, run) => `<p class="muted">${esc(t("itemProgress")(run.k + 1, task.problems.length))}</p>
+        <p class="problem">${esc(txt(task.problems[run.k].q))}</p>
         <label class="answer-label">${esc(t("yourAnswer"))}
           <input id="mentalInput" type="text" inputmode="decimal" autocomplete="off" enterkeyhint="next"></label>
-        <div class="actions"><button type="button" class="btn primary" id="mentalNext">${esc(t("next"))}</button></div>`;
-      setTimeout(() => { const i = $("#mentalInput"); if (i) i.focus(); }, 0);
-    }
-  } else if (T.step === "paper") {
-    area.innerHTML = `<h2>${esc(t("paperTitle"))}</h2><p>${esc(t("paperHelp"))}</p>
-      <ol class="problem-list">${M.paper.map((x) => `<li>${esc(x)}</li>`).join("")}</ol>
-      <label class="btn file-btn">${esc(T.photoUrl ? t("retakePhoto") : t("takePhoto"))}
+        <div class="actions"><button type="button" class="btn primary" id="mentalNext">${esc(t("next"))}</button></div>`,
+    click: (e, task, run) => {
+      if (!e.target.closest("#mentalNext")) return false;
+      TASKS.mental.next(task, run);
+      return true;
+    },
+    next: (task, run) => {
+      const val = $("#mentalInput").value.trim();
+      const ok = task.problems[run.k].a.map(normAnswer).includes(normAnswer(val));
+      run.items.push({ answer: val, correct: ok, ms: performance.now() - run.q0 });
+      run.q0 = performance.now();
+      if (++run.k >= task.problems.length) run.done = true;
+    },
+    summary: (task, run) => t("countResult")(loc(task.title), run.items.filter((x) => x.correct).length,
+      task.problems.length, secs(run.items.reduce((a, x) => a + x.ms, 0))),
+    detail: (task, run) => `<ul class="answers">${run.items.map((x, i) =>
+      `<li>${esc(txt(task.problems[i].q))} → <strong>${esc(x.answer || "—")}</strong> (${x.correct ? "✓" : "✗"}, ${secs(x.ms)} s)</li>`).join("")}</ul>`
+  },
+  choose: {
+    // The word list is fixed to the language active when the task starts.
+    start: () => ({ k: 0, correct: 0, t0: performance.now(), ms: 0, lang: state.lang, picks: [] }),
+    render: (task, run) => {
+      const list = task.items[run.lang] || task.items.en, opts = list[run.k];
+      const order = opts.map((_, i) => (i + run.k) % opts.length); // vary where the right answer sits
+      return `<p class="muted">${esc(t("itemProgress")(run.k + 1, list.length))}</p>
+        <div class="choices">${order.map((i) => `<button type="button" class="btn big word" data-choose="${i}">${esc(opts[i])}</button>`).join("")}</div>`;
+    },
+    click: (e, task, run) => {
+      const b = e.target.closest("[data-choose]");
+      if (!b) return false;
+      const list = task.items[run.lang] || task.items.en, i = Number(b.dataset.choose);
+      if (i === 0) run.correct++;
+      run.picks.push({ picked: list[run.k][i], right: list[run.k][0] });
+      if (++run.k >= list.length) { run.ms = performance.now() - run.t0; run.done = true; }
+      return true;
+    },
+    summary: (task, run) => t("countResult")(loc(task.title), run.correct, run.picks.length, secs(run.ms)),
+    detail: (task, run) => `<ul class="answers">${run.picks.map((p) =>
+      `<li>${esc(p.picked)} ${p.picked === p.right ? "✓" : `✗ (${esc(p.right)})`}</li>`).join("")}</ul>`
+  },
+  read: {
+    start: () => ({ phase: "reading", t0: performance.now(), lang: state.lang, q: 0, correct: 0, answers: [] }),
+    render: (task, run) => {
+      if (run.phase === "reading") {
+        const text = task.passage[run.lang] || task.passage.en;
+        return `<div class="passage">${text.split("\n\n").map((p) => `<p>${esc(p)}</p>`).join("")}</div>
+          <div class="actions"><button type="button" class="btn primary" data-read-done>${esc(t("readDone"))}</button></div>`;
+      }
+      const q = task.questions[run.q];
+      return `<p class="muted">${esc(t("readQHelp"))} ${esc(t("itemProgress")(run.q + 1, task.questions.length))}</p>
+        <p class="problem small">${esc(loc(q.q))}</p>
+        <div class="choices">${q.options.map((o, i) => `<button type="button" class="btn" data-answer="${i}">${esc(loc(o))}</button>`).join("")}</div>`;
+    },
+    click: (e, task, run) => {
+      if (e.target.closest("[data-read-done]")) { run.readMs = performance.now() - run.t0; run.phase = "questions"; return true; }
+      const b = e.target.closest("[data-answer]");
+      if (!b) return false;
+      const q = task.questions[run.q], i = Number(b.dataset.answer);
+      if (i === q.c) run.correct++;
+      run.answers.push(i === q.c);
+      if (++run.q >= task.questions.length) run.done = true;
+      return true;
+    },
+    summary: (task, run) => t("readResult")(loc(task.title), words(task.passage[run.lang] || task.passage.en),
+      secs(run.readMs), run.correct, task.questions.length)
+  },
+  paper: {
+    render: (task, run) => `<ol class="problem-list">${task.problems.map((x) => `<li>${esc(txt(x))}</li>`).join("")}</ol>
+      <label class="btn file-btn">${esc(run.photoUrl ? t("retakePhoto") : t("takePhoto"))}
         <input id="photoInput" type="file" accept="image/*" capture="environment" hidden></label>
-      ${T.photoUrl ? `<img class="work-photo" src="${T.photoUrl}" alt="${esc(t("taskPhoto"))}">` : ""}
-      <div class="actions"><button type="button" class="btn primary" data-task="done" data-paper="1">${esc(t("finishTasks"))}</button>${skip("done")}</div>`;
-  } else {
-    area.innerHTML = `<p>${esc(t("tasksDone"))}</p>${tasksSummaryHTML()}
-      <div class="actions"><button type="button" class="btn primary" data-go="result">${esc(t("toResults"))}</button></div>`;
+      ${run.photoUrl ? `<img class="work-photo" src="${run.photoUrl}" alt="${esc(t("taskPhoto"))}">` : ""}`,
+    summary: (task, run) => `${loc(task.title)}: ${run && run.photoUrl ? t("taskPhoto") : t("taskPhotoNone")}`
   }
+};
+
+function renderTasks() {
+  const id = state.activeMod, m = state.mods[id], T = state.tasks[id], area = $("#taskArea");
+  if (!T) return;
+  $("#tasksTitle").textContent = loc(m.tasksTitle);
+  if (T.i < 0) {
+    area.innerHTML = `<p>${esc(t("tasksIntro"))}</p><p class="muted">${esc(t("noNorms"))}</p>
+      <div class="actions"><button type="button" class="btn primary" data-task-go="0">${esc(t("tasksStart"))}</button>
+      <button type="button" class="btn" data-task-go="end">${esc(t("tasksSkip"))}</button></div>`;
+    return;
+  }
+  if (T.i >= m.tasks.length) {
+    area.innerHTML = `<p>${esc(t("tasksDone"))}</p>${tasksSummaryHTML(id)}
+      <div class="actions"><button type="button" class="btn primary" data-go="result">${esc(t("toResults"))}</button></div>`;
+    return;
+  }
+  const task = m.tasks[T.i], run = T.runs[T.i];
+  const head = `<h2>${esc(t("taskOf")(T.i + 1, m.tasks.length, loc(task.title)))}</h2>`;
+  const next = `<button type="button" class="btn" data-task-go="${T.i + 1}">${esc(t("skipTask"))}</button>`;
+  if (task.type === "paper") {
+    area.innerHTML = `${head}<p>${esc(loc(task.help))}</p>${TASKS.paper.render(task, run || {})}
+      <div class="actions"><button type="button" class="btn primary" data-task-go="${T.i + 1}">${esc(t("finishTasks"))}</button>${run && run.photoUrl ? "" : next}</div>`;
+    return;
+  }
+  if (!run) {
+    area.innerHTML = `${head}<p>${esc(loc(task.help))}</p>
+      <div class="actions"><button type="button" class="btn primary" data-begin>${esc(t("beginTask"))}</button>${next}</div>`;
+    return;
+  }
+  area.innerHTML = head + TASKS[task.type].render(task, run);
+  const input = $("#mentalInput");
+  if (input) setTimeout(() => input.focus(), 0);
 }
 
-function tasksSummaryHTML(withDetail = false) {
-  const T = state.tasks, M = state.mod.tasks;
-  if (!T || (!T.compare && !T.mental && !T.photoUrl && T.step !== "done")) return "";
-  const lines = [];
-  const C = T.compare;
-  lines.push(C && C.done ? esc(t("taskCompareResult")(C.correct, M.compare.length, secs(C.ms))) : `${esc(t("compareTitle"))}: ${esc(t("taskSkipped"))}`);
-  const Mn = T.mental;
-  lines.push(Mn && Mn.done ? esc(t("taskMentalResult")(Mn.items.filter((x) => x.correct).length, M.mental.length, secs(Mn.items.reduce((a, x) => a + x.ms, 0))))
-    : `${esc(t("mentalTitle"))}: ${esc(t("taskSkipped"))}`);
-  let detail = "";
-  if (withDetail && Mn && Mn.done) {
-    detail = `<p class="muted">${esc(t("packetMentalDetail"))}</p><ul class="answers">${Mn.items.map((x, i) => {
-      const p = M.mental[i]; const q = typeof p.q === "string" ? p.q : loc(p.q);
-      return `<li>${esc(q)} → <strong>${esc(x.answer || "—")}</strong> (${x.correct ? "✓" : "✗"}, ${secs(x.ms)} s)</li>`;
-    }).join("")}</ul>`;
-  }
-  return `<ul class="task-results">${lines.map((l) => `<li>${l}</li>`).join("")}</ul>${detail}<p class="muted">${esc(t("noNorms"))}</p>`;
+function advanceIfDone(id) {
+  const m = state.mods[id], T = state.tasks[id], run = T.runs[T.i];
+  if (run && run.done) T.i++;
+  renderTasks();
+  if (T.i >= m.tasks.length) renderAfterTasks();
 }
 
 function onTaskClick(e) {
-  const T = state.tasks, M = state.mod.tasks;
-  const jump = e.target.closest("[data-task]");
-  if (jump) { T.step = jump.dataset.task; renderTasks(); if (T.step === "done") renderAfterTasks(); return; }
-  if (e.target.closest("#beginCompare")) { T.compare = { i: 0, correct: 0, start: performance.now(), ms: 0, done: false }; renderTasks(); return; }
-  const pick = e.target.closest("[data-pick]");
-  if (pick && T.compare && !T.compare.done) {
-    const C = T.compare, p = M.compare[C.i];
-    const chose = pick.dataset.pick === "a" ? p.av : p.bv;
-    if (chose === Math.max(p.av, p.bv)) C.correct++;
-    C.i++;
-    if (C.i >= M.compare.length) { C.ms = performance.now() - C.start; C.done = true; T.step = "mental"; }
+  const id = state.activeMod, m = state.mods[id], T = state.tasks[id];
+  const jump = e.target.closest("[data-task-go]");
+  if (jump) {
+    T.i = jump.dataset.taskGo === "end" ? m.tasks.length : Number(jump.dataset.taskGo);
     renderTasks();
+    if (T.i >= m.tasks.length) renderAfterTasks();
     return;
   }
-  if (e.target.closest("#beginMental")) { T.mental = { i: 0, items: [], qStart: performance.now(), done: false }; renderTasks(); return; }
-  if (e.target.closest("#mentalNext")) nextMental();
+  const task = m.tasks[T.i];
+  if (!task) return;
+  if (e.target.closest("[data-begin]")) { T.runs[T.i] = TASKS[task.type].start(task); renderTasks(); return; }
+  const run = T.runs[T.i];
+  if (run && TASKS[task.type].click && TASKS[task.type].click(e, task, run)) advanceIfDone(id);
 }
 
-function nextMental() {
-  const T = state.tasks, M = state.mod.tasks, Mn = T.mental;
-  const val = $("#mentalInput").value.trim();
-  const ok = M.mental[Mn.i].a.map(normAnswer).includes(normAnswer(val));
-  Mn.items.push({ answer: val, correct: ok, ms: performance.now() - Mn.qStart });
-  Mn.i++;
-  Mn.qStart = performance.now();
-  if (Mn.i >= M.mental.length) { Mn.done = true; T.step = "paper"; }
-  renderTasks();
+function onTaskKey(e) {
+  if (e.key !== "Enter" || e.target.id !== "mentalInput") return;
+  e.preventDefault();
+  const id = state.activeMod, T = state.tasks[id], task = state.mods[id].tasks[T.i];
+  TASKS.mental.next(task, T.runs[T.i]);
+  advanceIfDone(id);
 }
 
 function onPhoto(e) {
   const f = e.target.files && e.target.files[0];
   if (!f) return;
-  if (state.tasks.photoUrl) URL.revokeObjectURL(state.tasks.photoUrl);
-  state.tasks.photoUrl = URL.createObjectURL(f); // memory only; never uploaded
+  const T = state.tasks[state.activeMod];
+  const run = T.runs[T.i] || (T.runs[T.i] = {});
+  if (run.photoUrl) URL.revokeObjectURL(run.photoUrl);
+  run.photoUrl = URL.createObjectURL(f); // memory only; never uploaded
+  run.done = true;
   renderTasks();
+}
+
+function revokePhotos(id) {
+  const T = state.tasks[id];
+  if (T) T.runs.forEach((r) => r && r.photoUrl && URL.revokeObjectURL(r.photoUrl));
+}
+
+function tasksSummaryHTML(id, withDetail = false) {
+  const m = state.mods[id], T = state.tasks[id];
+  if (!T || T.i < m.tasks.length) return "";
+  const rows = m.tasks.map((task, k) => {
+    const run = T.runs[k], kind = TASKS[task.type];
+    if (task.type === "paper") {
+      if (!withDetail || !run || !run.photoUrl) return `<li>${esc(kind.summary(task, run))}</li>`;
+      return `<li>${esc(kind.summary(task, run))}<p class="muted">${task.problems.map((x) => esc(txt(x))).join(" · ")}</p>
+        <img class="work-photo" src="${run.photoUrl}" alt="${esc(t("taskPhoto"))}"></li>`;
+    }
+    if (!run || !run.done) return `<li>${esc(loc(task.title))}: ${esc(t("taskSkipped"))}</li>`;
+    return `<li>${esc(kind.summary(task, run))}${withDetail && kind.detail ? kind.detail(task, run) : ""}</li>`;
+  }).join("");
+  return `<ul class="task-results">${rows}</ul><p class="muted">${esc(t("noNorms"))}</p>`;
 }
 
 function renderAfterTasks() { renderDeep(); renderPacket(); }
@@ -884,22 +972,17 @@ function renderPacket() {
   const list = (arr) => arr.map((x) => `<li>${esc(x)}</li>`).join("");
   const lines = Array.from({ length: 6 }, () => `<div class="write-line"></div>`).join("");
   const spanishNote = state.lang === "es" ? `<p class="muted">${esc(STR.es.esNotice)}</p>` : "";
-  let deep = "";
-  if (state.modResult) {
-    const m = state.mod;
+  const deep = MODULE_IDS.filter((id) => state.modResults[id]).map((id) => {
+    const m = state.mods[id], res = state.modResults[id];
     const opt = (it) => {
       const v = state.modAnswers[it.id];
       return v === null ? loc(m.na) : loc(it.options.find((o) => o.v === v));
     };
-    deep = `<h3>${esc(t("packetDeep"))}: ${esc(state.modResult.band ? t("band_" + state.modResult.band) : t("deepCardNA"))} (${esc(t("tagNotValidated"))})</h3>
-      <ul class="answers">${m.items.map((it) => `<li>${esc(loc(it))} <strong>${esc(opt(it))}</strong></li>`).join("")}</ul>`;
-    if (state.tasks && state.tasks.step === "done") {
-      const T = state.tasks;
-      deep += `<h3>${esc(t("packetTasks"))}</h3>${tasksSummaryHTML(true)}
-        <p><strong>${esc(t("taskPhoto"))}:</strong> ${T.photoUrl ? "" : esc(t("taskPhotoNone"))}</p>
-        ${T.photoUrl ? `<p class="muted">${m.tasks.paper.map(esc).join(" · ")}</p><img class="work-photo" src="${T.photoUrl}" alt="${esc(t("taskPhoto"))}">` : ""}`;
-    }
-  }
+    const tasks = tasksSummaryHTML(id, true);
+    return `<h3>${esc(loc(m.title))}: ${esc(res.band ? t("band_" + res.band) : t("deepCardNA"))} (${esc(t("tagNotValidated"))})</h3>
+      <ul class="answers">${m.items.map((it) => `<li>${esc(loc(it))} <strong>${esc(opt(it))}</strong></li>`).join("")}</ul>
+      ${tasks ? `<h3>${esc(loc(m.tasksTitle))}</h3>${tasks}` : ""}`;
+  }).join("");
 
   $("#packet").innerHTML = `
     <header>
@@ -999,15 +1082,16 @@ function restart() {
   state.context = {};
   state.pre = {};
   state.modAnswers = {};
-  state.modResult = null;
-  if (state.tasks && state.tasks.photoUrl) URL.revokeObjectURL(state.tasks.photoUrl);
-  state.tasks = freshTasks();
+  state.modResults = {};
+  Object.keys(state.tasks).forEach(revokePhotos);
+  state.tasks = {};
+  state.activeMod = null;
   state.result = null;
   state.demo = false;
   state.history = [];
   $("#qForm").reset();
   $("#preForm").reset();
-  $("#modForm").reset();
+  $("#modForm").innerHTML = "";
   $("#taskArea").innerHTML = "";
   $("#deepArea").innerHTML = "";
   $("#qError").hidden = true;
@@ -1017,6 +1101,8 @@ function restart() {
 
 function bindEvents() {
   document.addEventListener("click", (e) => {
+    const modEl = e.target.closest("[data-module]");
+    if (modEl) { openModule(modEl.dataset.module); return; }
     const goEl = e.target.closest("[data-go]");
     if (goEl) { go(goEl.dataset.go); return; }
     if (e.target.closest("[data-back]")) { show(state.history.pop() || "intro", false); }
@@ -1037,7 +1123,7 @@ function bindEvents() {
   $("#demoBtn").addEventListener("click", runDemo);
   $("#taskArea").addEventListener("click", onTaskClick);
   $("#taskArea").addEventListener("change", (e) => { if (e.target.id === "photoInput") onPhoto(e); });
-  $("#taskArea").addEventListener("keydown", (e) => { if (e.key === "Enter" && e.target.id === "mentalInput") { e.preventDefault(); nextMental(); } });
+  $("#taskArea").addEventListener("keydown", onTaskKey);
   $("#restartBtn").addEventListener("click", restart);
   $("#printBtn").addEventListener("click", () => window.print());
 }

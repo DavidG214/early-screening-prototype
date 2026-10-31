@@ -1,149 +1,565 @@
 {
   "id": "math",
   "domain": "C",
-  "version": "0.2",
-  "na": { "en": "This doesn't happen in my life", "es": "Esto no pasa en mi vida" },
+  "version": "0.3",
+  "title": {
+    "en": "A closer look: everyday numbers",
+    "es": "Más de cerca: los números de todos los días"
+  },
+  "help": {
+    "en": "Each question describes a situation. Pick what usually happens for you. If a situation is not part of your life, choose “This doesn’t happen in my life”.",
+    "es": "Cada pregunta describe una situación. Elige lo que normalmente te pasa. Si una situación no es parte de tu vida, elige “Esto no pasa en mi vida”."
+  },
+  "offer": {
+    "high": {
+      "en": "Your answers about numbers showed a signal. You can take a closer look with everyday situations and a few short number tasks (about 5 to 8 minutes).",
+      "es": "Tus respuestas sobre los números mostraron una señal. Puedes ver más de cerca con situaciones cotidianas y unas tareas cortas con números (de 5 a 8 minutos)."
+    },
+    "low": {
+      "en": "Want to look more closely at how you handle everyday numbers? There is an optional deeper section.",
+      "es": "¿Quieres ver más de cerca cómo manejas los números de todos los días? Hay una sección opcional más detallada."
+    }
+  },
+  "go": {
+    "en": "Take a closer look at numbers",
+    "es": "Ver más de cerca los números"
+  },
+  "na": {
+    "en": "This doesn't happen in my life",
+    "es": "Esto no pasa en mi vida"
+  },
   "items": [
-    { "id": "M1",
+    {
+      "id": "M1",
       "en": "You and three friends get a $68 bill and want to split it evenly. What usually happens?",
       "es": "Tú y tres amigos reciben una cuenta de $68 y quieren dividirla en partes iguales. ¿Qué suele pasar?",
       "options": [
-        { "v": 0, "en": "I work it out in my head fairly quickly.", "es": "Lo calculo mentalmente bastante rápido." },
-        { "v": 1, "en": "I can do it in my head, but it takes me a while.", "es": "Puedo hacerlo mentalmente, pero me toma un rato." },
-        { "v": 2, "en": "I need my phone or paper to work it out.", "es": "Necesito el celular o papel para calcularlo." },
-        { "v": 3, "en": "I let someone else handle it or avoid it.", "es": "Dejo que alguien más lo haga o lo evito." }
-      ] },
-    { "id": "M2",
+        {
+          "v": 0,
+          "en": "I work it out in my head fairly quickly.",
+          "es": "Lo calculo mentalmente bastante rápido."
+        },
+        {
+          "v": 1,
+          "en": "I can do it in my head, but it takes me a while.",
+          "es": "Puedo hacerlo mentalmente, pero me toma un rato."
+        },
+        {
+          "v": 2,
+          "en": "I need my phone or paper to work it out.",
+          "es": "Necesito el celular o papel para calcularlo."
+        },
+        {
+          "v": 3,
+          "en": "I let someone else handle it or avoid it.",
+          "es": "Dejo que alguien más lo haga o lo evito."
+        }
+      ]
+    },
+    {
+      "id": "M2",
       "en": "You pay with a $20 bill and the cashier hands you change. What do you do?",
       "es": "Pagas con un billete de $20 y el cajero te da el cambio. ¿Qué haces?",
       "options": [
-        { "v": 0, "en": "I quickly check in my head that it is right.", "es": "Reviso rápido mentalmente que esté bien." },
-        { "v": 1, "en": "I check, but it takes me some time.", "es": "Lo reviso, pero me toma tiempo." },
-        { "v": 2, "en": "I'd have to count it slowly or use my phone.", "es": "Tendría que contarlo despacio o usar el celular." },
-        { "v": 3, "en": "I usually can't tell whether it's right, so I trust the cashier.", "es": "Por lo general no puedo saber si está bien, así que confío en el cajero." }
-      ] },
-    { "id": "M3",
+        {
+          "v": 0,
+          "en": "I quickly check in my head that it is right.",
+          "es": "Reviso rápido mentalmente que esté bien."
+        },
+        {
+          "v": 1,
+          "en": "I check, but it takes me some time.",
+          "es": "Lo reviso, pero me toma tiempo."
+        },
+        {
+          "v": 2,
+          "en": "I'd have to count it slowly or use my phone.",
+          "es": "Tendría que contarlo despacio o usar el celular."
+        },
+        {
+          "v": 3,
+          "en": "I usually can't tell whether it's right, so I trust the cashier.",
+          "es": "Por lo general no puedo saber si está bien, así que confío en el cajero."
+        }
+      ]
+    },
+    {
+      "id": "M3",
       "en": "A sign says 20% off a $45 jacket. How do you find the new price?",
       "es": "Un letrero dice 20% de descuento en una chaqueta de $45. ¿Cómo sacas el nuevo precio?",
       "options": [
-        { "v": 0, "en": "I figure it out in my head.", "es": "Lo calculo mentalmente." },
-        { "v": 1, "en": "I can work it out, but slowly.", "es": "Puedo calcularlo, pero despacio." },
-        { "v": 2, "en": "I can't do it without a calculator.", "es": "No puedo hacerlo sin calculadora." },
-        { "v": 3, "en": "Even with a calculator I'm unsure how to set it up, so I wait for the register.", "es": "Aun con calculadora no sé bien cómo plantearlo, así que espero a ver el precio en la caja." }
-      ] },
-    { "id": "M4",
+        {
+          "v": 0,
+          "en": "I figure it out in my head.",
+          "es": "Lo calculo mentalmente."
+        },
+        {
+          "v": 1,
+          "en": "I can work it out, but slowly.",
+          "es": "Puedo calcularlo, pero despacio."
+        },
+        {
+          "v": 2,
+          "en": "I can't do it without a calculator.",
+          "es": "No puedo hacerlo sin calculadora."
+        },
+        {
+          "v": 3,
+          "en": "Even with a calculator I'm unsure how to set it up, so I wait for the register.",
+          "es": "Aun con calculadora no sé bien cómo plantearlo, así que espero a ver el precio en la caja."
+        }
+      ]
+    },
+    {
+      "id": "M4",
       "en": "A recipe calls for ¾ cup of flour and you want to make half the recipe. What happens?",
       "es": "Una receta pide ¾ de taza de harina y quieres hacer la mitad. ¿Qué pasa?",
       "options": [
-        { "v": 0, "en": "I know how much to use.", "es": "Sé cuánto usar." },
-        { "v": 1, "en": "I work it out after some thought.", "es": "Lo resuelvo después de pensarlo un poco." },
-        { "v": 2, "en": "I can't work it out, so I guess.", "es": "No logro calcularlo, así que calculo a ojo." },
-        { "v": 3, "en": "I avoid recipes I would have to change.", "es": "Evito las recetas que tendría que ajustar." }
-      ] },
-    { "id": "M5",
+        {
+          "v": 0,
+          "en": "I know how much to use.",
+          "es": "Sé cuánto usar."
+        },
+        {
+          "v": 1,
+          "en": "I work it out after some thought.",
+          "es": "Lo resuelvo después de pensarlo un poco."
+        },
+        {
+          "v": 2,
+          "en": "I can't work it out, so I guess.",
+          "es": "No logro calcularlo, así que calculo a ojo."
+        },
+        {
+          "v": 3,
+          "en": "I avoid recipes I would have to change.",
+          "es": "Evito las recetas que tendría que ajustar."
+        }
+      ]
+    },
+    {
+      "id": "M5",
       "en": "A bus leaves at 3:45 and the trip takes 50 minutes. When you work out the arrival time:",
       "es": "Un autobús sale a las 3:45 y el viaje dura 50 minutos. Cuando calculas la hora de llegada:",
       "options": [
-        { "v": 0, "en": "I know right away.", "es": "Lo sé de inmediato." },
-        { "v": 1, "en": "I get it after a moment.", "es": "Lo saco después de un momento." },
-        { "v": 2, "en": "I count it out step by step or write it down.", "es": "Lo cuento paso a paso o lo escribo." },
-        { "v": 3, "en": "I often get times like this wrong.", "es": "Con frecuencia me equivoco con horas así." }
-      ] },
-    { "id": "M6",
+        {
+          "v": 0,
+          "en": "I know right away.",
+          "es": "Lo sé de inmediato."
+        },
+        {
+          "v": 1,
+          "en": "I get it after a moment.",
+          "es": "Lo saco después de un momento."
+        },
+        {
+          "v": 2,
+          "en": "I count it out step by step or write it down.",
+          "es": "Lo cuento paso a paso o lo escribo."
+        },
+        {
+          "v": 3,
+          "en": "I often get times like this wrong.",
+          "es": "Con frecuencia me equivoco con horas así."
+        }
+      ]
+    },
+    {
+      "id": "M6",
       "no_na": true,
       "en": "When you add two small numbers, like 8 + 7:",
       "es": "Cuando sumas dos números pequeños, como 8 + 7:",
       "options": [
-        { "v": 0, "en": "I just know the answer.", "es": "Simplemente sé el resultado." },
-        { "v": 1, "en": "I work it out quickly in my head.", "es": "Lo calculo rápido mentalmente." },
-        { "v": 2, "en": "I count up, sometimes on my fingers or under my breath.", "es": "Voy contando, a veces con los dedos o en voz baja." },
-        { "v": 3, "en": "I need my fingers or a calculator nearly every time.", "es": "Casi siempre necesito los dedos o una calculadora." }
-      ] },
-    { "id": "M7",
+        {
+          "v": 0,
+          "en": "I just know the answer.",
+          "es": "Simplemente sé el resultado."
+        },
+        {
+          "v": 1,
+          "en": "I work it out quickly in my head.",
+          "es": "Lo calculo rápido mentalmente."
+        },
+        {
+          "v": 2,
+          "en": "I count up, sometimes on my fingers or under my breath.",
+          "es": "Voy contando, a veces con los dedos o en voz baja."
+        },
+        {
+          "v": 3,
+          "en": "I need my fingers or a calculator nearly every time.",
+          "es": "Casi siempre necesito los dedos o una calculadora."
+        }
+      ]
+    },
+    {
+      "id": "M7",
       "en": "Two brands cost $2.45 and $2.50 per pound. When you decide which is cheaper:",
       "es": "Dos marcas cuestan $2.45 y $2.50 la libra. Cuando decides cuál es más barata:",
       "options": [
-        { "v": 0, "en": "I can tell right away.", "es": "Lo sé de inmediato." },
-        { "v": 1, "en": "I need a moment to be sure.", "es": "Necesito un momento para estar seguro o segura." },
-        { "v": 2, "en": "I often mix up which is bigger when there are decimals.", "es": "Con decimales, con frecuencia confundo cuál es mayor." },
-        { "v": 3, "en": "I usually can't tell which is cheaper, so I just pick one.", "es": "Por lo general no sé cuál es más barata, así que escojo cualquiera." }
-      ] },
-    { "id": "M8",
+        {
+          "v": 0,
+          "en": "I can tell right away.",
+          "es": "Lo sé de inmediato."
+        },
+        {
+          "v": 1,
+          "en": "I need a moment to be sure.",
+          "es": "Necesito un momento para estar seguro o segura."
+        },
+        {
+          "v": 2,
+          "en": "I often mix up which is bigger when there are decimals.",
+          "es": "Con decimales, con frecuencia confundo cuál es mayor."
+        },
+        {
+          "v": 3,
+          "en": "I usually can't tell which is cheaper, so I just pick one.",
+          "es": "Por lo general no sé cuál es más barata, así que escojo cualquiera."
+        }
+      ]
+    },
+    {
+      "id": "M8",
       "en": "When you add up your bills for the month:",
       "es": "Cuando sumas tus gastos o recibos del mes:",
       "options": [
-        { "v": 0, "en": "I add them in my head or quickly on paper.", "es": "Los sumo mentalmente o rápido en papel." },
-        { "v": 1, "en": "I can, but I need effort or a calculator.", "es": "Puedo, pero necesito esfuerzo o una calculadora." },
-        { "v": 2, "en": "Even with a calculator I lose track or feel unsure.", "es": "Aun con calculadora me pierdo o me quedan dudas." },
-        { "v": 3, "en": "I avoid it or ask someone else to do it.", "es": "Lo evito o le pido a alguien más que lo haga." }
-      ] },
-    { "id": "M9",
+        {
+          "v": 0,
+          "en": "I add them in my head or quickly on paper.",
+          "es": "Los sumo mentalmente o rápido en papel."
+        },
+        {
+          "v": 1,
+          "en": "I can, but I need effort or a calculator.",
+          "es": "Puedo, pero necesito esfuerzo o una calculadora."
+        },
+        {
+          "v": 2,
+          "en": "Even with a calculator I lose track or feel unsure.",
+          "es": "Aun con calculadora me pierdo o me quedan dudas."
+        },
+        {
+          "v": 3,
+          "en": "I avoid it or ask someone else to do it.",
+          "es": "Lo evito o le pido a alguien más que lo haga."
+        }
+      ]
+    },
+    {
+      "id": "M9",
       "en": "You measure a wall with a tape measure marked in inches and fractions. What happens?",
       "es": "Mides una pared con una cinta de medir marcada en pulgadas y fracciones. ¿Qué pasa?",
       "options": [
-        { "v": 0, "en": "I read it easily.", "es": "La leo sin problema." },
-        { "v": 1, "en": "I have to stop and count the small marks.", "es": "Tengo que detenerme a contar las marcas pequeñas." },
-        { "v": 2, "en": "I often read it wrong.", "es": "Con frecuencia la leo mal." },
-        { "v": 3, "en": "I ask someone else to measure.", "es": "Le pido a alguien más que mida." }
-      ] },
-    { "id": "M10",
+        {
+          "v": 0,
+          "en": "I read it easily.",
+          "es": "La leo sin problema."
+        },
+        {
+          "v": 1,
+          "en": "I have to stop and count the small marks.",
+          "es": "Tengo que detenerme a contar las marcas pequeñas."
+        },
+        {
+          "v": 2,
+          "en": "I often read it wrong.",
+          "es": "Con frecuencia la leo mal."
+        },
+        {
+          "v": 3,
+          "en": "I ask someone else to measure.",
+          "es": "Le pido a alguien más que mida."
+        }
+      ]
+    },
+    {
+      "id": "M10",
       "en": "In a card or board game where someone has to keep score:",
       "es": "En un juego de cartas o de mesa donde alguien tiene que llevar la cuenta de los puntos:",
       "options": [
-        { "v": 0, "en": "I keep score without trouble.", "es": "Llevo la cuenta sin problema." },
-        { "v": 1, "en": "I can, but I fall behind.", "es": "Puedo, pero me quedo atrás." },
-        { "v": 2, "en": "I lose track and have to recount or ask.", "es": "Pierdo la cuenta y tengo que volver a contar o preguntar." },
-        { "v": 3, "en": "I can't keep score at all, so someone else always does it.", "es": "No puedo llevar los puntos, así que siempre lo hace alguien más." }
-      ] },
-    { "id": "M11",
+        {
+          "v": 0,
+          "en": "I keep score without trouble.",
+          "es": "Llevo la cuenta sin problema."
+        },
+        {
+          "v": 1,
+          "en": "I can, but I fall behind.",
+          "es": "Puedo, pero me quedo atrás."
+        },
+        {
+          "v": 2,
+          "en": "I lose track and have to recount or ask.",
+          "es": "Pierdo la cuenta y tengo que volver a contar o preguntar."
+        },
+        {
+          "v": 3,
+          "en": "I can't keep score at all, so someone else always does it.",
+          "es": "No puedo llevar los puntos, así que siempre lo hace alguien más."
+        }
+      ]
+    },
+    {
+      "id": "M11",
       "en": "At a store, you want to know if $40 covers what is in your cart.",
       "es": "En una tienda quieres saber si $40 alcanzan para lo que llevas en el carrito.",
       "options": [
-        { "v": 0, "en": "I keep a rough running total as I shop.", "es": "Voy llevando una suma aproximada mientras compro." },
-        { "v": 1, "en": "I can guess, but often loosely.", "es": "Puedo adivinar, pero muchas veces de forma muy aproximada." },
-        { "v": 2, "en": "I usually have no idea until the register.", "es": "Por lo general no tengo idea hasta llegar a la caja." },
-        { "v": 3, "en": "I can't estimate at all, so I bring extra money or put things back at the register.", "es": "No puedo calcularlo para nada, así que llevo dinero de más o regreso cosas en la caja." }
-      ] },
-    { "id": "M12",
+        {
+          "v": 0,
+          "en": "I keep a rough running total as I shop.",
+          "es": "Voy llevando una suma aproximada mientras compro."
+        },
+        {
+          "v": 1,
+          "en": "I can guess, but often loosely.",
+          "es": "Puedo adivinar, pero muchas veces de forma muy aproximada."
+        },
+        {
+          "v": 2,
+          "en": "I usually have no idea until the register.",
+          "es": "Por lo general no tengo idea hasta llegar a la caja."
+        },
+        {
+          "v": 3,
+          "en": "I can't estimate at all, so I bring extra money or put things back at the register.",
+          "es": "No puedo calcularlo para nada, así que llevo dinero de más o regreso cosas en la caja."
+        }
+      ]
+    },
+    {
+      "id": "M12",
       "en": "When someone shows numbers in a chart or table at work or school:",
       "es": "Cuando alguien muestra números en una gráfica o tabla en el trabajo o la escuela:",
       "options": [
-        { "v": 0, "en": "I understand what the numbers say.", "es": "Entiendo lo que dicen los números." },
-        { "v": 1, "en": "I understand them, but I need to look twice.", "es": "Los entiendo, pero necesito verlos dos veces." },
-        { "v": 2, "en": "I follow the words, but the numbers don't mean much to me.", "es": "Sigo las palabras, pero los números no me dicen mucho." },
-        { "v": 3, "en": "I can't make sense of the numbers even when I take my time.", "es": "No logro entender los números aunque me tome mi tiempo." }
-      ] }
+        {
+          "v": 0,
+          "en": "I understand what the numbers say.",
+          "es": "Entiendo lo que dicen los números."
+        },
+        {
+          "v": 1,
+          "en": "I understand them, but I need to look twice.",
+          "es": "Los entiendo, pero necesito verlos dos veces."
+        },
+        {
+          "v": 2,
+          "en": "I follow the words, but the numbers don't mean much to me.",
+          "es": "Sigo las palabras, pero los números no me dicen mucho."
+        },
+        {
+          "v": 3,
+          "en": "I can't make sense of the numbers even when I take my time.",
+          "es": "No logro entender los números aunque me tome mi tiempo."
+        }
+      ]
+    }
   ],
-  "tasks": {
-    "compare": [
-      { "a": "7", "av": 7, "b": "4", "bv": 4 },
-      { "a": "23", "av": 23, "b": "32", "bv": 32 },
-      { "a": "0.45", "av": 0.45, "b": "0.5", "bv": 0.5 },
-      { "a": "1.2", "av": 1.2, "b": "1.09", "bv": 1.09 },
-      { "a": "2/3", "av": 0.6667, "b": "3/4", "bv": 0.75 },
-      { "a": "1/2", "av": 0.5, "b": "1/3", "bv": 0.3333 },
-      { "a": "0.3", "av": 0.3, "b": "0.25", "bv": 0.25 },
-      { "a": "105", "av": 105, "b": "150", "bv": 150 },
-      { "a": "3/5", "av": 0.6, "b": "1/2", "bv": 0.5 },
-      { "a": "2.05", "av": 2.05, "b": "2.5", "bv": 2.5 },
-      { "a": "98", "av": 98, "b": "89", "bv": 89 },
-      { "a": "0.7", "av": 0.7, "b": "0.65", "bv": 0.65 },
-      { "a": "1/4", "av": 0.25, "b": "0.3", "bv": 0.3 },
-      { "a": "3/8", "av": 0.375, "b": "1/2", "bv": 0.5 },
-      { "a": "1010", "av": 1010, "b": "1001", "bv": 1001 },
-      { "a": "0.09", "av": 0.09, "b": "0.1", "bv": 0.1 }
-    ],
-    "mental": [
-      { "q": "8 + 7", "a": ["15"] },
-      { "q": "14 − 6", "a": ["8"] },
-      { "q": "6 × 7", "a": ["42"] },
-      { "q": "45 + 38", "a": ["83"] },
-      { "q": "72 − 29", "a": ["43"] },
-      { "q": "36 ÷ 4", "a": ["9"] },
-      { "q": { "en": "You pay $10 for something that costs $6.35. How much change?", "es": "Pagas $10 por algo que cuesta $6.35. ¿Cuánto es el cambio?" }, "a": ["3.65", "3,65"] },
-      { "q": { "en": "It is 2:40. What time will it be in 35 minutes?", "es": "Son las 2:40. ¿Qué hora será en 35 minutos?" },
-        "a": ["3:15", "315", "3.15", "3,15", "03:15", "15:15", "1515", "15.15", "15,15"] }
-    ],
-    "paper": ["3/4 + 1/2", "15% × 60", "1000 − 387"]
-  }
+  "tasksTitle": {
+    "en": "Hands-on number tasks",
+    "es": "Tareas prácticas con números"
+  },
+  "tasks": [
+    {
+      "type": "compare",
+      "title": {
+        "en": "Which is bigger?",
+        "es": "¿Cuál es mayor?"
+      },
+      "help": {
+        "en": "Tap the bigger number in each pair. Go at a comfortable pace; there are 16 pairs.",
+        "es": "Toca el número mayor de cada par. Ve a tu ritmo; son 16 pares."
+      },
+      "pairs": [
+        {
+          "a": "7",
+          "av": 7,
+          "b": "4",
+          "bv": 4
+        },
+        {
+          "a": "23",
+          "av": 23,
+          "b": "32",
+          "bv": 32
+        },
+        {
+          "a": "0.45",
+          "av": 0.45,
+          "b": "0.5",
+          "bv": 0.5
+        },
+        {
+          "a": "1.2",
+          "av": 1.2,
+          "b": "1.09",
+          "bv": 1.09
+        },
+        {
+          "a": "2/3",
+          "av": 0.6667,
+          "b": "3/4",
+          "bv": 0.75
+        },
+        {
+          "a": "1/2",
+          "av": 0.5,
+          "b": "1/3",
+          "bv": 0.3333
+        },
+        {
+          "a": "0.3",
+          "av": 0.3,
+          "b": "0.25",
+          "bv": 0.25
+        },
+        {
+          "a": "105",
+          "av": 105,
+          "b": "150",
+          "bv": 150
+        },
+        {
+          "a": "3/5",
+          "av": 0.6,
+          "b": "1/2",
+          "bv": 0.5
+        },
+        {
+          "a": "2.05",
+          "av": 2.05,
+          "b": "2.5",
+          "bv": 2.5
+        },
+        {
+          "a": "98",
+          "av": 98,
+          "b": "89",
+          "bv": 89
+        },
+        {
+          "a": "0.7",
+          "av": 0.7,
+          "b": "0.65",
+          "bv": 0.65
+        },
+        {
+          "a": "1/4",
+          "av": 0.25,
+          "b": "0.3",
+          "bv": 0.3
+        },
+        {
+          "a": "3/8",
+          "av": 0.375,
+          "b": "1/2",
+          "bv": 0.5
+        },
+        {
+          "a": "1010",
+          "av": 1010,
+          "b": "1001",
+          "bv": 1001
+        },
+        {
+          "a": "0.09",
+          "av": 0.09,
+          "b": "0.1",
+          "bv": 0.1
+        }
+      ]
+    },
+    {
+      "type": "mental",
+      "title": {
+        "en": "Work it out in your head",
+        "es": "Resuélvelo mentalmente"
+      },
+      "help": {
+        "en": "Type each answer without a calculator or paper. Write times like 3:15.",
+        "es": "Escribe cada respuesta sin calculadora ni papel. Escribe las horas así: 3:15."
+      },
+      "problems": [
+        {
+          "q": "8 + 7",
+          "a": [
+            "15"
+          ]
+        },
+        {
+          "q": "14 − 6",
+          "a": [
+            "8"
+          ]
+        },
+        {
+          "q": "6 × 7",
+          "a": [
+            "42"
+          ]
+        },
+        {
+          "q": "45 + 38",
+          "a": [
+            "83"
+          ]
+        },
+        {
+          "q": "72 − 29",
+          "a": [
+            "43"
+          ]
+        },
+        {
+          "q": "36 ÷ 4",
+          "a": [
+            "9"
+          ]
+        },
+        {
+          "q": {
+            "en": "You pay $10 for something that costs $6.35. How much change?",
+            "es": "Pagas $10 por algo que cuesta $6.35. ¿Cuánto es el cambio?"
+          },
+          "a": [
+            "3.65",
+            "3,65"
+          ]
+        },
+        {
+          "q": {
+            "en": "It is 2:40. What time will it be in 35 minutes?",
+            "es": "Son las 2:40. ¿Qué hora será en 35 minutos?"
+          },
+          "a": [
+            "3:15",
+            "315",
+            "3.15",
+            "3,15",
+            "03:15",
+            "15:15",
+            "1515",
+            "15.15",
+            "15,15"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "title": {
+        "en": "On paper",
+        "es": "En papel"
+      },
+      "help": {
+        "en": "Work out these problems by hand on paper or a whiteboard. Show your steps. Then take a photo of your work. The photo stays on this device, in this tab only. It is never uploaded or analysed; it only appears in your printed summary.",
+        "es": "Resuelve estos problemas a mano en papel o en un pizarrón. Muestra tus pasos. Luego toma una foto de tu trabajo. La foto se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza; solo aparece en tu resumen impreso."
+      },
+      "problems": [
+        "3/4 + 1/2",
+        "15% × 60",
+        "1000 − 387"
+      ]
+    }
+  ]
 }
