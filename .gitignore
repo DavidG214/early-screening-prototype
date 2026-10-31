@@ -3,3 +3,4 @@ ml/.venv/
 .tools/
 .claude/skills/
 __pycache__/
+.design/
