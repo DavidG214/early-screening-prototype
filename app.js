@@ -15,6 +15,7 @@ const STR = {
     introPoint1: "Nothing you enter is saved or sent anywhere. Closing this tab erases it.",
     introPoint2: "There are no right or wrong answers. Answer for your usual experience.",
     introPoint3: "Some questions ask about childhood and some about today. Answer them separately.",
+    introPoint4: "Some optional sections ask you to work on paper and scan it with your phone or computer camera. Have a pen and paper handy.",
     distress: "Some of these questions can bring up hard feelings. If you are struggling or in distress right now, please reach out to a healthcare professional or local emergency services.",
     start: "Start the questions",
     seeLimitations: "See limitations",
@@ -163,16 +164,24 @@ const STR = {
     skipTask: "Skip this task",
     next: "Next",
     yourAnswer: "Your answer",
-    takePhoto: "Take or choose a photo",
-    retakePhoto: "Use a different photo",
     finishTasks: "Finish",
+    scanPage: "Scan your page",
+    scanAnother: "Scan another page",
+    scanning: "Scanning…",
+    scanFailed: "That photo couldn't be read. Please try again.",
+    rotate: "Rotate",
+    remove: "Remove",
+    pageOf: (i, n) => `Page ${i} of ${n}`,
+    timeLeft: (s) => `${s} seconds left`,
+    timeUp: "Time's up. Finish your sentence, then scan your page.",
+    reflectTitle: "A few quick questions about this task (not scored)",
+    paperResult: (title, time, n) => `${title}: worked on paper for ${time}; ${n} page${n === 1 ? "" : "s"} scanned.`,
+    paperTime: (time) => `time on paper ${time}`,
     tasksDone: "Thanks. Your task results are in your summary.",
     toResults: "Back to my results",
     beginTask: "Begin",
     noNorms: "No adult norms are used here, and these results are not scored. A professional can interpret them.",
     taskSkipped: "Skipped",
-    taskPhoto: "Photo of work on paper",
-    taskPhotoNone: "No photo added.",
     packetPre: "Background questions",
     limitationsTitle: "Limitations",
     limitations: [
@@ -188,7 +197,7 @@ const STR = {
       "The prototype includes a model trained on a public autism screening dataset (UCI, ID 426). Its label appears to be derived from the questionnaire score itself, and clinical diagnosis is not indicated. The model shows a method and a leakage check. It does not score your answers.",
       "The list of places to ask comes from web pages opened during research. Nothing was confirmed by phone, and fees, wait times and insurance are unknown.",
       "The closer look at numbers and the hands-on tasks are not validated. Task times are not compared with any norms; they are examples for a professional to interpret.",
-      "If you add a photo, it stays on this device in this tab only. It is never uploaded or analysed, and it is erased when you close the tab or start over."
+      "Scanned pages stay on this device in this tab only. The app never uploads, reads or analyses them; they are for a professional to look at. They are erased when you close the tab or start over."
     ],
     sourcesTitle: "Construct sources",
     sourcesNote: "Our areas draw on the constructs these instruments measure. No item from any of them is reproduced or altered here. All 25 questions are original wording written for this prototype.",
@@ -213,6 +222,7 @@ const STR = {
     introPoint1: "Nada de lo que escribes se guarda ni se envía. Al cerrar esta pestaña se borra todo.",
     introPoint2: "No hay respuestas correctas ni incorrectas. Contesta según lo que te pasa normalmente.",
     introPoint3: "Algunas preguntas son sobre tu niñez y otras sobre hoy. Contéstalas por separado.",
+    introPoint4: "Algunas secciones opcionales te piden trabajar en papel y escanearlo con la cámara del celular o la computadora. Ten cerca un bolígrafo o lápiz y papel.",
     distress: "Algunas de estas preguntas pueden despertar emociones difíciles. Si estás pasando por un momento difícil o sientes angustia ahora mismo, busca a un profesional de la salud o a los servicios de emergencia de tu zona.",
     start: "Empezar las preguntas",
     seeLimitations: "Ver limitaciones",
@@ -361,16 +371,24 @@ const STR = {
     skipTask: "Saltar esta tarea",
     next: "Siguiente",
     yourAnswer: "Tu respuesta",
-    takePhoto: "Tomar o elegir una foto",
-    retakePhoto: "Usar otra foto",
     finishTasks: "Terminar",
+    scanPage: "Escanear tu hoja",
+    scanAnother: "Escanear otra hoja",
+    scanning: "Escaneando…",
+    scanFailed: "No se pudo leer esa foto. Inténtalo de nuevo.",
+    rotate: "Girar",
+    remove: "Quitar",
+    pageOf: (i, n) => `Hoja ${i} de ${n}`,
+    timeLeft: (s) => `Quedan ${s} segundos`,
+    timeUp: "Se acabó el tiempo. Termina tu oración y luego escanea tu hoja.",
+    reflectTitle: "Unas preguntas rápidas sobre esta tarea (no se califican)",
+    paperResult: (title, time, n) => `${title}: trabajó en papel durante ${time}; ${n} hoja${n === 1 ? "" : "s"} escaneada${n === 1 ? "" : "s"}.`,
+    paperTime: (time) => `tiempo en papel ${time}`,
     tasksDone: "Gracias. Los resultados de las tareas están en tu resumen.",
     toResults: "Volver a mis resultados",
     beginTask: "Empezar",
     noNorms: "Aquí no se usan normas para adultos y estos resultados no se califican. Un profesional puede interpretarlos.",
     taskSkipped: "Omitida",
-    taskPhoto: "Foto del trabajo en papel",
-    taskPhotoNone: "No se agregó foto.",
     packetPre: "Preguntas de contexto",
     limitationsTitle: "Limitaciones",
     limitations: [
@@ -386,7 +404,7 @@ const STR = {
       "El prototipo incluye un modelo entrenado con un conjunto público de datos de detección de autismo (UCI, ID 426). Su etiqueta parece derivarse del propio puntaje del cuestionario y no indica diagnóstico clínico. El modelo muestra un método y una revisión de fuga de datos. No califica tus respuestas.",
       "La lista de lugares viene de páginas web revisadas durante la investigación. Nada se confirmó por teléfono, y los costos, tiempos de espera y seguros son desconocidos.",
       "La sección detallada de números y las tareas prácticas no están validadas. Los tiempos no se comparan con ninguna norma; son ejemplos para que un profesional los interprete.",
-      "Si agregas una foto, se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza, y se borra al cerrar la pestaña o empezar de nuevo."
+      "Las hojas escaneadas se quedan en este dispositivo, solo en esta pestaña. La app nunca las sube, lee ni analiza; son para que un profesional las vea. Se borran al cerrar la pestaña o empezar de nuevo."
     ],
     sourcesTitle: "Fuentes de los constructos",
     sourcesNote: "Nuestras áreas se basan en los constructos que miden estos instrumentos. No se reproduce ni se modifica ninguna pregunta de ellos. Las 25 preguntas son originales, escritas para este prototipo.",
@@ -428,6 +446,11 @@ async function loadJSON(path) {
 }
 
 async function init() {
+  // Bound first so the toggle also works on the load-error screen.
+  $("#langToggle").addEventListener("click", () => {
+    state.lang = state.lang === "en" ? "es" : "en";
+    applyStrings();
+  });
   try {
     state.q = await loadJSON("data/questionnaire.json");
   } catch (e) {
@@ -450,7 +473,7 @@ async function init() {
 
 // ---------- scoring ----------
 function bandFor(score) {
-  if (score < 33.4) return "low";
+  if (!(score >= 0) || score < 33.4) return "low";
   if (score < 60) return "mid";
   return "high";
 }
@@ -480,6 +503,7 @@ function scoreAll() {
 // ---------- rendering ----------
 function applyStrings() {
   document.documentElement.lang = state.lang;
+  ["#qError", "#modError", "#preError"].forEach((sel) => { const el = $(sel); if (el) el.hidden = true; }); // re-shown in the new language on next submit
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const v = t(el.dataset.i18n);
     if (typeof v === "string") el.textContent = v;
@@ -663,13 +687,13 @@ function runDemo() {
 }
 
 // ---------- closer looks: optional deeper modules (data/modules/*.json) ----------
-const MODULE_IDS = ["reading", "math"]; // same order as the areas on the result screen
+const MODULE_IDS = ["reading", "writing", "math"]; // same order as the areas on the result screen
 const activeMod = () => state.mods[state.activeMod];
 
 function scoreModule(m) {
   const vals = m.items.map((it) => state.modAnswers[it.id]).filter((v) => v !== null && v !== undefined);
   // Need at least half the situations to apply before giving a band.
-  if (vals.length < Math.ceil(m.items.length / 2)) return { band: null, applied: vals.length };
+  if (!vals.length || vals.length < Math.ceil(m.items.length / 2)) return { band: null, applied: vals.length };
   const score = (100 * vals.reduce((a, b) => a + b, 0)) / (3 * vals.length);
   return { band: bandFor(score), applied: vals.length };
 }
@@ -847,13 +871,105 @@ const TASKS = {
       secs(run.readMs), run.correct, task.questions.length)
   },
   paper: {
-    render: (task, run) => `<ol class="problem-list">${task.problems.map((x) => `<li>${esc(txt(x))}</li>`).join("")}</ol>
-      <label class="btn file-btn">${esc(run.photoUrl ? t("retakePhoto") : t("takePhoto"))}
-        <input id="photoInput" type="file" accept="image/*" capture="environment" hidden></label>
-      ${run.photoUrl ? `<img class="work-photo" src="${run.photoUrl}" alt="${esc(t("taskPhoto"))}">` : ""}`,
-    summary: (task, run) => `${loc(task.title)}: ${run && run.photoUrl ? t("taskPhoto") : t("taskPhotoNone")}`
+    // Timer runs from Begin until the first scan. Scans are cleaned up locally and never read or analysed.
+    start: (task) => ({ t0: performance.now(), paperMs: null, pages: [], reflect: {},
+      deadline: task.countdown ? performance.now() + task.countdown * 1000 : null }),
+    render: (task, run) => {
+      const left = run.deadline ? Math.max(0, Math.ceil((run.deadline - performance.now()) / 1000)) : null;
+      const clock = run.deadline && !run.pages.length
+        ? `<p class="countdown" id="countdown">${esc(left > 0 ? t("timeLeft")(left) : t("timeUp"))}</p>` : "";
+      const pages = run.pages.map((p, i) => `<figure class="scan-thumb">
+          <img src="${p.url}" alt="${esc(t("pageOf")(i + 1, run.pages.length))}">
+          <figcaption>${esc(t("pageOf")(i + 1, run.pages.length))}
+            <button type="button" class="btn small" data-page-rotate="${i}">${esc(t("rotate"))}</button>
+            <button type="button" class="btn small" data-page-remove="${i}">${esc(t("remove"))}</button></figcaption>
+        </figure>`).join("");
+      const reflect = run.pages.length && task.reflect ? `<fieldset class="reflect"><legend>${esc(t("reflectTitle"))}</legend>
+        ${task.reflect.map((r) => `<div class="item"><p class="reflect-q">${esc(loc(r))}</p><div class="opts">${r.options.map((o) =>
+          `<label class="opt"><input type="radio" name="rf-${r.id}" value="${esc(o.value)}" ${run.reflect[r.id] === o.value ? "checked" : ""}><span>${esc(loc(o))}</span></label>`).join("")}</div></div>`).join("")}
+      </fieldset>` : "";
+      return `<ol class="problem-list">${task.problems.map((x) => `<li>${esc(txt(x))}</li>`).join("")}</ol>${clock}
+        <div class="scan-pages">${pages}</div>
+        <label class="btn file-btn ${run.pages.length ? "" : "primary"}">${esc(run.pages.length ? t("scanAnother") : t("scanPage"))}
+          <input id="photoInput" type="file" accept="image/*" capture="environment" hidden></label>
+        <p class="muted" id="scanStatus" aria-live="polite"></p>${reflect}`;
+    },
+    click: (e, task, run) => {
+      const rot = e.target.closest("[data-page-rotate]"), rm = e.target.closest("[data-page-remove]");
+      if (rm) {
+        const [p] = run.pages.splice(Number(rm.dataset.pageRemove), 1);
+        URL.revokeObjectURL(p.url);
+        return true;
+      }
+      if (rot) {
+        const p = run.pages[Number(rot.dataset.pageRotate)];
+        p.rot = (p.rot + 90) % 360;
+        scanImage(p.file, p.rot).then((url) => { URL.revokeObjectURL(p.url); p.url = url; renderTasks(); });
+        return false;
+      }
+      return false;
+    },
+    summary: (task, run) => run && run.pages && run.pages.length
+      ? t("paperResult")(loc(task.title), fmtDuration(run.paperMs), run.pages.length)
+      : `${loc(task.title)}: ${t("taskSkipped")}`,
+    detail: (task, run) => {
+      const answers = (task.reflect || []).map((r) => {
+        const o = r.options.find((x) => x.value === run.reflect[r.id]);
+        return `<li>${esc(loc(r))} <strong>${esc(o ? loc(o) : t("packetNoAnswer"))}</strong></li>`;
+      }).join("");
+      const pages = run.pages.map((p, i) => `<figure class="scan-page">
+          <figcaption><strong>${esc(loc(task.title))}</strong> · ${esc(t("pageOf")(i + 1, run.pages.length))} · ${esc(t("paperTime")(fmtDuration(run.paperMs)))}
+            <br>${task.problems.map((x) => esc(txt(x))).join(" · ")}</figcaption>
+          <img src="${p.url}" alt="${esc(t("pageOf")(i + 1, run.pages.length))}">
+        </figure>`).join("");
+      return `${answers ? `<ul class="answers">${answers}</ul>` : ""}${pages}`;
+    }
   }
 };
+
+const fmtDuration = (ms) => {
+  if (ms === null || ms === undefined) return "—";
+  const s = Math.round(ms / 1000);
+  return s < 60 ? `${s} s` : `${Math.floor(s / 60)} min ${s % 60} s`;
+};
+
+// Turn a phone photo into a "scanned page": downscale, grayscale, then map the paper tone (90th percentile)
+// to white and the darkest ink (0.5th percentile) to black. Ink usually covers well under 5% of a page.
+async function scanImage(file, rot = 0) {
+  const bmp = await createImageBitmap(file);
+  const scale = Math.min(1, 1600 / Math.max(bmp.width, bmp.height));
+  const w = Math.round(bmp.width * scale), h = Math.round(bmp.height * scale);
+  const turned = rot === 90 || rot === 270;
+  const canvas = document.createElement("canvas");
+  canvas.width = turned ? h : w;
+  canvas.height = turned ? w : h;
+  const ctx = canvas.getContext("2d");
+  ctx.translate(canvas.width / 2, canvas.height / 2);
+  ctx.rotate((rot * Math.PI) / 180);
+  ctx.drawImage(bmp, -w / 2, -h / 2, w, h);
+  bmp.close();
+  const img = ctx.getImageData(0, 0, canvas.width, canvas.height), d = img.data;
+  const hist = new Uint32Array(256);
+  for (let i = 0; i < d.length; i += 4) {
+    const l = Math.round(0.299 * d[i] + 0.587 * d[i + 1] + 0.114 * d[i + 2]);
+    d[i] = l;
+    hist[l]++;
+  }
+  const n = d.length / 4;
+  let lo = 0, hi = 255, acc = 0;
+  for (let v = 0; v < 256; v++) { acc += hist[v]; if (acc >= n * 0.005) { lo = v; break; } }
+  acc = 0;
+  for (let v = 255; v >= 0; v--) { acc += hist[v]; if (acc >= n * 0.10) { hi = v; break; } }
+  lo = Math.min(lo, hi - 60); // never stretch a near-flat image into noise
+  const span = Math.max(1, hi - lo);
+  for (let i = 0; i < d.length; i += 4) {
+    const v = Math.max(0, Math.min(255, ((d[i] - lo) * 255) / span));
+    d[i] = d[i + 1] = d[i + 2] = v;
+  }
+  ctx.putImageData(img, 0, 0);
+  const blob = await new Promise((r) => canvas.toBlob(r, "image/jpeg", 0.85));
+  return URL.createObjectURL(blob); // memory only; never uploaded
+}
 
 function renderTasks() {
   const id = state.activeMod, m = state.mods[id], T = state.tasks[id], area = $("#taskArea");
@@ -873,9 +989,20 @@ function renderTasks() {
   const task = m.tasks[T.i], run = T.runs[T.i];
   const head = `<h2>${esc(t("taskOf")(T.i + 1, m.tasks.length, loc(task.title)))}</h2>`;
   const next = `<button type="button" class="btn" data-task-go="${T.i + 1}">${esc(t("skipTask"))}</button>`;
-  if (task.type === "paper") {
-    area.innerHTML = `${head}<p>${esc(loc(task.help))}</p>${TASKS.paper.render(task, run || {})}
-      <div class="actions"><button type="button" class="btn primary" data-task-go="${T.i + 1}">${esc(t("finishTasks"))}</button>${run && run.photoUrl ? "" : next}</div>`;
+  clearInterval(countdownTimer);
+  if (task.type === "paper" && run) {
+    const finish = run.pages.length
+      ? `<button type="button" class="btn primary" data-task-go="${T.i + 1}">${esc(t("finishTasks"))}</button>` : next;
+    area.innerHTML = `${head}${TASKS.paper.render(task, run)}<div class="actions">${finish}</div>`;
+    if (run.deadline && !run.pages.length) {
+      countdownTimer = setInterval(() => {
+        const el = $("#countdown");
+        if (!el) { clearInterval(countdownTimer); return; }
+        const left = Math.max(0, Math.ceil((run.deadline - performance.now()) / 1000));
+        el.textContent = left > 0 ? t("timeLeft")(left) : t("timeUp");
+        if (!left) clearInterval(countdownTimer);
+      }, 250);
+    }
     return;
   }
   if (!run) {
@@ -883,9 +1010,10 @@ function renderTasks() {
       <div class="actions"><button type="button" class="btn primary" data-begin>${esc(t("beginTask"))}</button>${next}</div>`;
     return;
   }
+  const typed = $("#mentalInput") ? $("#mentalInput").value : ""; // survive a language switch
   area.innerHTML = head + TASKS[task.type].render(task, run);
   const input = $("#mentalInput");
-  if (input) setTimeout(() => input.focus(), 0);
+  if (input) { input.value = typed; setTimeout(() => input.focus(), 0); }
 }
 
 function advanceIfDone(id) {
@@ -896,6 +1024,7 @@ function advanceIfDone(id) {
 }
 
 function onTaskClick(e) {
+  if (e.detail > 1) return; // a double click must not answer two items
   const id = state.activeMod, m = state.mods[id], T = state.tasks[id];
   const jump = e.target.closest("[data-task-go]");
   if (jump) {
@@ -912,27 +1041,44 @@ function onTaskClick(e) {
 }
 
 function onTaskKey(e) {
-  if (e.key !== "Enter" || e.target.id !== "mentalInput") return;
+  if (e.key !== "Enter" || e.repeat || e.target.id !== "mentalInput") return;
   e.preventDefault();
   const id = state.activeMod, T = state.tasks[id], task = state.mods[id].tasks[T.i];
   TASKS.mental.next(task, T.runs[T.i]);
   advanceIfDone(id);
 }
 
-function onPhoto(e) {
+let countdownTimer = null;
+
+async function onPhoto(e) {
   const f = e.target.files && e.target.files[0];
   if (!f) return;
-  const T = state.tasks[state.activeMod];
-  const run = T.runs[T.i] || (T.runs[T.i] = {});
-  if (run.photoUrl) URL.revokeObjectURL(run.photoUrl);
-  run.photoUrl = URL.createObjectURL(f); // memory only; never uploaded
-  run.done = true;
+  const T = state.tasks[state.activeMod], run = T.runs[T.i];
+  if (!run) return;
+  if (run.paperMs === null) run.paperMs = performance.now() - run.t0; // first scan stops the clock
+  const status = $("#scanStatus");
+  if (status) status.textContent = t("scanning");
+  const buttons = [...document.querySelectorAll("#taskArea button")];
+  buttons.forEach((b) => (b.disabled = true)); // no skipping ahead while a page is being processed
+  try {
+    run.pages.push({ file: f, rot: 0, url: await scanImage(f, 0) });
+  } catch (err) {
+    if (status) status.textContent = t("scanFailed");
+    buttons.forEach((b) => (b.disabled = false));
+    return;
+  }
   renderTasks();
+}
+
+function onReflect(e) {
+  if (!e.target.name || !e.target.name.startsWith("rf-")) return;
+  const T = state.tasks[state.activeMod], run = T && T.runs[T.i];
+  if (run && run.reflect) run.reflect[e.target.name.slice(3)] = e.target.value;
 }
 
 function revokePhotos(id) {
   const T = state.tasks[id];
-  if (T) T.runs.forEach((r) => r && r.photoUrl && URL.revokeObjectURL(r.photoUrl));
+  if (T) T.runs.forEach((r) => r && r.pages && r.pages.forEach((p) => URL.revokeObjectURL(p.url)));
 }
 
 function tasksSummaryHTML(id, withDetail = false) {
@@ -941,9 +1087,8 @@ function tasksSummaryHTML(id, withDetail = false) {
   const rows = m.tasks.map((task, k) => {
     const run = T.runs[k], kind = TASKS[task.type];
     if (task.type === "paper") {
-      if (!withDetail || !run || !run.photoUrl) return `<li>${esc(kind.summary(task, run))}</li>`;
-      return `<li>${esc(kind.summary(task, run))}<p class="muted">${task.problems.map((x) => esc(txt(x))).join(" · ")}</p>
-        <img class="work-photo" src="${run.photoUrl}" alt="${esc(t("taskPhoto"))}"></li>`;
+      const scanned = run && run.pages && run.pages.length;
+      return `<li>${esc(kind.summary(task, run))}${withDetail && scanned ? kind.detail(task, run) : ""}</li>`;
     }
     if (!run || !run.done) return `<li>${esc(loc(task.title))}: ${esc(t("taskSkipped"))}</li>`;
     return `<li>${esc(kind.summary(task, run))}${withDetail && kind.detail ? kind.detail(task, run) : ""}</li>`;
@@ -1107,10 +1252,6 @@ function bindEvents() {
     if (goEl) { go(goEl.dataset.go); return; }
     if (e.target.closest("[data-back]")) { show(state.history.pop() || "intro", false); }
   });
-  $("#langToggle").addEventListener("click", () => {
-    state.lang = state.lang === "en" ? "es" : "en";
-    applyStrings();
-  });
   $("#submitBtn").addEventListener("click", submit);
   $("#preNext").addEventListener("click", () => {
     const err = $("#preError");
@@ -1118,11 +1259,11 @@ function bindEvents() {
     err.hidden = true;
     show(state.pre.adult === "yes" ? "questions" : "adultonly");
   });
-  $("#adultBack").addEventListener("click", () => show("prescreen", false));
+  $("#adultBack").addEventListener("click", () => show(state.history.pop() || "prescreen", false));
   $("#modSubmit").addEventListener("click", submitModule);
   $("#demoBtn").addEventListener("click", runDemo);
   $("#taskArea").addEventListener("click", onTaskClick);
-  $("#taskArea").addEventListener("change", (e) => { if (e.target.id === "photoInput") onPhoto(e); });
+  $("#taskArea").addEventListener("change", (e) => { if (e.target.id === "photoInput") onPhoto(e); else onReflect(e); });
   $("#taskArea").addEventListener("keydown", onTaskKey);
   $("#restartBtn").addEventListener("click", restart);
   $("#printBtn").addEventListener("click", () => window.print());

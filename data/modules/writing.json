@@ -1,0 +1,536 @@
+{
+  "id": "writing",
+  "domain": "B",
+  "version": "0.2",
+  "title": {
+    "en": "A closer look: everyday writing",
+    "es": "Más de cerca: la escritura de todos los días"
+  },
+  "help": {
+    "en": "Each question describes a situation. Pick what usually happens for you. If a situation is not part of your life, choose “This doesn’t happen in my life”. After these questions you can do two short tasks on paper, so have a pen and paper handy.",
+    "es": "Cada pregunta describe una situación. Elige lo que normalmente te pasa. Si una situación no es parte de tu vida, elige “Esto no pasa en mi vida”. Después de estas preguntas puedes hacer dos tareas cortas en papel, así que ten cerca un bolígrafo o lápiz y papel."
+  },
+  "offer": {
+    "high": {
+      "en": "Your answers about writing showed a signal. You can take a closer look with everyday situations and two short pen-and-paper tasks (about 5 to 8 minutes).",
+      "es": "Tus respuestas sobre la escritura mostraron una señal. Puedes ver más de cerca con situaciones cotidianas y dos tareas cortas con bolígrafo o lápiz y papel (de 5 a 8 minutos)."
+    },
+    "low": {
+      "en": "Want to look more closely at everyday writing? There is an optional deeper section with two short pen-and-paper tasks.",
+      "es": "¿Quieres ver más de cerca la escritura de todos los días? Hay una sección opcional más detallada con dos tareas cortas en papel."
+    }
+  },
+  "go": {
+    "en": "Take a closer look at writing",
+    "es": "Ver más de cerca la escritura"
+  },
+  "na": {
+    "en": "This doesn't happen in my life",
+    "es": "Esto no pasa en mi vida"
+  },
+  "items": [
+    {
+      "id": "W1",
+      "en": "You have to fill in a paper form at a clinic or office.",
+      "es": "Tienes que llenar un formulario en papel en una clínica u oficina.",
+      "options": [
+        {
+          "v": 0,
+          "en": "I fill it in without trouble.",
+          "es": "Lo lleno sin problema."
+        },
+        {
+          "v": 1,
+          "en": "I fill it in, but it takes me a long time.",
+          "es": "Lo lleno, pero me toma mucho tiempo."
+        },
+        {
+          "v": 2,
+          "en": "My writing gets so messy or cramped that parts are hard to read.",
+          "es": "Mi letra se vuelve tan desordenada o apretada que partes se leen con dificultad."
+        },
+        {
+          "v": 3,
+          "en": "Writing it out is too hard, so I ask someone to fill it in for me.",
+          "es": "Escribirlo me cuesta demasiado, así que le pido a alguien que lo llene por mí."
+        }
+      ]
+    },
+    {
+      "id": "W2",
+      "en": "You want to write a birthday or thank-you card by hand.",
+      "es": "Quieres escribir a mano una tarjeta de cumpleaños o de agradecimiento.",
+      "options": [
+        {
+          "v": 0,
+          "en": "I write it easily.",
+          "es": "La escribo con facilidad."
+        },
+        {
+          "v": 1,
+          "en": "I write it, but it takes effort to keep it neat.",
+          "es": "La escribo, pero me cuesta que se vea ordenada."
+        },
+        {
+          "v": 2,
+          "en": "I keep it very short because writing by hand is hard.",
+          "es": "La hago muy corta porque escribir a mano me cuesta."
+        },
+        {
+          "v": 3,
+          "en": "Writing by hand is too hard, so I don't write it.",
+          "es": "Escribir a mano me cuesta demasiado, así que no la escribo."
+        }
+      ]
+    },
+    {
+      "id": "W3",
+      "en": "Someone is talking (a meeting, class or appointment) and you need to take notes.",
+      "es": "Alguien está hablando (una reunión, una clase o una cita) y necesitas tomar notas.",
+      "options": [
+        {
+          "v": 0,
+          "en": "I keep up.",
+          "es": "Le sigo el ritmo."
+        },
+        {
+          "v": 1,
+          "en": "I keep up, but my notes are hard to read later.",
+          "es": "Le sigo el ritmo, pero después me cuesta leer mis notas."
+        },
+        {
+          "v": 2,
+          "en": "My hand can't keep up with what I hear, so I miss parts.",
+          "es": "Mi mano no alcanza lo que oigo, así que me pierdo partes."
+        },
+        {
+          "v": 3,
+          "en": "I can't write fast enough, so I don't take notes.",
+          "es": "No logro escribir tan rápido, así que no tomo notas."
+        }
+      ]
+    },
+    {
+      "id": "W4",
+      "en": "You need to write an important email or message.",
+      "es": "Necesitas escribir un correo o mensaje importante.",
+      "options": [
+        {
+          "v": 0,
+          "en": "I write it and send it.",
+          "es": "Lo escribo y lo mando."
+        },
+        {
+          "v": 1,
+          "en": "I write it, but it takes me far longer than it should.",
+          "es": "Lo escribo, pero me toma mucho más tiempo del que debería."
+        },
+        {
+          "v": 2,
+          "en": "Putting my ideas in order takes me a very long time.",
+          "es": "Ordenar mis ideas me toma muchísimo tiempo."
+        },
+        {
+          "v": 3,
+          "en": "I can't get it into words, so I ask someone to write it or don't send it.",
+          "es": "No logro ponerlo en palabras, así que le pido a alguien que lo escriba o no lo mando."
+        }
+      ]
+    },
+    {
+      "id": "W5",
+      "en": "You leave a handwritten note for someone at home or work.",
+      "es": "Le dejas una nota escrita a mano a alguien en casa o en el trabajo.",
+      "options": [
+        {
+          "v": 0,
+          "en": "They read it fine.",
+          "es": "La leen sin problema."
+        },
+        {
+          "v": 1,
+          "en": "They sometimes ask what a word says.",
+          "es": "A veces preguntan qué dice alguna palabra."
+        },
+        {
+          "v": 2,
+          "en": "They often can't read parts of it.",
+          "es": "Con frecuencia no pueden leer partes."
+        },
+        {
+          "v": 3,
+          "en": "My handwriting can't be read, so I avoid leaving notes by hand.",
+          "es": "Mi letra no se entiende, así que evito dejar notas a mano."
+        }
+      ]
+    },
+    {
+      "id": "W6",
+      "en": "You write by hand for ten minutes or more, for example in an exam or a journal.",
+      "es": "Escribes a mano durante diez minutos o más, por ejemplo en un examen o un diario.",
+      "options": [
+        {
+          "v": 0,
+          "en": "My writing looks the same at the end as at the start.",
+          "es": "Mi letra se ve igual al final que al principio."
+        },
+        {
+          "v": 1,
+          "en": "It gets a little larger or messier.",
+          "es": "Se vuelve un poco más grande o desordenada."
+        },
+        {
+          "v": 2,
+          "en": "By the end it is hard to read.",
+          "es": "Al final es difícil de leer."
+        },
+        {
+          "v": 3,
+          "en": "I can't keep it readable that long, so I stop or ask someone to write for me.",
+          "es": "No logro que siga legible tanto tiempo, así que paro o le pido a alguien que escriba por mí."
+        }
+      ]
+    },
+    {
+      "id": "W7",
+      "en": "You need to explain something in writing that you could easily explain out loud.",
+      "es": "Necesitas explicar por escrito algo que podrías explicar fácilmente en voz alta.",
+      "options": [
+        {
+          "v": 0,
+          "en": "Writing it is about as easy as saying it.",
+          "es": "Escribirlo es casi tan fácil como decirlo."
+        },
+        {
+          "v": 1,
+          "en": "Writing it takes more effort.",
+          "es": "Escribirlo me cuesta más esfuerzo."
+        },
+        {
+          "v": 2,
+          "en": "My written version leaves out a lot of what I know.",
+          "es": "Lo que escribo deja fuera mucho de lo que sé."
+        },
+        {
+          "v": 3,
+          "en": "I can say it, but I can't get it down in writing.",
+          "es": "Lo puedo decir, pero no logro ponerlo por escrito."
+        }
+      ]
+    },
+    {
+      "id": "W8",
+      "en": "You copy an address or phone number from a screen or board onto paper.",
+      "es": "Copias una dirección o un número de teléfono de una pantalla o una pizarra a un papel.",
+      "options": [
+        {
+          "v": 0,
+          "en": "I copy it quickly and correctly.",
+          "es": "Lo copio rápido y bien."
+        },
+        {
+          "v": 1,
+          "en": "I copy it correctly, but slowly.",
+          "es": "Lo copio bien, pero despacio."
+        },
+        {
+          "v": 2,
+          "en": "I often make mistakes or skip parts.",
+          "es": "Con frecuencia me equivoco o me salto partes."
+        },
+        {
+          "v": 3,
+          "en": "Even taking my time I copy it wrong, so I ask someone to write it for me.",
+          "es": "Aun con calma lo copio mal, así que le pido a alguien que lo escriba."
+        }
+      ]
+    },
+    {
+      "id": "W9",
+      "en": "A form or application asks you to write a short paragraph about yourself.",
+      "es": "Un formulario o una solicitud te pide escribir un párrafo corto sobre ti.",
+      "options": [
+        {
+          "v": 0,
+          "en": "I write it without much trouble.",
+          "es": "Lo escribo sin mucho problema."
+        },
+        {
+          "v": 1,
+          "en": "I write it, but it takes several tries.",
+          "es": "Lo escribo, pero me toma varios intentos."
+        },
+        {
+          "v": 2,
+          "en": "I write only a sentence or two because writing more is hard.",
+          "es": "Escribo solo una o dos oraciones porque escribir más me cuesta."
+        },
+        {
+          "v": 3,
+          "en": "I can't get it written, so I leave it blank or ask someone.",
+          "es": "No logro escribirlo, así que lo dejo en blanco o le pido ayuda a alguien."
+        }
+      ]
+    },
+    {
+      "id": "W10",
+      "en": "When you write by hand, your letters:",
+      "es": "Cuando escribes a mano, tus letras:",
+      "options": [
+        {
+          "v": 0,
+          "en": "Look consistent.",
+          "es": "Se ven parejas."
+        },
+        {
+          "v": 1,
+          "en": "Vary in size or slant.",
+          "es": "Cambian de tamaño o de inclinación."
+        },
+        {
+          "v": 2,
+          "en": "Mix capitals and small letters or change shape.",
+          "es": "Mezclan mayúsculas y minúsculas o cambian de forma."
+        },
+        {
+          "v": 3,
+          "en": "Come out so uneven that people can't tell them apart.",
+          "es": "Salen tan disparejas que no se distinguen unas de otras."
+        }
+      ],
+      "no_na": true
+    },
+    {
+      "id": "W11",
+      "en": "You quickly jot down a message during a phone call.",
+      "es": "Anotas rápido un mensaje durante una llamada.",
+      "options": [
+        {
+          "v": 0,
+          "en": "It's easy to read later.",
+          "es": "Después se lee fácil."
+        },
+        {
+          "v": 1,
+          "en": "It's readable, but messy.",
+          "es": "Se entiende, pero está desordenado."
+        },
+        {
+          "v": 2,
+          "en": "Even I struggle to read it later.",
+          "es": "Hasta a mí me cuesta leerlo después."
+        },
+        {
+          "v": 3,
+          "en": "I can't write fast enough to get it down.",
+          "es": "No logro escribir tan rápido para anotarlo."
+        }
+      ]
+    },
+    {
+      "id": "W12",
+      "no_na": true,
+      "en": "When you reread something you wrote:",
+      "es": "Cuando vuelves a leer algo que escribiste:",
+      "options": [
+        {
+          "v": 0,
+          "en": "It says what I meant.",
+          "es": "Dice lo que quería decir."
+        },
+        {
+          "v": 1,
+          "en": "I find a few mistakes to fix, but it says what I meant.",
+          "es": "Encuentro algunos errores que corregir, pero dice lo que quería decir."
+        },
+        {
+          "v": 2,
+          "en": "I find many missing or mixed-up words.",
+          "es": "Encuentro muchas palabras que faltan o que están revueltas."
+        },
+        {
+          "v": 3,
+          "en": "It often doesn't make sense, even to me.",
+          "es": "Con frecuencia no tiene sentido, ni para mí."
+        }
+      ]
+    }
+  ],
+  "tasksTitle": {
+    "en": "Pen-and-paper writing tasks",
+    "es": "Tareas de escritura con bolígrafo o lápiz y papel"
+  },
+  "tasks": [
+    {
+      "type": "paper",
+      "title": {
+        "en": "Copy a sentence",
+        "es": "Copia una oración"
+      },
+      "help": {
+        "en": "Tap Begin to see a sentence. Copy it onto paper in your normal handwriting, then scan the page. The timer runs from Begin until your first scan. The scan stays on this device, in this tab only. It is never uploaded or analysed; it only appears in your printed summary.",
+        "es": "Toca Empezar para ver una oración. Cópiala en papel con tu letra normal y luego escanea la hoja. El tiempo corre desde Empezar hasta tu primer escaneo. El escaneo se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza; solo aparece en tu resumen impreso."
+      },
+      "problems": [
+        {
+          "en": "Every Tuesday the bus to the market leaves at nine fifteen, so we get everything ready the night before.",
+          "es": "Todos los martes el autobús al mercado sale a las nueve y cuarto, así que dejamos todo listo la noche anterior."
+        }
+      ],
+      "reflect": [
+        {
+          "id": "wc_look",
+          "en": "How often did you look back at the sentence while copying?",
+          "es": "¿Qué tan seguido volviste a ver la oración mientras copiabas?",
+          "options": [
+            {
+              "value": "once",
+              "en": "Once or twice",
+              "es": "Una o dos veces"
+            },
+            {
+              "value": "some",
+              "en": "Several times",
+              "es": "Varias veces"
+            },
+            {
+              "value": "word",
+              "en": "For almost every word",
+              "es": "Casi en cada palabra"
+            }
+          ]
+        },
+        {
+          "id": "wc_fix",
+          "en": "Did you cross out or rewrite anything?",
+          "es": "¿Tachaste o volviste a escribir algo?",
+          "options": [
+            {
+              "value": "no",
+              "en": "No",
+              "es": "No"
+            },
+            {
+              "value": "few",
+              "en": "Once or twice",
+              "es": "Una o dos veces"
+            },
+            {
+              "value": "many",
+              "en": "Several times",
+              "es": "Varias veces"
+            }
+          ]
+        },
+        {
+          "id": "wc_words",
+          "en": "Did you leave out or change any words?",
+          "es": "¿Omitiste o cambiaste alguna palabra?",
+          "options": [
+            {
+              "value": "no",
+              "en": "No",
+              "es": "No"
+            },
+            {
+              "value": "one",
+              "en": "One",
+              "es": "Una"
+            },
+            {
+              "value": "several",
+              "en": "Several",
+              "es": "Varias"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paper",
+      "countdown": 120,
+      "title": {
+        "en": "Write for two minutes",
+        "es": "Escribe durante dos minutos"
+      },
+      "help": {
+        "en": "Tap Begin to start a two-minute timer. Write on paper about what you did yesterday, from morning to night. Don't worry about spelling or neatness. When the time is up, finish your sentence and scan the page.",
+        "es": "Toca Empezar para iniciar un temporizador de dos minutos. Escribe en papel lo que hiciste ayer, de la mañana a la noche. No te preocupes por la ortografía ni por que se vea bonito. Cuando se acabe el tiempo, termina tu oración y escanea la hoja."
+      },
+      "problems": [
+        {
+          "en": "What did you do yesterday, from morning to night?",
+          "es": "¿Qué hiciste ayer, de la mañana a la noche?"
+        }
+      ],
+      "reflect": [
+        {
+          "id": "wf_amount",
+          "en": "Compared with telling someone about your day, how much did you get down?",
+          "es": "Comparado con contarle tu día a alguien, ¿cuánto lograste escribir?",
+          "options": [
+            {
+              "value": "same",
+              "en": "About as much",
+              "es": "Más o menos lo mismo"
+            },
+            {
+              "value": "less",
+              "en": "Less",
+              "es": "Menos"
+            },
+            {
+              "value": "much_less",
+              "en": "Much less",
+              "es": "Mucho menos"
+            }
+          ]
+        },
+        {
+          "id": "wf_words",
+          "en": "How easy was it to turn your thoughts into sentences on paper?",
+          "es": "¿Qué tan fácil fue convertir tus ideas en oraciones en el papel?",
+          "options": [
+            {
+              "value": "easy",
+              "en": "Easy",
+              "es": "Fácil"
+            },
+            {
+              "value": "effort",
+              "en": "It took effort",
+              "es": "Me costó esfuerzo"
+            },
+            {
+              "value": "hard",
+              "en": "Very hard",
+              "es": "Muy difícil"
+            }
+          ]
+        },
+        {
+          "id": "wf_hand",
+          "en": "How did your hand feel?",
+          "es": "¿Cómo se sintió tu mano?",
+          "options": [
+            {
+              "value": "fine",
+              "en": "Fine",
+              "es": "Bien"
+            },
+            {
+              "value": "tired",
+              "en": "A little tired",
+              "es": "Un poco cansada"
+            },
+            {
+              "value": "sore",
+              "en": "Sore or cramping",
+              "es": "Adolorida o con calambre"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

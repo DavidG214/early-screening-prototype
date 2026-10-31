@@ -7,8 +7,8 @@
     "es": "Más de cerca: los números de todos los días"
   },
   "help": {
-    "en": "Each question describes a situation. Pick what usually happens for you. If a situation is not part of your life, choose “This doesn’t happen in my life”.",
-    "es": "Cada pregunta describe una situación. Elige lo que normalmente te pasa. Si una situación no es parte de tu vida, elige “Esto no pasa en mi vida”."
+    "en": "Each question describes a situation. Pick what usually happens for you. If a situation is not part of your life, choose “This doesn’t happen in my life”. After these questions there are short number tasks, including one on paper, so have a pen and paper handy.",
+    "es": "Cada pregunta describe una situación. Elige lo que normalmente te pasa. Si una situación no es parte de tu vida, elige “Esto no pasa en mi vida”. Después de estas preguntas hay tareas cortas con números, una de ellas en papel, así que ten cerca un bolígrafo o lápiz y papel."
   },
   "offer": {
     "high": {
@@ -552,13 +552,86 @@
         "es": "En papel"
       },
       "help": {
-        "en": "Work out these problems by hand on paper or a whiteboard. Show your steps. Then take a photo of your work. The photo stays on this device, in this tab only. It is never uploaded or analysed; it only appears in your printed summary.",
-        "es": "Resuelve estos problemas a mano en papel o en un pizarrón. Muestra tus pasos. Luego toma una foto de tu trabajo. La foto se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza; solo aparece en tu resumen impreso."
+        "en": "Tap Begin to see three problems. Work them out by hand on paper or a whiteboard and show your steps. Then scan the page. The timer runs from Begin until your first scan. The scan stays on this device, in this tab only. It is never uploaded or analysed; it only appears in your printed summary.",
+        "es": "Toca Empezar para ver tres problemas. Resuélvelos a mano en papel o en una pizarra o pizarrón y muestra tus pasos. Luego escanea la hoja. El tiempo corre desde Empezar hasta tu primer escaneo. El escaneo se queda en este dispositivo, solo en esta pestaña. Nunca se sube ni se analiza; solo aparece en tu resumen impreso."
       },
       "problems": [
         "3/4 + 1/2",
         "15% × 60",
         "1000 − 387"
+      ],
+      "reflect": [
+        {
+          "id": "mp_erase",
+          "en": "Did you erase or start over?",
+          "es": "¿Borraste o empezaste de nuevo?",
+          "options": [
+            {
+              "value": "no",
+              "en": "No",
+              "es": "No"
+            },
+            {
+              "value": "once",
+              "en": "Once",
+              "es": "Una vez"
+            },
+            {
+              "value": "many",
+              "en": "Several times",
+              "es": "Varias veces"
+            }
+          ]
+        },
+        {
+          "id": "mp_fingers",
+          "en": "Did you count on your fingers?",
+          "es": "¿Contaste con los dedos?",
+          "options": [
+            {
+              "value": "no",
+              "en": "No",
+              "es": "No"
+            },
+            {
+              "value": "little",
+              "en": "A little",
+              "es": "Un poco"
+            },
+            {
+              "value": "lot",
+              "en": "A lot",
+              "es": "Mucho"
+            }
+          ]
+        },
+        {
+          "id": "mp_hardest",
+          "en": "Which problem was hardest?",
+          "es": "¿Qué problema fue el más difícil?",
+          "options": [
+            {
+              "value": "p1",
+              "en": "3/4 + 1/2",
+              "es": "3/4 + 1/2"
+            },
+            {
+              "value": "p2",
+              "en": "15% × 60",
+              "es": "15% × 60"
+            },
+            {
+              "value": "p3",
+              "en": "1000 − 387",
+              "es": "1000 − 387"
+            },
+            {
+              "value": "none",
+              "en": "None were hard",
+              "es": "Ninguno fue difícil"
+            }
+          ]
+        }
       ]
     }
   ]
